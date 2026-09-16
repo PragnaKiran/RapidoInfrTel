@@ -38,7 +38,7 @@ export default function Footer() {
                 </span>
               </div>
               <div className="text-xs text-slate-400 mt-0.5">
-                RAPIDO INFRATEL LLP · LLPIN: <span className="text-saffron-300 font-mono font-medium">AAV-6363</span> · RoC Ahmedabad Registered
+                RAPIDO INFRATEL LLP · Architecting Digital Bharat · Solutions Architecture Practice
               </div>
             </div>
           </div>
@@ -57,8 +57,8 @@ export default function Footer() {
       </div>
 
       {/* 2. MAIN FOOTER CONTENT */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-9">
           {/* Col 1 & 2: Entity & Mission */}
           <div className="lg:col-span-2 space-y-4">
             <RapidoLogo size="default" />
@@ -76,7 +76,7 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <ShieldCheck className="w-4 h-4 text-fiber-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Trademark renewed for 10 years) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad, Gujarat)
+                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Trademark renewed for 10 years) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (Ahmedabad, Gujarat)
                 </span>
               </div>
             </div>
@@ -90,31 +90,37 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/solutions#pillar-1" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/enterprise-platforms" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Optical Fiber &amp; FTTH</span>
+                  <span>Enterprise Cloud Platforms</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#pillar-2" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/mobile-products" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Sovereign Portals &amp; GIS Stack</span>
+                  <span>Mobile Applications &amp; Mobility</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#pillar-3" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/ai-intelligence" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Open Community Wi-Fi Mesh</span>
+                  <span>Sovereign AI &amp; Intelligence</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#ai-mobile" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/spatial-gis" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>AI &amp; Mobile Applications</span>
+                  <span>Municipal Spatial GIS</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#hosting" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/civic-inclusion" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                  <ArrowRight className="w-3 h-3 text-slate-600" />
+                  <span>Universal Human Inclusion</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions/rapido-hosting" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Rapido Cloud Hosting</span>
                 </Link>
@@ -136,7 +142,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#hosting" className="hover:text-white transition-colors flex items-center gap-1">
+                <Link href="/solutions/rapido-hosting#domains" className="hover:text-white transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>“We are . in domain name”</span>
                 </Link>
@@ -178,7 +184,7 @@ export default function Footer() {
               <div className="p-2.5 rounded-lg bg-slate-900/90 border border-slate-800">
                 <div className="text-white font-semibold">PMP-Grade Project Governance</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">
-                  Methodical architectural management and execution rigor.
+                  PMBOK-aligned solutions oversight and agile software delivery.
                 </div>
               </div>
             </div>
@@ -186,8 +192,8 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* 3. BOTTOM STATUTORY COPYRIGHT BAR */}
-      <div className="border-t border-slate-800/80 bg-slate-950 py-6 px-4">
+      {/* 3. COPYRIGHT STRIP */}
+      <div className="border-t border-slate-800/80 bg-slate-950 py-5 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div className="flex items-center gap-2">
             <img
@@ -201,9 +207,11 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4 text-slate-400">
-            <span>LLPIN: AAV-6363</span>
+            <span>Ahmedabad, Gujarat</span>
             <span>·</span>
-            <span>RoC Ahmedabad, Gujarat</span>
+            <Link href="/about" className="hover:text-fiber-300">
+              About Practice
+            </Link>
             <span>·</span>
             <Link href="/contact" className="text-fiber-400 hover:underline">
               Corporate Inquiries

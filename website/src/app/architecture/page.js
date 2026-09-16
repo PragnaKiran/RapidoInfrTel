@@ -26,26 +26,26 @@ export const metadata = {
 export default function ArchitecturePage() {
   const architecturalTiers = [
     {
-      tier: "Tier 1: Physical Fiber & Transmission Grid",
-      tagline: "Carrier-Neutral Dark Fiber & GPON Backhaul",
-      desc: "Underground armored ribbon optical fiber networks engineered with micro-trenching, HDD trenchless crossings, and pre-ducted conduits for scalable multi-terabit Dense Wavelength Division Multiplexing (DWDM).",
+      tier: "Tier 1: Carrier Transmission Interface & Telecommunications Bus",
+      tagline: "Carrier-Grade Peering & High-Throughput Optical Interface",
+      desc: "Software and hardware interface layer abstracting underlying carrier-neutral dark fiber, high-density optical corridors, and Dense Wavelength Division Multiplexing (DWDM) pipelines.",
       specs: [
-        "Cable: 48F / 96F / 288F Armored Single Mode G.652.D Optical Fiber",
-        "Ducting: High-Density Polyethylene (HDPE) Silicon Ducts (40/33mm)",
-        "Enclosures: IP68 Hermetically Sealed Fiber Joint Closures",
-        "Splice Budget: < 0.05 dB insertion loss per fusion joint"
+        "Network Interconnect: Direct Layer-2/Layer-3 direct carrier transmission peering",
+        "Carrier Standards: Interfacing with ITU-T G.652.D single-mode carrier transmission rings",
+        "Throughput Capacity: Multi-terabit carrier routing interface with sub-millisecond queuing",
+        "Resilience Bus: Automated G.8032 ERPS transmission failover coordination"
       ],
       icon: Radio,
       color: "text-fiber-400"
     },
     {
-      tier: "Tier 2: Edge Aggregation & POP Facilities",
-      tagline: "Ultra-Low Latency Edge Processing",
-      desc: "Strategically sited Point of Presence (POP) shelters equipped with redundant dual-rectifier DC power, environmental monitoring, and carrier-grade GPON Optical Line Terminals (OLTs).",
+      tier: "Tier 2: Edge Aggregation & Cloud POP Facilities",
+      tagline: "Ultra-Low Latency Edge Processing & Data Routing",
+      desc: "Strategically sited Point of Presence (POP) software gateways with redundant DC power, environmental monitoring, and carrier-grade optical edge routing nodes.",
       specs: [
-        "Splitter Ratios: 1:32 and 1:64 Class C+ GPON Optic Budgeting",
+        "Routing Protocol: BGP Anycast routing with sub-10ms localized packet steering",
         "Power Backup: N+1 SMPS Rectifiers with Lithium Ferro Phosphate (LFP) banks",
-        "Ring Topology: Dual-parented ring protection with sub-50ms ITU-T G.8032 ERPS",
+        "Ring Topology: Dual-parented ring protection with sub-50ms failover orchestration",
         "Edge Compute: Containerized edge micro-clusters for localized civic caching"
       ],
       icon: Server,
@@ -93,8 +93,8 @@ export default function ArchitecturePage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="bg-telecom-950 py-10 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
@@ -224,7 +224,7 @@ export default function ArchitecturePage() {
             Need a Customized Blueprint for Your Municipal, Carrier or Cloud Network?
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            Our solutions architecture team prepares detailed Route Survey Maps, Link Loss Budgets, and Bill of Quantities (BOQ).
+            Our solutions architecture team prepares detailed Architecture Blueprints, Data Flow Topology Maps, and Systems Specifications.
           </p>
           <Link
             href="/contact"

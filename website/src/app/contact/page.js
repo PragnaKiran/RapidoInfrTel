@@ -15,13 +15,13 @@ import {
 
 export const metadata = {
   title: "Contact & Technical Inquiries | RAPIDO INFRATEL LLP",
-  description: "Contact RAPIDO INFRATEL LLP (LLPIN: AAV-6363). Registered office at Parimal Garden Cross Road, C.G. Road, Ahmedabad. Submit project feasibility inquiries, technical scoping, and solutions architecture briefs.",
+  description: "Contact RAPIDO INFRATEL LLP. Registered office at Parimal Garden Cross Road, C.G. Road, Ahmedabad. Submit project feasibility inquiries, technical scoping, and solutions architecture briefs.",
 };
 
 export default function ContactPage() {
   return (
-    <div className="bg-telecom-950 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="bg-telecom-950 py-10 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">

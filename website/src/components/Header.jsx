@@ -57,33 +57,39 @@ export default function Header() {
       hasDropdown: true,
       subItems: [
         {
-          title: "Optical Fiber & FTTH Networks",
-          desc: "48F-288F Armored Ribbon OFC & GPON Transmission",
-          href: "/solutions#pillar-1",
-          icon: Radio
-        },
-        {
-          title: "Governance & Paperless Portals",
-          desc: "Aadhaar, DigiLocker & Unified Municipal GIS",
-          href: "/solutions#pillar-2",
+          title: "Enterprise Cloud Platforms",
+          desc: "Cloud-Native Microservices & Distributed Digital Utilities",
+          href: "/solutions/enterprise-platforms",
           icon: Server
         },
         {
-          title: "Open Community Wi-Fi & Equity",
-          desc: "Decentralized Wi-Fi Mesh & Multilingual Bhashini",
-          href: "/solutions#pillar-3",
-          icon: Users
-        },
-        {
-          title: "AI & Mobile App Development",
-          desc: "Enterprise Cloud-Native Apps & Predictive Analytics",
-          href: "/solutions#ai-mobile",
+          title: "Mobile Applications & Mobility",
+          desc: "Native iOS/Android, Field Operations & Offline-First Sync",
+          href: "/solutions/mobile-products",
           icon: Cpu
         },
         {
+          title: "Sovereign AI & Intelligence",
+          desc: "Predictive Analytics, Bhashini 22-Language AI & Workflow ML",
+          href: "/solutions/ai-intelligence",
+          icon: Cpu
+        },
+        {
+          title: "Municipal Spatial GIS & Sensors",
+          desc: "Urban Digital Twin Mapping & IoT Telemetry Sensors",
+          href: "/solutions/spatial-gis",
+          icon: Radio
+        },
+        {
+          title: "Universal Human Inclusion",
+          desc: "Zero-Barrier Civic Portals, Digital Equity & Public Dignity",
+          href: "/solutions/civic-inclusion",
+          icon: Users
+        },
+        {
           title: "Rapido Hosting & Domains",
-          desc: "“We are . in domain name” · Sovereign Cloud Hosting",
-          href: "/solutions#hosting",
+          desc: "“We are . in domain name” · Enterprise Sovereign Cloud",
+          href: "/solutions/rapido-hosting",
           icon: Globe2
         }
       ]
@@ -103,7 +109,7 @@ export default function Header() {
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
             <span className="inline-flex items-center gap-1.5 font-semibold text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
               <ShieldCheck className="w-3.5 h-3.5" />
-              LLPIN: AAV-6363 · RoC Ahmedabad
+              Official Corporate Platform
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="text-fiber-400 font-semibold tracking-wide hidden lg:inline">

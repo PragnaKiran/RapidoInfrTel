@@ -24,7 +24,7 @@ import {
 
 export const metadata = {
   title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & IT/Mobile Products",
-  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products used on the infrastructure of carrier transmission companies under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad (LLPIN: AAV-6363).",
+  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products used on the infrastructure of carrier transmission companies under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
 };
 
 export default function HomePage() {
@@ -32,19 +32,19 @@ export default function HomePage() {
     {
       id: "pillar-1",
       number: "01",
-      title: "Digital Infrastructure as a Utility",
-      tagline: "High-Speed Transmission & Carrier Backbone",
-      desc: "Architecting resilient solutions designs and PMP-grade management of carrier-grade transmission corridors and optical infrastructure.",
+      title: "Enterprise Cloud Platforms & Digital Utilities",
+      tagline: "High-Availability Distributed Backbones",
+      desc: "Architecting resilient cloud-native microservices, fault-tolerant transaction pipelines, and digital utilities operating on carrier telecommunication infrastructure.",
       borderColor: "border-fiber-500/40",
       textColor: "text-fiber-400",
-      icon: Radio,
+      icon: Server,
       items: [
-        "Turnkey Optical Fiber Network (OFC) & FTTH GPON architectural blueprints",
-        "48F–288F armored ribbon micro-duct routes & trenchless corridor designs",
-        "Carrier transmission interfaces & small-cell densification architectures",
-        "Zero-Trust Network Architecture (ZTNA) & edge compute facilities"
+        "Cloud-native microservices and distributed transaction pipelines",
+        "Carrier network interface abstractions and high-throughput data buses",
+        "Sub-50ms failover orchestration & zero-downtime deployment pipelines",
+        "Zero-Trust Network Architecture (ZTNA) and sovereign edge facilities"
       ],
-      link: "/solutions#pillar-1"
+      link: "/solutions/enterprise-platforms"
     },
     {
       id: "pillar-2",
@@ -61,24 +61,24 @@ export default function HomePage() {
         "Unified GIS municipal spatial asset intelligence & real-time monitoring",
         "Scalable civic data pipelines for equitable utility and resource distribution"
       ],
-      link: "/solutions#pillar-2"
+      link: "/solutions/spatial-gis"
     },
     {
       id: "pillar-3",
       number: "03",
       title: "Universal Human Inclusion & Equity",
-      tagline: "Universal Access & Open Wi-Fi Mesh",
-      desc: "Democratizing connectivity through multilingual computing, open-access community Wi-Fi, and radical digital inclusion.",
+      tagline: "Universal Access & Civic Products",
+      desc: "Democratizing access through multilingual computing, civic digital products, and radical human inclusion.",
       borderColor: "border-emerald-500/40",
       textColor: "text-emerald-400",
       icon: Users,
       items: [
         "Bhashini-ready multilingual NLP localization across 22 scheduled Indian languages",
         "Decentralized open-access community Wi-Fi mesh software products",
-        "Equitable connectivity grids for peri-urban clusters and rural communities",
+        "Equitable civic service portals for peri-urban clusters and rural communities",
         "Participatory digital tools engineered to eliminate racial and gender gaps"
       ],
-      link: "/solutions#pillar-3"
+      link: "/solutions/civic-inclusion"
     }
   ];
 
@@ -99,8 +99,8 @@ export default function HomePage() {
       sub: "Dismantling Bias & Wage Gaps"
     },
     {
-      stat: "LLPIN: AAV-6363",
-      label: "RoC Ahmedabad",
+      stat: "Enterprise",
+      label: "Cloud & Products",
       sub: "Architecting Digital Bharat"
     }
   ];
@@ -239,11 +239,11 @@ export default function HomePage() {
                     <div className="flex items-center gap-2.5">
                       <Radio className="w-4 h-4 text-amber-400" />
                       <div>
-                        <div className="font-semibold text-white">Tier 1: Carrier Optical Corridors</div>
-                        <div className="text-[11px] text-slate-400">Underlying 48F–288F OFC &amp; GPON infrastructure</div>
+                        <div className="font-semibold text-white">Tier 1: Carrier Transmission Infrastructure</div>
+                        <div className="text-[11px] text-slate-400">High-capacity optical transmission &amp; carrier telecom buses</div>
                       </div>
                     </div>
-                    <span className="text-[10px] font-mono text-amber-400 font-bold">Carrier Physical</span>
+                    <span className="text-[10px] font-mono text-amber-400 font-bold">Carrier Network</span>
                   </div>
                 </div>
 
@@ -261,7 +261,7 @@ export default function HomePage() {
       </section>
 
       {/* 4. THE THREE VISION PILLARS */}
-      <section className="py-20 md:py-28 bg-telecom-900/60 border-y border-slate-800/80 relative">
+      <section className="py-16 md:py-24 bg-telecom-900/60 border-y border-slate-800/80 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
@@ -403,7 +403,7 @@ export default function HomePage() {
               </div>
 
               <Link
-                href="/solutions#ai-mobile"
+                href="/solutions/mobile-products"
                 className="inline-flex items-center gap-2 text-xs font-bold text-fiber-400 hover:underline pt-2"
               >
                 <span>Learn about AI &amp; Mobile Solutions</span>
@@ -472,7 +472,7 @@ export default function HomePage() {
               </div>
 
               <Link
-                href="/solutions#hosting"
+                href="/solutions/rapido-hosting"
                 className="inline-flex items-center gap-2 text-xs font-bold text-saffron-400 hover:underline pt-2"
               >
                 <span>Explore Rapido Hosting &amp; Domains</span>
@@ -484,7 +484,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. CORPORATE HERITAGE & VERIFIED ENTITY CARD */}
-      <section className="py-14 bg-gradient-to-r from-telecom-950 via-slate-900 to-telecom-950 border-t border-slate-800">
+      <section className="py-12 bg-gradient-to-r from-telecom-950 via-slate-900 to-telecom-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-8 rounded-2xl border border-saffron-500/20 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
@@ -496,7 +496,7 @@ export default function HomePage() {
                   RAPIDO INFRATEL LLP · 15+ Years Brand Heritage
                 </h3>
                 <p className="text-xs text-slate-300 mt-1 max-w-3xl leading-relaxed">
-                  Rapido® brand established in <strong>2009</strong> with registered Trademark (renewed for the next 10 years). Incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), currently structured as <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad). Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.
+                  Rapido® brand established in <strong>2009</strong> with registered Trademark (renewed for the next 10 years). Incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), currently structured as <strong>RAPIDO INFRATEL LLP</strong>. Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.
                 </p>
               </div>
             </div>
@@ -512,7 +512,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. LEAD CAPTURE & TECHNICAL CONSULTATION SECTION */}
-      <section id="contact" className="py-20 md:py-28 relative">
+      <section id="contact" className="py-16 md:py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">

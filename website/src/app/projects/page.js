@@ -22,22 +22,22 @@ export const metadata = {
 export default function ProjectsPage() {
   const caseStudies = [
     {
-      title: "Metropolitan Optical Fiber Highway & Ring Network",
-      tagline: "Solution Architecture & PMP Project Management",
-      location: "Ahmedabad – Gandhinagar Economic Corridor, Gujarat",
-      desc: "Turnkey solutions architecture, route survey, Right-of-Way (RoW) liaisoning, and PMP-grade project management of a 120 km 96-core and 288-core underground armored optical fiber cable ring connecting major IT parks, financial centers, and municipal edge shelters.",
+      title: "Enterprise Digital Infrastructure & High-Throughput Platform Deployment",
+      tagline: "Solutions Architecture & PMP-Grade Platform Management",
+      location: "Ahmedabad – Gandhinagar Technology Corridor, Gujarat",
+      desc: "High-throughput solutions architecture and PMP-grade project management of a distributed enterprise platform operating across high-speed carrier optical infrastructure, connecting major IT parks, financial institutions, and municipal edge datacenters with sub-50ms failover resilience.",
       stats: [
-        { label: "Fiber Route", value: "120+ km" },
-        { label: "Core Strand Spec", value: "96F / 288F Armored" },
-        { label: "POP Shelters", value: "14 Carrier Nodes" },
-        { label: "Ring Redundancy", value: "Sub-50ms ERPS" }
+        { label: "Carrier Pipeline", value: "120+ km Interconnect" },
+        { label: "Throughput Capacity", value: "Multi-Terabit Bus" },
+        { label: "POP Enclaves", value: "14 Cloud Nodes" },
+        { label: "Ring Resilience", value: "Sub-50ms Failover" }
       ],
       deliverables: [
-        "HDD trenchless crossings beneath national highways and railway corridors",
-        "Carrier-neutral dark fiber leasing and DWDM channel provisioning",
-        "Comprehensive OTDR link loss testing and GPS GIS route digitization"
+        "Direct carrier transmission peering and Layer-2/Layer-3 software data bus",
+        "Distributed enterprise platform deployment with active-active failover",
+        "Sub-50ms service mesh resilience and comprehensive real-time telemetry"
       ],
-      icon: Radio,
+      icon: Server,
       color: "text-fiber-400"
     },
     {
@@ -100,8 +100,8 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="bg-telecom-950 py-10 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">

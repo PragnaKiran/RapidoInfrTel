@@ -8,7 +8,7 @@ export const metadata = {
     default: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & IT/Mobile Products",
     template: "%s | RAPIDO INFRATEL LLP",
   },
-  description: "RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad). Designers of proprietary IT & Mobile Products used on carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
+  description: "RAPIDO INFRATEL LLP. Designers of proprietary IT & Mobile Products used on carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
   keywords: [
     "rapido infratel llp",
     "architecting digital bharat",
@@ -83,13 +83,8 @@ const jsonLdData = {
       "url": "https://rapidoinfratel.com",
       "logo": "https://rapidoinfratel.com/Rapido-Logo.png",
       "image": "https://rapidoinfratel.com/Rapido-Logo.png",
-      "description": "Proprietary IT & Mobile Products engineered to ride upon carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad Registered (LLPIN: AAV-6363).",
+      "description": "Proprietary IT & Mobile Products engineered to ride upon carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
       "email": "contact@rapidoinfratel.com",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "LLPIN",
-        "value": "AAV-6363",
-      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "B2, Rangkrupa Complex, B/s Gujarat Gas Bldg., Parimal Garden Cross Road, C.G. Road",

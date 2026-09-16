@@ -22,7 +22,7 @@ import {
 
 export const metadata = {
   title: "About Us | Corporate Profile, Heritage & Solutions Architecture",
-  description: "Learn about RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad). Brand heritage since 2009, 2017 Private Limited incorporation, solutions architecture expertise, and PMP-grade project management.",
+  description: "Learn about RAPIDO INFRATEL LLP. Brand heritage since 2009, 2017 Private Limited incorporation, solutions architecture expertise, and PMP-grade project management.",
 };
 
 export default function AboutPage() {
@@ -42,7 +42,7 @@ export default function AboutPage() {
     {
       year: "Present",
       title: "RAPIDO INFRATEL LLP",
-      desc: "Structured as RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad), delivering premier solutions architecture, PMP-grade project management, AI/mobile platforms, and Rapido Hosting.",
+      desc: "Structured as RAPIDO INFRATEL LLP, delivering premier solutions architecture, PMP-grade project management, AI/mobile platforms, and Rapido Hosting.",
       badge: "Active Entity"
     }
   ];
@@ -71,8 +71,8 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="bg-telecom-950 py-10 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header Breadcrumb & Title */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
@@ -97,7 +97,7 @@ export default function AboutPage() {
               The Rapido brand name has been actively serving enterprise technology and digital product domains since <strong>2009</strong>. Backed by a registered trademark (®) in technology and digital product classes that has been renewed for the next 10 years, our journey represents steadfast commercial stability and intellectual property integrity.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Originally incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), our corporate structure has evolved into <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad) to operate as a focused solutions architecture and product development practice.
+              Originally incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), our corporate structure has evolved into <strong>RAPIDO INFRATEL LLP</strong> to operate as a focused solutions architecture and product development practice.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               We operate independently as a private enterprise with zero governmental or political connections. Our foundational inspiration is <em>Architecting Digital Bharat</em> rooted in universal human inclusion and equity: actively valuing every individual, eliminating systemic prejudices and wage gaps, and championing female representation in technology and leadership.

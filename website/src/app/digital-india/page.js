@@ -24,13 +24,13 @@ export const metadata = {
 export default function DigitalIndiaPage() {
   const initiatives = [
     {
-      name: "High-Capacity OFC & Rural Connectivity Networks",
-      badge: "Broadband for All",
-      desc: "Providing high-speed optical fiber connectivity designs to rural Gram Panchayats and semi-urban clusters. We architect carrier-neutral middle-mile transmission and last-mile FTTH networks that unlock telemedicine, rural e-learning, and digitized administrative workflows.",
+      name: "Universal High-Throughput Digital Pipelines & Platforms",
+      badge: "Broadband Utility for All",
+      desc: "Architecting software platforms and solutions designs operating over carrier-neutral high-speed optical pipelines for rural Gram Panchayats and semi-urban clusters. We unlock telemedicine, rural e-learning, and digitized administrative workflows.",
       deliverables: [
-        "HDD trenchless fiber laying design along state highways & rural corridors",
-        "Point of Presence (POP) shelters equipped with solar & battery backups",
-        "Carrier-neutral GPON optical termination with 99.9% uptime targets"
+        "Carrier-interfaced digital pipeline design along state & rural corridors",
+        "Point of Presence (POP) cloud enclaves with solar & battery backups",
+        "High-throughput civic utility routing with 99.99% uptime targets"
       ],
       icon: Radio,
       color: "text-fiber-400"
@@ -86,8 +86,8 @@ export default function DigitalIndiaPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="bg-telecom-950 py-10 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">

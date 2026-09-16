@@ -33,28 +33,28 @@ export default function HeroSlider() {
       description:
         "Specialized solutions architects delivering resilient architectural designs and PMP-grade project management of ultra-high-speed digital pipelines as fundamental civic utilities for every citizen, enterprise, and public institution.",
       image: "/images/home_hero_architects.jpg",
-      imageAlt: "Solutions Architects analyzing fiber network topology",
+      imageAlt: "Solutions Architects analyzing digital infrastructure topology",
       primaryBtn: { text: "Explore Architectural Scope", href: "/solutions" },
       secondaryBtn: { text: "Technical Architecture", href: "/architecture" },
       metric: { val: "PMP-Grade", label: "Project Governance", sub: "End-to-End Architectural Oversight" }
     },
     {
       id: 2,
-      badge: "Transmission Infrastructure · 48F–288F OFC",
+      badge: "Enterprise Cloud-Native Platforms · Digital Utilities",
       badgeColor: "text-fiber-400 bg-fiber-500/10 border-fiber-500/30",
       headline: (
         <>
-          Carrier-Grade <span className="gradient-text-fiber">Optical Fiber</span> &amp;{" "}
-          <span className="text-white">FTTH GPON Networks</span>
+          Enterprise <span className="gradient-text-fiber">Cloud Platforms</span> &amp;{" "}
+          <span className="text-white">Digital Utilities</span>
         </>
       ),
       description:
-        "Engineering high-density armored ribbon OFC ducting, micro-trenching corridors, and GPON distribution backhauls designed with sub-50ms ring protection for 25+ year infrastructure lifespans.",
-      image: "/images/home_hero_fiber.jpg",
-      imageAlt: "Infrastructure engineer testing optical distribution panel",
-      primaryBtn: { text: "Optical Infrastructure", href: "/solutions#pillar-1" },
+        "Engineering high-availability cloud-native microservices, fault-tolerant transaction pipelines, and distributed digital utility backbones running over carrier telecommunication networks.",
+      image: "/images/home_hero_platforms.jpg",
+      imageAlt: "Executive solution architect and engineering team reviewing cloud platform topologies",
+      primaryBtn: { text: "Cloud Platforms", href: "/solutions/enterprise-platforms" },
       secondaryBtn: { text: "Case Studies", href: "/projects" },
-      metric: { val: "Sub-50ms", label: "Ring Resilience", sub: "G.8032 ERPS Carrier Standards" }
+      metric: { val: "Sub-50ms", label: "Failover Resilience", sub: "Distributed Cloud Utility Architecture" }
     },
     {
       id: 3,
@@ -70,8 +70,8 @@ export default function HeroSlider() {
         "Architecting predictive data models, intelligent workflow pipelines, and mobile applications riding on high-capacity carrier transmission infrastructure, equipped with native 22-language translation.",
       image: "/images/hero_ai_mobile.jpg",
       imageAlt: "Software engineers developing AI models and mobile applications",
-      primaryBtn: { text: "AI & Mobile Development", href: "/solutions#ai-mobile" },
-      secondaryBtn: { text: "Consult Solutions Team", href: "/contact" },
+      primaryBtn: { text: "Mobile Applications", href: "/solutions/mobile-products" },
+      secondaryBtn: { text: "Sovereign AI Intelligence", href: "/solutions/ai-intelligence" },
       metric: { val: "22 Languages", label: "Bhashini Ready", sub: "Inclusive Multilingual Interfaces" }
     },
     {
@@ -88,27 +88,27 @@ export default function HeroSlider() {
         "Under the trusted Rapido Hosting brand, we provide high-availability enterprise cloud servers, managed VPS, edge compute enclaves, and premier domain name registration solutions.",
       image: "/images/hero_hosting.jpg",
       imageAlt: "Enterprise cloud datacenter and server cluster",
-      primaryBtn: { text: "Rapido Hosting Solutions", href: "/solutions#hosting" },
-      secondaryBtn: { text: "Domain Services", href: "/contact" },
+      primaryBtn: { text: "Rapido Hosting Solutions", href: "/solutions/rapido-hosting" },
+      secondaryBtn: { text: "Domain Services", href: "/solutions/rapido-hosting#domains" },
       metric: { val: "99.999%", label: "Cloud Uptime", sub: "High-Availability Sovereign Datacenters" }
     },
     {
       id: 5,
-      badge: "Civic Access & Equity · Open Wi-Fi Mesh",
+      badge: "Universal Human Inclusion & Equity · Civic Access",
       badgeColor: "text-amber-400 bg-amber-500/10 border-amber-500/30",
       headline: (
         <>
-          Universal <span className="gradient-text-saffron">Open-Access Wi-Fi Mesh</span> &amp;{" "}
-          <span className="text-white">Empowerment Products</span>
+          Universal <span className="gradient-text-saffron">Human Inclusion</span> &amp;{" "}
+          <span className="text-white">Civic Digital Products</span>
         </>
       ),
       description:
-        "Deploying decentralized open-access community Wi-Fi mesh software and sovereign paperless credential engines that empower local merchants, students, and citizens under universal human inclusion and equity.",
-      image: "/images/hero_citizen.jpg",
-      imageAlt: "Citizens using open community Wi-Fi on smartphones in town square",
-      primaryBtn: { text: "Universal Access Products", href: "/solutions#pillar-3" },
-      secondaryBtn: { text: "Digital Bharat", href: "/digital-india" },
-      metric: { val: "Open Mesh", label: "Decentralized Wi-Fi", sub: "Universal Human Equity & Access" }
+        "Empowering every citizen, merchant, and student through barrier-free digital civic products and paperless service engines built on the universal human inclusion principle of equity and mutual respect.",
+      image: "/images/home_hero_civic_inclusion.jpg",
+      imageAlt: "Diverse cross-functional engineering and civic leadership team collaborating on inclusive digital products",
+      primaryBtn: { text: "Civic Inclusion Products", href: "/solutions/civic-inclusion" },
+      secondaryBtn: { text: "Architecting Digital Bharat", href: "/digital-india" },
+      metric: { val: "100% Inclusive", label: "Zero-Barrier Access", sub: "Universal Human Equity & Civic Dignity" }
     }
   ];
 
@@ -131,7 +131,7 @@ export default function HeroSlider() {
 
   return (
     <div 
-      className="relative overflow-hidden bg-telecom-950 min-h-[640px] md:min-h-[700px] flex items-center"
+      className="relative overflow-hidden bg-telecom-950 min-h-[600px] md:min-h-[665px] flex items-center"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -140,7 +140,7 @@ export default function HeroSlider() {
       <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] bg-saffron-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Slide Container */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14 relative z-10">
         {slides.map((slide, index) => {
           const isActive = index === current;
           return (
@@ -152,9 +152,9 @@ export default function HeroSlider() {
                   : "opacity-0 absolute inset-0 pointer-events-none translate-x-8"
               }`}
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-center">
                 {/* Left Content (7 cols) */}
-                <div className="lg:col-span-7 space-y-6">
+                <div className="lg:col-span-7 space-y-5">
                   {/* Badge */}
                   <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs font-semibold">
                     <span className="w-2 h-2 rounded-full bg-fiber-400 animate-pulse" />
@@ -223,7 +223,7 @@ export default function HeroSlider() {
         })}
 
         {/* CONTROLS: PREV/NEXT & DOTS */}
-        <div className="mt-10 pt-6 border-t border-slate-800/80 flex items-center justify-between flex-wrap gap-4">
+        <div className="mt-8 pt-5 border-t border-slate-800/80 flex items-center justify-between flex-wrap gap-4">
           {/* Slide Indicator Dots */}
           <div className="flex items-center gap-2.5">
             {slides.map((s, idx) => (
@@ -238,11 +238,6 @@ export default function HeroSlider() {
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
-          </div>
-
-          {/* Current index label */}
-          <div className="text-xs font-mono text-slate-400">
-            Slide <span className="text-white font-bold">{current + 1}</span> of {slides.length}
           </div>
 
           {/* Prev / Next Arrows */}
