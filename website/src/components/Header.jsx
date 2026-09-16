@@ -6,7 +6,6 @@ import RapidoLogo from "./RapidoLogo";
 import { 
   ShieldCheck, 
   Mail, 
-  Phone, 
   MapPin, 
   Menu, 
   X, 
@@ -14,7 +13,9 @@ import {
   ArrowUpRight,
   Radio,
   Server,
-  Users
+  Users,
+  Cpu,
+  Globe2
 } from "lucide-react";
 
 export default function Header() {
@@ -30,8 +31,7 @@ export default function Header() {
       const winHeight = window.innerHeight;
       const distFromBottom = docHeight - (scrollY + winHeight);
 
-      // Proximity detection: Unfix / fade sticky header when near footer (> 400px from bottom)
-      // to eliminate duplicate logo collisions!
+      // Proximity detection: Unfix / fade sticky header when near footer to eliminate duplicate logo collisions
       if (scrollY > 80 && distFromBottom > 420) {
         setIsSticky(true);
       } else {
@@ -43,7 +43,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
     setSolutionsDropdownOpen(false);
@@ -58,22 +57,34 @@ export default function Header() {
       hasDropdown: true,
       subItems: [
         {
-          title: "Pillar 1: Digital Infra as a Utility",
-          desc: "Optical Fiber (OFC), FTTH, Towers & Cyber Trust Backbone",
+          title: "Optical Fiber & FTTH Networks",
+          desc: "48F-288F Armored Ribbon OFC & GPON Transmission",
           href: "/solutions#pillar-1",
           icon: Radio
         },
         {
-          title: "Pillar 2: Governance on Demand",
-          desc: "Paperless Portals, Smart City GIS & Real-Time Analytics",
+          title: "Governance & Paperless Portals",
+          desc: "Aadhaar, DigiLocker & Unified Municipal GIS",
           href: "/solutions#pillar-2",
           icon: Server
         },
         {
-          title: "Pillar 3: Citizen Empowerment",
-          desc: "PM-WANI Public Wi-Fi, Bhashini Access & Community Tools",
+          title: "Citizen Enablement & PM-WANI",
+          desc: "PDOA Public Wi-Fi Mesh & Multilingual Bhashini",
           href: "/solutions#pillar-3",
           icon: Users
+        },
+        {
+          title: "AI & Mobile App Development",
+          desc: "Enterprise Cloud-Native Apps & Predictive Analytics",
+          href: "/solutions#ai-mobile",
+          icon: Cpu
+        },
+        {
+          title: "Rapido Hosting & Domains",
+          desc: "“We are . in domain name” · Sovereign Cloud Hosting",
+          href: "/solutions#hosting",
+          icon: Globe2
         }
       ]
     },
@@ -88,15 +99,15 @@ export default function Header() {
       {/* 1. TOP STATUTORY & ENTITY BAR */}
       <div className="bg-telecom-950 border-b border-slate-800/80 text-[11px] text-slate-300 py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
-          {/* Entity & LLPIN Status */}
+          {/* Entity Status */}
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
             <span className="inline-flex items-center gap-1.5 font-semibold text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
               <ShieldCheck className="w-3.5 h-3.5" />
               LLPIN: AAV-6363 · RoC Ahmedabad
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
-            <span className="text-slate-400 hidden lg:inline">
-              Registered in Gujarat under LLP Act, 2008
+            <span className="text-fiber-400 font-semibold tracking-wide hidden lg:inline">
+              Architecting Bharat
             </span>
           </div>
 
@@ -157,13 +168,13 @@ export default function Header() {
 
                     {/* Dropdown Menu */}
                     <div
-                      className={`absolute top-full left-0 w-80 pt-2 transition-all duration-200 ${
+                      className={`absolute top-full left-0 w-88 pt-2 transition-all duration-200 ${
                         solutionsDropdownOpen
                           ? "opacity-100 visible translate-y-0"
                           : "opacity-0 invisible -translate-y-2 pointer-events-none"
                       }`}
                     >
-                      <div className="p-2 rounded-xl bg-telecom-950/95 backdrop-blur-2xl border border-slate-700/80 shadow-2xl shadow-black/80">
+                      <div className="p-2 rounded-xl bg-telecom-950/95 backdrop-blur-2xl border border-slate-700/80 shadow-2xl shadow-black/80 w-80 space-y-1">
                         {link.subItems.map((sub) => {
                           const Icon = sub.icon;
                           return (
@@ -214,7 +225,7 @@ export default function Header() {
               href="/contact"
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-saffron-500 to-saffron-600 hover:from-saffron-400 hover:to-saffron-500 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
             >
-              <span>Submit RFP / Inquiry</span>
+              <span>Inquire / RFP</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
 

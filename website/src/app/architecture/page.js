@@ -13,12 +13,14 @@ import {
   ArrowRight,
   CheckCircle2,
   Terminal,
-  Share2
+  Share2,
+  Globe2,
+  Smartphone
 } from "lucide-react";
 
 export const metadata = {
-  title: "Technology Architecture | Blueprints & Telecom Stack",
-  description: "Explore the multi-tier engineering blueprints of RAPIDO INFRATEL LLP: Optical fiber backhaul topology, Zero-Trust network security, Aadhaar PKI trust stack, and PM-WANI PDOA architectures.",
+  title: "Technology Architecture | Blueprints, AI & Sovereign Cloud Stack",
+  description: "Explore the multi-tier engineering blueprints of RAPIDO INFRATEL LLP: Optical fiber backhaul topology, Zero-Trust network security, Aadhaar PKI trust stack, AI/Mobile gateways, and Rapido Hosting.",
 };
 
 export default function ArchitecturePage() {
@@ -74,6 +76,19 @@ export default function ArchitecturePage() {
       ],
       icon: Layers,
       color: "text-blue-400"
+    },
+    {
+      tier: "Tier 5: Enterprise AI, Mobile Gateways & Rapido Hosting",
+      tagline: "“We are . in domain name” · Sovereign Cloud Stack",
+      desc: "High-availability enterprise datacenter infrastructure powering AI inference models, mobile app backend services (iOS & Android), and premier domain resolution.",
+      specs: [
+        "Hosting: Sovereign cloud servers, managed VPS & Anycast DNS resolution",
+        "AI Architecture: Containerized inference pipelines & Bhashini voice synthesis",
+        "Mobile Mesh: Low-latency GraphQL and WebSocket citizen-facing gateways",
+        "SLA Standard: 99.999% high-availability datacenter cluster resilience"
+      ],
+      icon: Globe2,
+      color: "text-purple-400"
     }
   ];
 
@@ -83,14 +98,14 @@ export default function ArchitecturePage() {
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-            Engineering Blueprints
+            Solutions Architecture Blueprints
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Multi-Tier <br />
             <span className="gradient-text-fiber">Technology Architecture</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            A granular overview of the physical, transmission, cryptographic, and software layers that comprise RAPIDO INFRATEL LLP digital infrastructure solutions.
+            A granular overview of the transmission, edge, sovereign cryptographic trust, AI, mobile, and cloud hosting tiers that comprise RAPIDO INFRATEL LLP solutions.
           </p>
         </div>
 
@@ -111,7 +126,7 @@ export default function ArchitecturePage() {
                       </div>
                       <div>
                         <span className={`text-[11px] font-bold uppercase tracking-wider ${tier.color}`}>
-                          Architecture Level {idx + 1}
+                          Architecture Tier 0{idx + 1}
                         </span>
                         <h3 className="text-lg font-bold text-white">{tier.tier}</h3>
                       </div>
@@ -190,16 +205,16 @@ export default function ArchitecturePage() {
         {/* BOTTOM CTA */}
         <div className="text-center space-y-4 pt-6">
           <h3 className="text-xl font-bold text-white">
-            Need a Customized Blueprint for Your Municipal or Carrier Network?
+            Need a Customized Blueprint for Your Municipal, Carrier or Cloud Network?
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            Our engineering team prepares detailed Route Survey Maps, Link Loss Budgets, and Bill of Quantities (BOQ).
+            Our solutions architecture team prepares detailed Route Survey Maps, Link Loss Budgets, and Bill of Quantities (BOQ).
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-saffron-500 hover:bg-saffron-400 text-white font-bold text-xs transition-colors shadow-lg shadow-saffron-500/20"
           >
-            <span>Consult Technical Architecture Team</span>
+            <span>Consult Solutions Architecture Committee</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

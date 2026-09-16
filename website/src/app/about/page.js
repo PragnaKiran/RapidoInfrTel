@@ -10,37 +10,62 @@ import {
   MapPin, 
   Mail, 
   ArrowRight,
-  Radio,
-  FileCheck,
-  Scale
+  Radio, 
+  FileCheck, 
+  Scale,
+  Sparkles,
+  Clock,
+  Layers,
+  Cpu
 } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Corporate Profile & Digital India Vision",
-  description: "Learn about RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad). Our corporate profile, vision for Bharat's digital infrastructure, engineering standards, and statutory governance.",
+  title: "About Us | Corporate Profile, Heritage & Solutions Architecture",
+  description: "Learn about RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad). Brand heritage since 2009, 2017 Private Limited incorporation, solutions architecture expertise, and PMP-grade project management.",
 };
 
 export default function AboutPage() {
+  const milestones = [
+    {
+      year: "2009",
+      title: "Brand Inception & Trademark",
+      desc: "Establishment of the Rapido® brand identity. Official registration of the trademark in telecommunications and technology classifications, recently renewed for the next 10 years.",
+      badge: "Brand Origin"
+    },
+    {
+      year: "2017",
+      title: "Corporate Incorporation",
+      desc: "Incorporated as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) in Gujarat, cementing corporate focus on telecommunications engineering and infrastructure design.",
+      badge: "Entity Inception"
+    },
+    {
+      year: "Present",
+      title: "RAPIDO INFRATEL LLP",
+      desc: "Structured as RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad), delivering premier solutions architecture, PMP-grade project management, AI/mobile platforms, and Rapido Hosting.",
+      badge: "Active Entity"
+    }
+  ];
+
   const values = [
     {
-      title: "Sovereign Engineering Precision",
-      desc: "Designing telecom backbones and digital public infrastructure that uphold Indian data sovereignty, non-proprietary protocols, and carrier-neutral access.",
+      title: "Solutions Architecture Excellence",
+      desc: "Architecting carrier-grade transmission backbones, zero-trust cybersecurity perimeters, and cloud-native digital systems engineered for multi-decade durability.",
+      icon: Cpu,
+    },
+    {
+      title: "PMP-Grade Project Governance",
+      desc: "Applying rigorous Project Management Professional standards to ensure transparent milestone delivery, link loss budgeting, and carrier SLA compliance.",
       icon: ShieldCheck,
     },
     {
-      title: "Digital India Mission Alignment",
-      desc: "Committed to realizing the national vision of technology as an equalizer — delivering high-speed optical fiber and civic services to every citizen.",
+      title: "Architecting Bharat",
+      desc: "Inspired by the transformative vision of universal digital connectivity and sovereign digital infrastructure, delivered through independent engineering excellence.",
       icon: Target,
     },
     {
-      title: "Statutory & Regulatory Rigor",
-      desc: "Strict adherence to Department of Telecommunications (DoT), TEC guidelines, PM-WANI architectures, and Ministry of Corporate Affairs compliance.",
-      icon: Scale,
-    },
-    {
-      title: "Future-Proof Scalability",
-      desc: "Architectures engineered for 25+ year lifecycles, supporting dense WDM fiber expansions, 5G small-cell densification, and AI-driven civic analytics.",
-      icon: Compass,
+      title: "Intellectual Property & Trust",
+      desc: "Over 15+ years of verified brand trust, registered trademark protection, and statutory compliance with the Ministry of Corporate Affairs (RoC Ahmedabad).",
+      icon: Award,
     },
   ];
 
@@ -50,21 +75,80 @@ export default function AboutPage() {
         {/* Header Breadcrumb & Title */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-            Corporate Profile &amp; Entity Data
+            Corporate Profile &amp; Brand Heritage
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Engineering Bharat’s <br />
-            <span className="gradient-text-fiber">Digital Infrastructure</span> &amp; Governance Backbone
+            Architecting Bharat: <br />
+            <span className="gradient-text-fiber">Solutions Architecture</span> &amp; Engineering Governance
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing and Telecom Infrastructure Engineering Firm. We are driven by a singular mandate: transforming telecommunications pipelines and digital services into seamless utilities for public empowerment.
+            <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing and Telecom Infrastructure Engineering Firm. As solution architects, we deliver resilient architectural designs and PMP-grade project management for next-generation digital pipelines, enterprise AI systems, and cloud hosting infrastructure.
           </p>
         </div>
 
-        {/* STATUTORY VERIFICATION CARD */}
-        <div className="glass-card p-6 sm:p-8 rounded-2xl border border-saffron-500/30 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-80 h-80 bg-saffron-500/10 rounded-full blur-3xl pointer-events-none" />
+        {/* FEATURED BOARDROOM IMAGE & NARRATIVE */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-6 space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              A Legacy of Brand Trust &amp; Engineering Precision
+            </h2>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              The Rapido brand name has been actively serving enterprise telecommunications and technology domains since <strong>2009</strong>. Backed by a registered trademark (®) in telecom and technology classes that has been renewed for the next 10 years, our journey represents steadfast commercial stability and intellectual property integrity.
+            </p>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Originally incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), our corporate structure has evolved into <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad) to serve as a focused, agile solutions architecture practice.
+            </p>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              We operate independently with zero political or governmental affiliations, inspired purely by the national imperative to make high-speed digital connectivity an accessible, frictionless utility for all.
+            </p>
+          </div>
 
+          <div className="lg:col-span-6">
+            <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+              <img
+                src="/images/about_boardroom.jpg"
+                alt="Rapido InfraTel Solution Architecture Committee in Ahmedabad"
+                className="w-full h-[360px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300">
+                <div className="font-bold text-white">Solution Architecture Committee</div>
+                <div className="text-[11px] text-slate-400">Ahmedabad Tech Hub · PMP-Grade Project Governance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CHRONOLOGY & HERITAGE MILESTONES */}
+        <div className="glass-card p-8 sm:p-10 rounded-2xl border border-slate-800 space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+            <div>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">15+ Years Evolution</span>
+              <h3 className="text-xl font-bold text-white mt-0.5">Corporate Heritage &amp; Milestone Timeline</h3>
+            </div>
+            <div className="text-xs text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 w-fit">
+              Trademark Registered &amp; Renewed for 10 Years
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {milestones.map((m) => (
+              <div key={m.year} className="p-6 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3 relative">
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-black text-white font-mono">{m.year}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-fiber-400 bg-fiber-500/10 px-2 py-0.5 rounded border border-fiber-500/20">
+                    {m.badge}
+                  </span>
+                </div>
+                <h4 className="text-sm font-bold text-white">{m.title}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed">{m.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* STATUTORY ENTITY VERIFICATION CARD */}
+        <div className="glass-card p-6 sm:p-8 rounded-2xl border border-saffron-500/30 relative overflow-hidden">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl bg-saffron-500/10 border border-saffron-500/30 flex items-center justify-center text-saffron-400">
@@ -72,16 +156,16 @@ export default function AboutPage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white">
-                  Statutory Entity Verification &amp; Registry
+                  Corporate Entity Verification &amp; Registry
                 </h3>
                 <p className="text-xs text-slate-400">
-                  Registered under Limited Liability Partnership Act, 2008 with Ministry of Corporate Affairs (MCA)
+                  Ministry of Corporate Affairs (RoC Ahmedabad Registered Entity)
                 </p>
               </div>
             </div>
 
             <div className="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-lg">
-              <CheckCircle2 className="w-4 h-4" /> Active &amp; Verified Legal Entity
+              <CheckCircle2 className="w-4 h-4" /> Active &amp; Verified Entity
             </div>
           </div>
 
@@ -97,13 +181,13 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-1">
-              <span className="text-slate-400 font-medium">Registrar of Companies:</span>
-              <div className="font-bold text-white text-sm">RoC Ahmedabad, Gujarat</div>
+              <span className="text-slate-400 font-medium">Corporate Inception CIN:</span>
+              <div className="font-mono font-bold text-slate-200 text-sm">U64200GJ2017PTC096551</div>
             </div>
 
             <div className="space-y-1">
-              <span className="text-slate-400 font-medium">Official Contact Email:</span>
-              <div className="font-bold text-fiber-400 text-sm">contact@rapidoinfratel.com</div>
+              <span className="text-slate-400 font-medium">Registrar of Companies:</span>
+              <div className="font-bold text-white text-sm">RoC Ahmedabad, Gujarat</div>
             </div>
           </div>
 
@@ -115,71 +199,28 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* STRATEGIC POSITIONING & VISION */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-5">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              Our Vision: Technology as an Equalizer
-            </h2>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              At Rapido InfraTel LLP, we believe that true digital transformation is not measured simply by software deployments, but by the physical and architectural integrity of the pipelines that carry essential citizen services.
-            </p>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              From the bustling metropolitan corridors of Gujarat to peri-urban clusters and rural Gram Panchayats, our solutions are architected to deliver <strong>carrier-grade durability</strong>, <strong>frictionless public access</strong>, and <strong>uncompromising data sovereignty</strong>.
-            </p>
-
-            <div className="pt-2">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-fiber-400 mb-3">
-                Core Sectors of Operation
-              </h4>
-              <ul className="space-y-2 text-xs text-slate-300">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-fiber-400" />
-                  <span>Optical Fiber Cable (OFC) Ducting &amp; High-Density FTTH Network Design</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-fiber-400" />
-                  <span>PM-WANI Public Data Office Aggregator (PDOA) Mesh Solutions</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-fiber-400" />
-                  <span>e-Governance Systems Architecture (Aadhaar Stack, DigiLocker &amp; PKI)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-fiber-400" />
-                  <span>Smart City Integrated Command and Control Centers (ICCC) &amp; GIS Mapping</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="glass-card p-8 rounded-2xl border border-slate-800 space-y-6">
-            <h3 className="text-lg font-bold text-white">Engineering Core Principles</h3>
-            <div className="space-y-4">
-              {values.map((val) => {
-                const Icon = val.icon;
-                return (
-                  <div key={val.title} className="flex items-start gap-3.5">
-                    <div className="p-2 rounded-lg bg-slate-900 text-fiber-400 border border-slate-800 flex-shrink-0 mt-0.5">
-                      <Icon className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-white">{val.title}</h4>
-                      <p className="text-xs text-slate-400 mt-0.5 leading-relaxed">{val.desc}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+        {/* CORE ARCHITECTURAL PRINCIPLES */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {values.map((val) => {
+            const Icon = val.icon;
+            return (
+              <div key={val.title} className="glass-card p-6 rounded-xl border border-slate-800 space-y-3">
+                <div className="p-2.5 rounded-lg bg-slate-900 text-fiber-400 border border-slate-800 w-fit">
+                  <Icon className="w-5 h-5" />
+                </div>
+                <h4 className="text-base font-bold text-white">{val.title}</h4>
+                <p className="text-xs text-slate-300 leading-relaxed">{val.desc}</p>
+              </div>
+            );
+          })}
         </div>
 
-        {/* CTA TO SOLUTIONS & CONTACT */}
+        {/* BOTTOM ACTION */}
         <div className="p-8 rounded-2xl bg-gradient-to-r from-telecom-900 to-slate-900 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-bold text-white">Ready to Architect Your Digital Infrastructure?</h3>
+            <h3 className="text-xl font-bold text-white">Consult Our Solutions Architecture Team</h3>
             <p className="text-xs text-slate-400 mt-1">
-              Explore our technical specifications across the 3 Digital India Pillars or request a feasibility session.
+              Discuss feasibility parameters, PMP-grade milestone structuring, or enterprise cloud hosting requirements.
             </p>
           </div>
 

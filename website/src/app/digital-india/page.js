@@ -10,22 +10,23 @@ import {
   ArrowRight,
   CheckCircle2,
   Sparkles,
-  Layers
+  Layers,
+  Cpu
 } from "lucide-react";
 
 export const metadata = {
-  title: "Digital India Initiatives | National Mission Alignment",
-  description: "How RAPIDO INFRATEL LLP actively supports and enables the Digital India Mission: BharatNet OFC connectivity, PM-WANI Wi-Fi revolution, Digital Public Infrastructure (DPI), and Bhashini multilingual empowerment.",
+  title: "Digital India Initiatives | Architecting Bharat · Infrastructure Engineering",
+  description: "How RAPIDO INFRATEL LLP architects sovereign digital infrastructure: Optical fiber connectivity, PM-WANI Wi-Fi aggregation, Digital Public Infrastructure, and Bhashini multilingual accessibility.",
 };
 
 export default function DigitalIndiaPage() {
   const initiatives = [
     {
-      name: "BharatNet & National OFC Backbone",
+      name: "High-Capacity OFC & Rural Broadband Connectivity",
       badge: "Broadband for All",
-      desc: "Providing high-speed optical fiber connectivity to rural Gram Panchayats and semi-urban clusters. We engineer carrier-neutral middle-mile transmission and last-mile FTTH networks that unlock telemedicine, rural e-learning, and digitized administrative records.",
+      desc: "Providing high-speed optical fiber connectivity designs to rural Gram Panchayats and semi-urban clusters. We architect carrier-neutral middle-mile transmission and last-mile FTTH networks that unlock telemedicine, rural e-learning, and digitized administrative workflows.",
       deliverables: [
-        "HDD trenchless fiber laying along state highways & rural corridors",
+        "HDD trenchless fiber laying design along state highways & rural corridors",
         "Point of Presence (POP) shelters equipped with solar & battery backups",
         "Carrier-neutral GPON optical termination with 99.9% uptime targets"
       ],
@@ -33,9 +34,9 @@ export default function DigitalIndiaPage() {
       color: "text-fiber-400"
     },
     {
-      name: "PM-WANI Public Wi-Fi Revolution",
-      badge: "Affordable Universal Access",
-      desc: "Deploying Public Data Office Aggregator (PDOA) architecture under the Prime Minister Wi-Fi Access Network Interface. This initiative allows local kirana stores, panchayat bhavans, and transit hubs to distribute affordable, micro-sachet internet access.",
+      name: "PM-WANI Public Wi-Fi Framework",
+      badge: "Universal Access",
+      desc: "Architecting Public Data Office Aggregator (PDOA) compliant infrastructure under the Prime Minister Wi-Fi Access Network Interface. Enabling local retail touchpoints, panchayat centers, and transit hubs to distribute affordable, micro-sachet internet access.",
       deliverables: [
         "DoT Central Registry interoperable authentication stacks",
         "Outdoor carrier-grade Wi-Fi 6 access point grid management",
@@ -45,8 +46,8 @@ export default function DigitalIndiaPage() {
       color: "text-saffron-400"
     },
     {
-      name: "Digital Public Infrastructure (India Stack)",
-      badge: "Sovereign Trust Framework",
+      name: "Digital Public Infrastructure (DPI) & Sovereign Trust",
+      badge: "Identity & Trust",
       desc: "Integrating the tri-layer India Stack: Identity (Aadhaar authentication), Payments (UPI / BBPS gateways), and Data (DigiLocker & Account Aggregators) into public enterprise workflows for frictionless citizen experiences.",
       deliverables: [
         "Aadhaar OTP & Biometric e-KYC integration (AUA/KUA protocols)",
@@ -69,7 +70,7 @@ export default function DigitalIndiaPage() {
       color: "text-blue-400"
     },
     {
-      name: "Smart Cities & Municipal ICCC",
+      name: "Smart Cities & Municipal ICCC Systems",
       badge: "Urban Intelligence",
       desc: "Deploying spatial GIS databases, IoT asset sensors, and Integrated Command and Control Centers (ICCC) for municipal corporations. Enabling automated utility billing, emergency dispatch, and predictive traffic routing.",
       deliverables: [
@@ -88,15 +89,31 @@ export default function DigitalIndiaPage() {
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
-            National Mission Alignment
+            National Vision · Engineering Execution
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Enabling the Vision of <br />
-            <span className="gradient-text-saffron">Digital India</span>
+            Architecting Bharat: <br />
+            <span className="gradient-text-saffron">Universal Digital Infrastructure</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Technology is the greatest democratizer of opportunity. At RAPIDO INFRATEL LLP, our infrastructure blueprints directly support the national pillars of the Digital India Mission.
+            As an independent solutions architecture and engineering firm, RAPIDO INFRATEL LLP translates the aspirations of national digital missions into robust physical and software reality — building the foundational pipelines for an interconnected nation.
           </p>
+        </div>
+
+        {/* FEATURE IMAGE */}
+        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+          <img
+            src="/images/hero_citizen.jpg"
+            alt="Citizen Digital Empowerment and Public Wi-Fi Access"
+            className="w-full h-[320px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
+            <div className="font-bold text-white text-sm">Empowering Everyday Citizens</div>
+            <p className="text-slate-400 text-[11px] mt-1">
+              High-speed public connectivity designed to bridge urban, peri-urban, and village digital divides seamlessly.
+            </p>
+          </div>
         </div>
 
         {/* INITIATIVES GRID */}
@@ -129,7 +146,7 @@ export default function DigitalIndiaPage() {
 
                   <div className="space-y-2 pt-3 border-t border-slate-800/80">
                     <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wide">
-                      Key Engineering Outcomes:
+                      Engineering Architecture Deliverables:
                     </div>
                     {item.deliverables.map((del, dIdx) => (
                       <div key={dIdx} className="flex items-start gap-2 text-xs text-slate-300">
@@ -145,7 +162,7 @@ export default function DigitalIndiaPage() {
                     href={`/contact?initiative=${encodeURIComponent(item.name)}`}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-fiber-400 hover:text-fiber-300 transition-colors"
                   >
-                    <span>Inquire about this national initiative framework</span>
+                    <span>Inquire regarding solution design</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -160,10 +177,10 @@ export default function DigitalIndiaPage() {
             <Sparkles className="w-6 h-6" />
           </div>
           <h3 className="text-2xl font-bold text-white max-w-2xl mx-auto">
-            “Making technology an enabler of social and economic empowerment for every citizen.”
+            “Architecting Bharat — Engineering technology as an enabler of social and economic empowerment.”
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            RAPIDO INFRATEL LLP · Committed to building the sovereign infrastructure and high-speed digital pipelines for Bharat’s Viksit Bharat 2047 horizon.
+            RAPIDO INFRATEL LLP · Dedicated to building sovereign infrastructure and high-speed digital pipelines through independent solutions engineering.
           </p>
           <div className="pt-2">
             <Link

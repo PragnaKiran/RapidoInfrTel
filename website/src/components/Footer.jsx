@@ -6,12 +6,14 @@ import {
   ShieldCheck, 
   Mail, 
   MapPin, 
-  ExternalLink, 
+  ArrowRight,
   Radio, 
   Server, 
   Users, 
   Layers,
-  ArrowRight
+  Cpu,
+  Globe2,
+  Lock
 } from "lucide-react";
 
 export default function Footer() {
@@ -30,9 +32,9 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
-                <span>Verified Corporate Entity</span>
+                <span>Architecting Bharat · Corporate Entity</span>
                 <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-1.5 py-0.2 rounded font-medium">
-                  Active
+                  Verified
                 </span>
               </div>
               <div className="text-xs text-slate-400 mt-0.5">
@@ -61,7 +63,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <RapidoLogo size="default" />
             <p className="text-xs text-slate-300 leading-relaxed pr-6">
-              RAPIDO INFRATEL LLP is a premier Technology Solutions Designing &amp; Telecom Infrastructure Engineering Firm. Dedicated to realizing the vision of the <strong className="text-white">Digital India Mission</strong>, we architect high-speed fiber backbones, digital identity frameworks, paperless e-governance platforms, and PM-WANI public connectivity enablers across urban and rural Bharat.
+              RAPIDO INFRATEL LLP is a premier Technology Solutions Designing &amp; Telecom Infrastructure Engineering Firm. As solution architects, we deliver resilient architectural designs and PMP-grade project governance of ultra-high-speed digital pipelines, enterprise AI applications, and sovereign cloud infrastructure for citizens, enterprises, and public institutions.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">
@@ -74,47 +76,47 @@ export default function Footer() {
               <div className="flex items-center gap-2.5">
                 <ShieldCheck className="w-4 h-4 text-fiber-400 flex-shrink-0" />
                 <span>
-                  <strong>Entity Identifier:</strong> LLPIN AAV-6363 (Ministry of Corporate Affairs)
+                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Trademark renewed for 10 years)
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Col 3: 3 Digital India Pillars */}
+          {/* Col 3: Core Architectural Pillars */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
               <Layers className="w-3.5 h-3.5 text-fiber-400" />
-              <span>Digital India Pillars</span>
+              <span>Solutions Architecture</span>
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/solutions#pillar-1" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Digital Infra as a Utility</span>
+                  <span>Optical Fiber &amp; FTTH</span>
                 </Link>
               </li>
               <li>
                 <Link href="/solutions#pillar-2" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Governance on Demand</span>
+                  <span>e-Governance &amp; GIS Stack</span>
                 </Link>
               </li>
               <li>
                 <Link href="/solutions#pillar-3" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Citizen Empowerment</span>
+                  <span>PM-WANI Public Wi-Fi</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#ofc" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions#ai-mobile" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Optical Fiber &amp; FTTH</span>
+                  <span>AI &amp; Mobile Applications</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions#pm-wani" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions#hosting" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>PM-WANI Wi-Fi Mesh</span>
+                  <span>Rapido Cloud Hosting</span>
                 </Link>
               </li>
             </ul>
@@ -124,7 +126,7 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
               <Server className="w-3.5 h-3.5 text-saffron-400" />
-              <span>Core Systems</span>
+              <span>Systems &amp; Hosting</span>
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
@@ -134,15 +136,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/architecture#identity" className="hover:text-white transition-colors flex items-center gap-1">
+                <Link href="/solutions#hosting" className="hover:text-white transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Aadhaar &amp; PKI Trust Stack</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/architecture#gis" className="hover:text-white transition-colors flex items-center gap-1">
-                  <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Municipal GIS &amp; ICCC</span>
+                  <span>“We are . in domain name”</span>
                 </Link>
               </li>
               <li>
@@ -157,23 +153,33 @@ export default function Footer() {
                   <span>Case Studies &amp; Blueprints</span>
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors flex items-center gap-1">
+                  <ArrowRight className="w-3 h-3 text-slate-600" />
+                  <span>Technical RFP Inquiries</span>
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Col 5: Governance & Standards */}
+          {/* Col 5: Rapido Hosting & Sovereign Cloud */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Standards &amp; Trust</span>
+              <Globe2 className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Rapido Hosting</span>
             </h4>
             <div className="space-y-2 text-xs text-slate-400">
-              <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
-                <div className="text-white font-semibold">TEC &amp; DoT Guidelines</div>
-                <div className="text-[11px] text-slate-400 mt-0.5">Compliant Telecom &amp; OFC network deployment specifications</div>
+              <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                <div className="text-fiber-400 font-bold">“We are . in domain name”</div>
+                <div className="text-[11px] text-slate-300 mt-1">
+                  Leading domain name registrar and high-availability sovereign enterprise cloud hosting infrastructure.
+                </div>
               </div>
-              <div className="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
-                <div className="text-white font-semibold">PM-WANI PDOA Architecture</div>
-                <div className="text-[11px] text-slate-400 mt-0.5">Universal Wi-Fi interoperability &amp; Central Registry compliance</div>
+              <div className="p-2.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <div className="text-white font-semibold">PMP-Grade Project Governance</div>
+                <div className="text-[11px] text-slate-400 mt-0.5">
+                  Methodical architectural management and execution rigor.
+                </div>
               </div>
             </div>
           </div>
@@ -190,7 +196,7 @@ export default function Footer() {
               className="w-4 h-4 object-contain"
             />
             <span>
-              &copy; {new Date().getFullYear()} <strong>RAPIDO INFRATEL LLP</strong>. All rights reserved. Registered under Limited Liability Partnership Act, 2008.
+              &copy; {new Date().getFullYear()} <strong>RAPIDO INFRATEL LLP</strong>. Architecting Bharat. All rights reserved.
             </span>
           </div>
 
@@ -200,7 +206,7 @@ export default function Footer() {
             <span>RoC Ahmedabad, Gujarat</span>
             <span>·</span>
             <Link href="/contact" className="text-fiber-400 hover:underline">
-              Official Inquiries
+              Corporate Inquiries
             </Link>
           </div>
         </div>

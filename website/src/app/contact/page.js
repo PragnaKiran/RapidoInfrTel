@@ -9,7 +9,8 @@ import {
   Clock, 
   Phone,
   CheckCircle2,
-  ExternalLink
+  ExternalLink,
+  Globe2
 } from "lucide-react";
 
 export const metadata = {
@@ -31,7 +32,7 @@ export default function ContactPage() {
             <span className="gradient-text-saffron">RFP Submission</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Submit your infrastructure parameters, municipal scope, or tender inquiries directly to the RAPIDO INFRATEL LLP technical solutions design team.
+            Submit your infrastructure parameters, municipal scope, AI/mobile application briefs, or enterprise hosting inquiries directly to the RAPIDO INFRATEL LLP solutions architecture team.
           </p>
         </div>
 
@@ -47,7 +48,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-white">RAPIDO INFRATEL LLP</h3>
-                  <p className="text-xs text-saffron-400 font-mono">LLPIN: AAV-6363</p>
+                  <p className="text-xs text-saffron-400 font-mono">LLPIN: AAV-6363 · RoC Ahmedabad</p>
                 </div>
               </div>
 
@@ -71,9 +72,17 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <Globe2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white block mb-0.5">Technical Committee Hours:</strong>
+                    <strong className="text-white block mb-0.5">Hosting &amp; Domain Division:</strong>
+                    <span className="text-slate-300">Rapido Hosting — “We are . in domain name”</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Clock className="w-4 h-4 text-saffron-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-white block mb-0.5">Solutions Architecture Office Hours:</strong>
                     <span>Monday &ndash; Saturday: 09:30 IST &ndash; 18:30 IST</span>
                   </div>
                 </div>
@@ -81,8 +90,8 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <ShieldCheck className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white block mb-0.5">Corporate Status:</strong>
-                    <span>Ministry of Corporate Affairs (RoC Ahmedabad Registered Entity)</span>
+                    <strong className="text-white block mb-0.5">Corporate Heritage:</strong>
+                    <span>Rapido® brand established 2009 (Registered Trademark renewed for 10 years)</span>
                   </div>
                 </div>
               </div>
@@ -92,18 +101,18 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-3 text-xs text-slate-300">
               <h4 className="font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
                 <FileText className="w-4 h-4 text-saffron-400" />
-                <span>RFP &amp; Tender Instructions</span>
+                <span>RFP &amp; Tender Evaluation Protocols</span>
               </h4>
               <p className="text-slate-400 leading-relaxed">
-                For public tenders, municipal terms of reference, or confidential carrier route documents, you may initiate submission via the form or email project briefs to <strong className="text-white">contact@rapidoinfratel.com</strong> with your tender reference number.
+                For formal tenders, municipal terms of reference, or carrier route blueprints, you may initiate submission via the form or email project documentation directly to <strong className="text-white">contact@rapidoinfratel.com</strong>.
               </p>
               <div className="flex items-center gap-2 text-fiber-400 pt-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
-                <span>Sub-24h acknowledgement on all formal technical tenders</span>
+                <span>Sub-24h turnaround on formal project inquiries</span>
               </div>
             </div>
 
-            {/* Interactive Embedded Map representation */}
+            {/* Location Reference */}
             <div className="rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 h-48 relative flex items-center justify-center p-4 text-center">
               <div className="absolute inset-0 bg-telecom-grid opacity-60 pointer-events-none" />
               <div className="relative z-10 space-y-2">

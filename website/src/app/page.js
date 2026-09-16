@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import FeasibilityTool from "@/components/FeasibilityTool";
+import HeroSlider from "@/components/HeroSlider";
 import ContactForm from "@/components/ContactForm";
 import { 
   Radio, 
@@ -18,8 +18,14 @@ import {
   Activity,
   Building2,
   ChevronRight,
-  ExternalLink
+  Sparkles,
+  Smartphone
 } from "lucide-react";
+
+export const metadata = {
+  title: "RAPIDO INFRATEL LLP | Architecting Bharat · Solution Architects & Telecom Engineering",
+  description: "RAPIDO INFRATEL LLP is a premier Technology Solutions Designing & Telecom Infrastructure Engineering Firm in Ahmedabad. We deliver resilient solutions architecture designs and PMP-grade project management for next-generation digital pipelines, enterprise AI, mobile applications, and sovereign cloud hosting.",
+};
 
 export default function HomePage() {
   const pillars = [
@@ -27,17 +33,16 @@ export default function HomePage() {
       id: "pillar-1",
       number: "01",
       title: "Digital Infrastructure as a Utility",
-      tagline: "High-Speed Connectivity & Trust Backbone",
-      desc: "Delivering resilient, ultra-high-speed digital pipelines as fundamental civic utilities for every citizen, enterprise, and public institution.",
-      color: "from-fiber-500/20 to-blue-600/10",
+      tagline: "High-Speed Transmission & Trust Backbone",
+      desc: "Architecting resilient solutions designs and PMP-grade management of carrier-grade transmission corridors and physical infrastructure.",
       borderColor: "border-fiber-500/40",
       textColor: "text-fiber-400",
       icon: Radio,
       items: [
-        "Next-generation Optical Fiber Network (OFC) & FTTH rollout engineering",
-        "Telecom tower infrastructure & urban small-cell planning",
-        "Digital Identity & Trust Backbone (Aadhaar stack, DigiLocker, e-Sign, PKI)",
-        "Resilient edge compute facilities & Zero-Trust network security"
+        "Turnkey Optical Fiber Network (OFC) & FTTH GPON architectural blueprints",
+        "48F–288F armored ribbon micro-duct routes & HDD trenchless designs",
+        "Telecom tower infrastructure & urban small-cell densification",
+        "Zero-Trust Network Architecture (ZTNA) & edge compute facilities"
       ],
       link: "/solutions#pillar-1"
     },
@@ -45,17 +50,16 @@ export default function HomePage() {
       id: "pillar-2",
       number: "02",
       title: "Governance & Services on Demand",
-      tagline: "Seamless, Paperless & Faceless Delivery",
-      desc: "Architecting cloud-native e-governance systems and spatial intelligence platforms to deliver citizen services without physical friction.",
-      color: "from-saffron-500/20 to-amber-600/10",
+      tagline: "Seamless, Paperless & Faceless Portals",
+      desc: "Engineering cloud-native enterprise e-governance systems, automated verification, and municipal spatial intelligence.",
       borderColor: "border-saffron-500/40",
       textColor: "text-saffron-400",
       icon: Server,
       items: [
-        "Real-time cross-departmental integration across civic & state platforms",
-        "End-to-end paperless, cashless, and transparent public service delivery",
-        "Unified GIS municipal asset mapping & Command-and-Control (ICCC)",
-        "Civic data pipelines for welfare analytics & grievance redressal"
+        "Sovereign digital identity integration (Aadhaar AUA/KUA stack & DigiLocker)",
+        "Paperless and faceless citizen services with immutable audit ledgers",
+        "Unified GIS municipal utility mapping & Smart City ICCC integrations",
+        "Scalable civic data pipelines for welfare analytics & grievance resolution"
       ],
       link: "/solutions#pillar-2"
     },
@@ -63,17 +67,16 @@ export default function HomePage() {
       id: "pillar-3",
       number: "03",
       title: "Digital Empowerment of Citizens",
-      tagline: "Universal Access & Community Participation",
-      desc: "Eliminating digital divides through multilingual platforms, public Wi-Fi aggregation, and inclusive participatory governance tools.",
-      color: "from-emerald-500/20 to-teal-600/10",
+      tagline: "Universal Access & Community Wi-Fi",
+      desc: "Democratizing connectivity through multilingual computing, public Wi-Fi aggregation, and inclusive community portals.",
       borderColor: "border-emerald-500/40",
       textColor: "text-emerald-400",
       icon: Users,
       items: [
-        "Universal digital access with Bhashini-ready Indian language localization",
-        "PM-WANI compliant Public Data Office Aggregator (PDOA) architectures",
-        "High-speed public Wi-Fi grids for smart villages & underserved clusters",
-        "Participatory digital governance tools & citizen feedback ecosystems"
+        "Bhashini-ready multilingual NLP localization across 22 scheduled languages",
+        "PM-WANI Public Data Office Aggregator (PDOA) compliant Wi-Fi mesh",
+        "Affordable public Wi-Fi grids for peri-urban clusters & smart villages",
+        "Participatory civic engagement tools & citizen feedback ecosystems"
       ],
       link: "/solutions#pillar-3"
     }
@@ -81,78 +84,38 @@ export default function HomePage() {
 
   const highlights = [
     {
-      stat: "48F-288F",
-      label: "Optical Fiber Capabilities",
-      sub: "Armored ribbon & micro-duct OFC"
+      stat: "2009",
+      label: "Brand Heritage",
+      sub: "Rapido® Trademark in Telecom & Tech"
+    },
+    {
+      stat: "PMP-Grade",
+      label: "Project Governance",
+      sub: "Solution Architecture Oversight"
     },
     {
       stat: "PM-WANI",
-      label: "PDOA Architecture Ready",
-      sub: "Compliant with DoT / C-DoT specifications"
-    },
-    {
-      stat: "100% Paperless",
-      label: "e-Governance Frameworks",
-      sub: "Aadhaar, DigiLocker & PKI integrated"
+      label: "PDOA Architecture",
+      sub: "DoT Central Registry Interoperable"
     },
     {
       stat: "LLPIN: AAV-6363",
-      label: "RoC Ahmedabad Registered",
-      sub: "Verified entity under LLP Act, 2008"
+      label: "RoC Ahmedabad",
+      sub: "Architecting Bharat"
     }
   ];
 
   return (
     <div className="relative overflow-hidden bg-telecom-950">
-      {/* 1. HERO SECTION */}
-      <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 border-b border-slate-800/80 bg-telecom-grid">
-        {/* Glow Spheres */}
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-fiber-500/15 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-40 right-10 w-[350px] h-[350px] bg-saffron-500/10 rounded-full blur-[100px] pointer-events-none" />
+      {/* 1. ANIMATED 5-SLIDE HERO SLIDER */}
+      <section className="border-b border-slate-800/80">
+        <HeroSlider />
+      </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            {/* Mission Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 shadow-lg text-xs font-semibold text-slate-200">
-              <span className="w-2 h-2 rounded-full bg-fiber-400 animate-pulse" />
-              <span className="text-fiber-400">Digital India Vision Alignment</span>
-              <span className="text-slate-600">·</span>
-              <span className="text-saffron-400">LLPIN: AAV-6363</span>
-            </div>
-
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
-              Architecting Bharat’s <br />
-              <span className="gradient-text-fiber">Digital Infrastructure</span> &amp;{" "}
-              <span className="gradient-text-saffron">Telecom Future</span>
-            </h1>
-
-            {/* Strategic Paragraph */}
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              <strong>RAPIDO INFRATEL LLP</strong> is a premier Technology Solutions Designing &amp; Telecom Infrastructure Engineering Firm. We design next-generation optical fiber highways, resilient telecom towers, digital identity trust stacks, paperless e-governance systems, and PM-WANI public connectivity grids to empower every citizen.
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-              <Link
-                href="/solutions"
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-sm text-telecom-950 bg-fiber-400 hover:bg-fiber-300 shadow-xl shadow-fiber-500/20 transition-all flex items-center justify-center gap-2"
-              >
-                <span>Explore 3 Vision Pillars</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                href="#feasibility"
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all flex items-center justify-center gap-2"
-              >
-                <span>Model Telecom Feasibility</span>
-                <Cpu className="w-4 h-4 text-saffron-400" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Telemetry Metric Cards */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-16 pt-12 border-t border-slate-800/80">
+      {/* 2. STATS & TELEMETRY STRIP */}
+      <section className="py-8 bg-telecom-900/80 border-b border-slate-800/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {highlights.map((item) => (
               <div key={item.label} className="glass-card p-5 rounded-xl border border-slate-800">
                 <div className="text-2xl sm:text-3xl font-black text-white tracking-tight font-mono">
@@ -166,18 +129,79 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. THE THREE VISION PILLARS OF DIGITAL INDIA */}
+      {/* 3. CORE MISSION & STRATEGIC POSITIONING */}
       <section className="py-20 md:py-28 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left Narrative (7 cols) */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
+                Architecting Bharat · Solutions Architecture
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                Delivering Resilient Architectural Designs &amp; PMP-Grade Project Governance
+              </h2>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                As premier solution architects, <strong>RAPIDO INFRATEL LLP</strong> bridges the critical nexus between hard telecommunications engineering, sovereign trust frameworks, and modern enterprise software. We specialize in designing and managing the lifecycle of ultra-high-speed digital pipelines as essential civic utilities for every citizen, enterprise, and public institution.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Inspired by the profound vision of an interconnected Bharat, our methodologies apply rigorous Project Management Professional (PMP) grade standards to route surveying, optical duct budgeting, micro-trenching, GPON distribution, and cross-departmental software architecture.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <div className="w-8 h-8 rounded-lg bg-fiber-500/10 text-fiber-400 flex items-center justify-center mb-2">
+                    <Activity className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-sm font-bold text-white">Solution Architecture</h4>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Multi-tier physical and cyber blueprints designed for 25+ year infrastructure lifespans.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <div className="w-8 h-8 rounded-lg bg-saffron-500/10 text-saffron-400 flex items-center justify-center mb-2">
+                    <ShieldCheck className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-sm font-bold text-white">PMP-Grade Governance</h4>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Structured milestone management, link loss auditing, and carrier-grade SLA enforcement.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Featured Image (5 cols) */}
+            <div className="lg:col-span-5 relative">
+              <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+                <img
+                  src="/images/about_boardroom.jpg"
+                  alt="Rapido InfraTel Solution Architecture Committee"
+                  className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300">
+                  <div className="font-bold text-white">Architectural Strategy Committee</div>
+                  <div className="text-[11px] text-slate-400">Ahmedabad Headquarters · Infrastructure &amp; Telecom Solutions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. THE THREE VISION PILLARS */}
+      <section className="py-20 md:py-28 bg-telecom-900/60 border-y border-slate-800/80 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
-              National Infrastructure Mandate
+              National Infrastructure Horizon
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              The Three Vision Pillars of Digital India
+              The Three Vision Pillars of Digital Enablement
             </h2>
             <p className="text-sm text-slate-300">
-              Transforming India into a digitally empowered society and knowledge economy through sovereign engineering frameworks and citizen-centric utilities.
+              Architecting universal connectivity, paperless civic delivery, and citizen empowerment across urban corridors and rural communities.
             </p>
           </div>
 
@@ -190,7 +214,6 @@ export default function HomePage() {
                   className={`glass-card p-8 rounded-2xl border ${pillar.borderColor} flex flex-col justify-between relative overflow-hidden group glass-card-hover`}
                 >
                   <div className="space-y-5">
-                    {/* Top Row */}
                     <div className="flex items-center justify-between">
                       <div className={`p-3 rounded-xl bg-slate-900 border border-slate-800 ${pillar.textColor}`}>
                         <Icon className="w-6 h-6" />
@@ -212,7 +235,6 @@ export default function HomePage() {
                       </p>
                     </div>
 
-                    {/* Features list */}
                     <div className="space-y-2.5 pt-4 border-t border-slate-800/80">
                       {pillar.items.map((item, idx) => (
                         <div key={idx} className="flex items-start gap-2 text-xs text-slate-300">
@@ -239,131 +261,138 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. INTERACTIVE CAPACITY & FEASIBILITY ESTIMATOR */}
-      <section id="feasibility" className="py-16 md:py-24 bg-telecom-900/60 border-y border-slate-800/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FeasibilityTool />
-        </div>
-      </section>
-
-      {/* 4. STRATEGIC POSITIONING & ENGINEERING RIGOR */}
+      {/* 5. AI, MOBILE APPLICATIONS & RAPIDO HOSTING SHOWCASE */}
       <section className="py-20 md:py-28 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-                Engineering Integrity &amp; Standards
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
-                Not Merely an IT Vendor — A Premier Telecom &amp; Digital Solutions Architecture Firm
-              </h2>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Rapido InfraTel LLP combines deep domain expertise in telecommunications physical infrastructure (towers, ducts, armored optical fiber cables, GPON FTTH) with modern cloud-native systems architecture. We bridge the critical gap between hard telecom engineering and sovereign digital services.
-              </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
+              Full-Stack Digital Capabilities
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              AI, Mobile Applications &amp; Sovereign Cloud Hosting
+            </h2>
+            <p className="text-sm text-slate-300">
+              Beyond optical conduits, we deliver the intelligent applications, mobile interfaces, and sovereign hosting infrastructure that power modern digital ecosystems.
+            </p>
+          </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-fiber-500/10 text-fiber-400 flex items-center justify-center mb-2">
-                    <Wifi className="w-4 h-4" />
-                  </div>
-                  <h4 className="text-sm font-bold text-white">Carrier &amp; ISP Ready</h4>
-                  <p className="text-xs text-slate-400 mt-1">
-                    Design compliant with DoT, TEC, and TRAI standards for carrier-grade multi-tenant fiber backbones.
-                  </p>
-                </div>
-
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-saffron-500/10 text-saffron-400 flex items-center justify-center mb-2">
-                    <Lock className="w-4 h-4" />
-                  </div>
-                  <h4 className="text-sm font-bold text-white">Sovereign Trust Stack</h4>
-                  <p className="text-xs text-slate-400 mt-1">
-                    Direct architectural integration with Aadhaar auth, DigiLocker repository, and PKI-based credential issuance.
-                  </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Card 1: AI & Mobile Applications */}
+            <div className="glass-card p-8 rounded-2xl border border-slate-800 space-y-6 relative overflow-hidden group">
+              <div className="relative rounded-xl overflow-hidden h-48 border border-slate-800">
+                <img
+                  src="/images/hero_ai_mobile.jpg"
+                  alt="AI and Mobile Applications Development"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 px-3 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-xs font-bold text-fiber-400">
+                  AI &amp; Mobile Development
                 </div>
               </div>
 
-              <div className="pt-2">
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-fiber-400 transition-colors"
-                >
-                  <span>Learn more about our corporate profile &amp; governance</span>
-                  <ChevronRight className="w-4 h-4" />
-                </Link>
+              <div className="space-y-3">
+                <h3 className="text-xl font-bold text-white tracking-tight">
+                  Enterprise AI Models &amp; Multilingual Mobile Apps
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  We engineer intelligent workflow automation, predictive civic intelligence, and cloud-native iOS and Android applications. Incorporating Bhashini language models, our applications provide voice-first and multilingual accessibility across 22 scheduled Indian languages.
+                </p>
+
+                <ul className="space-y-2 text-xs text-slate-300 pt-2 border-t border-slate-800/80">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
+                    <span>Citizen-facing mobile applications with biometric &amp; Aadhaar auth</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
+                    <span>Field-force utility tracking &amp; GIS mobile inspection tools</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
+                    <span>AI-powered automated grievance classification &amp; routing</span>
+                  </li>
+                </ul>
               </div>
+
+              <Link
+                href="/solutions#ai-mobile"
+                className="inline-flex items-center gap-2 text-xs font-bold text-fiber-400 hover:underline pt-2"
+              >
+                <span>Learn about AI &amp; Mobile Solutions</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
 
-            {/* Right Blueprint Graphic Card */}
-            <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-700/80 space-y-6">
-              <div className="flex items-center justify-between pb-4 border-b border-slate-800">
+            {/* Card 2: Rapido Hosting & Domains */}
+            <div className="glass-card p-8 rounded-2xl border border-slate-800 space-y-6 relative overflow-hidden group">
+              <div className="relative rounded-xl overflow-hidden h-48 border border-slate-800">
+                <img
+                  src="/images/hero_hosting.jpg"
+                  alt="Rapido Hosting Enterprise Datacenter"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-transparent to-transparent" />
+                <div className="absolute bottom-3 left-3 px-3 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-xs font-bold text-saffron-400">
+                  Rapido Hosting
+                </div>
+              </div>
+
+              <div className="space-y-3">
                 <div className="flex items-center gap-2">
-                  <Activity className="w-4 h-4 text-fiber-400" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-white">
-                    Integrated Digital Pipeline Architecture
-                  </span>
+                  <h3 className="text-xl font-bold text-white tracking-tight">
+                    Sovereign Cloud Hosting &amp; Domain Solutions
+                  </h3>
                 </div>
-                <span className="text-[10px] font-mono text-slate-400">DoT / TEC Aligned</span>
+                <div className="text-xs font-mono font-bold text-saffron-400 bg-saffron-500/10 px-2.5 py-1 rounded w-fit border border-saffron-500/20">
+                  “We are . in domain name”
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Under the established <strong>Rapido Hosting</strong> brand, we are one of the leading hosting service providers and domain name authorities. We deliver high-availability sovereign cloud hosting, managed VPS, edge compute enclaves, and instant domain registrations with carrier-grade DNS resilience.
+                </p>
+
+                <ul className="space-y-2 text-xs text-slate-300 pt-2 border-t border-slate-800/80">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-saffron-400" />
+                    <span>Premier domain registration &amp; Anycast DNS resolution</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-saffron-400" />
+                    <span>Enterprise sovereign cloud servers &amp; high-performance VPS</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-saffron-400" />
+                    <span>99.999% SLA availability with localized disaster recovery</span>
+                  </li>
+                </ul>
               </div>
 
-              {/* Layered stack illustration */}
-              <div className="space-y-3 font-mono text-xs">
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-emerald-500/30 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                    <span className="text-white font-sans font-bold">Layer 4: Citizen Applications</span>
-                  </div>
-                  <span className="text-[10px] text-emerald-400 font-mono">Bhashini / Web &amp; Mobile</span>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-saffron-500/30 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-saffron-400" />
-                    <span className="text-white font-sans font-bold">Layer 3: Trust &amp; e-Gov Stack</span>
-                  </div>
-                  <span className="text-[10px] text-saffron-400 font-mono">Aadhaar / DigiLocker / GIS</span>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-fiber-500/30 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-fiber-400" />
-                    <span className="text-white font-sans font-bold">Layer 2: Edge Aggregation</span>
-                  </div>
-                  <span className="text-[10px] text-fiber-400 font-mono">PM-WANI PDOA / OLT / POPs</span>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-slate-900/90 border border-blue-500/30 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-blue-400" />
-                    <span className="text-white font-sans font-bold">Layer 1: Physical Infrastructure</span>
-                  </div>
-                  <span className="text-[10px] text-blue-400 font-mono">OFC Ribbon / Towers / FTTH</span>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-telecom-950 border border-slate-800 text-xs text-slate-400">
-                Full-lifecycle engineering: From Route Survey, Right-of-Way (RoW) liaisoning, HDD trenchless execution, to Network Operations Center (NOC) monitoring.
-              </div>
+              <Link
+                href="/solutions#hosting"
+                className="inline-flex items-center gap-2 text-xs font-bold text-saffron-400 hover:underline pt-2"
+              >
+                <span>Explore Rapido Hosting &amp; Domains</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. VERIFIED CORPORATE ENTITY BANNER */}
+      {/* 6. CORPORATE HERITAGE & VERIFIED ENTITY CARD */}
       <section className="py-14 bg-gradient-to-r from-telecom-950 via-slate-900 to-telecom-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-card p-8 rounded-2xl border border-saffron-500/20 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="glass-card p-8 rounded-2xl border border-saffron-500/20 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 rounded-2xl bg-saffron-500/10 border border-saffron-500/30 flex items-center justify-center text-saffron-400 flex-shrink-0">
                 <Building2 className="w-7 h-7" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white">
-                  RAPIDO INFRATEL LLP · Verified RoC Ahmedabad Entity
+                  RAPIDO INFRATEL LLP · 15+ Years Brand Heritage
                 </h3>
-                <p className="text-xs text-slate-300 mt-1">
-                  Registered under Limited Liability Partnership Act, 2008 with the Ministry of Corporate Affairs (MCA). 
-                  LLPIN: <strong className="text-saffron-300 font-mono">AAV-6363</strong>. Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.
+                <p className="text-xs text-slate-300 mt-1 max-w-3xl leading-relaxed">
+                  Rapido® brand established in <strong>2009</strong> with registered Trademark (renewed for the next 10 years). Incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), currently structured as <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad). Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.
                 </p>
               </div>
             </div>
@@ -372,25 +401,25 @@ export default function HomePage() {
               href="/about"
               className="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold border border-slate-700 transition-colors flex-shrink-0"
             >
-              View Statutory Verification
+              Read Corporate Evolution
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 6. LEAD CAPTURE & TECHNICAL RFP SECTION */}
+      {/* 7. LEAD CAPTURE & TECHNICAL RFP SECTION */}
       <section id="contact" className="py-20 md:py-28 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
-                Direct Technical Channel
+                Direct Technical Inquiries
               </div>
               <h2 className="text-3xl font-extrabold text-white tracking-tight leading-snug">
-                Initiate Project Feasibility or Submit Infrastructure RFP
+                Initiate Project Scoping or Submit Infrastructure RFP
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Connect directly with our senior infrastructure engineering committee. We assist government nodal agencies, smart city SPVs, telecom operators, and municipal corporations in architecting compliant, future-proof digital utilities.
+                Connect directly with our solutions architecture committee. We consult with telecom carriers, municipal bodies, enterprise organizations, and technology leaders to design and manage mission-critical digital systems.
               </p>
 
               <div className="space-y-4 text-xs text-slate-300 pt-2">
@@ -400,7 +429,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-4 h-4 text-saffron-400" />
-                  <span>Sub-24h turnaround on feasibility inquiries</span>
+                  <span>PMP-grade scope definition &amp; technical feasibility</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Globe2 className="w-4 h-4 text-emerald-400" />

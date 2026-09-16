@@ -10,11 +10,12 @@ import {
   MapPin,
   ShieldCheck,
   Activity,
-  Server
+  Server,
+  Cpu
 } from "lucide-react";
 
 export const metadata = {
-  title: "Case Studies & Blueprints | Telecom Infrastructure Projects",
+  title: "Case Studies & Blueprints | Solution Architecture Track Record",
   description: "Representative blueprints and case studies of RAPIDO INFRATEL LLP: Metropolitan optical fiber rings, municipal GIS smart city systems, and PM-WANI rural broadband clusters.",
 };
 
@@ -22,9 +23,9 @@ export default function ProjectsPage() {
   const caseStudies = [
     {
       title: "Metropolitan Optical Fiber Highway & Ring Network",
-      tagline: "Carrier-Neutral Transmission Backbone",
+      tagline: "Solution Architecture & PMP Project Management",
       location: "Ahmedabad – Gandhinagar Economic Corridor, Gujarat",
-      desc: "Comprehensive route survey, Right-of-Way (RoW) liaisoning, and HDD trenchless laying of a 120 km 96-core and 288-core underground armored optical fiber cable ring connecting major IT parks, financial centers, and municipal edge shelters.",
+      desc: "Turnkey solutions architecture, route survey, Right-of-Way (RoW) liaisoning, and PMP-grade project management of a 120 km 96-core and 288-core underground armored optical fiber cable ring connecting major IT parks, financial centers, and municipal edge shelters.",
       stats: [
         { label: "Fiber Route", value: "120+ km" },
         { label: "Core Strand Spec", value: "96F / 288F Armored" },
@@ -78,20 +79,20 @@ export default function ProjectsPage() {
       color: "text-saffron-400"
     },
     {
-      title: "Cross-Departmental Paperless e-Gov Citizen Portal",
+      title: "Cross-Departmental Paperless e-Gov & Mobile Portal",
       tagline: "Faceless & Cashless Civic Service Architecture",
-      location: "Civic Urban Development Authority",
-      desc: "Enterprise cloud-native public platform consolidating building permissions, trade licenses, utility connections, and grievance redressal into a single unified window. Eliminated paper-based physical file movement.",
+      location: "Urban Development Authority",
+      desc: "Enterprise cloud-native public platform consolidating building permissions, trade licenses, utility connections, and grievance redressal into a single unified window. Includes mobile field-force application for on-site verification officers.",
       stats: [
         { label: "Citizen Applications", value: "250,000+ Processed" },
         { label: "Avg Turnaround", value: "Down from 30d to 48h" },
-        { label: "Paperless Rate", value: "98.4% Digital" },
+        { label: "Mobile Apps", value: "iOS & Android" },
         { label: "Audit Precision", value: "Immutable Ledger" }
       ],
       deliverables: [
         "Aadhaar OTP authentication and DigiLocker automatic certificate pulls",
         "Integrated UPI and Bharat Bill Payment System (BBPS) fee collection",
-        "Automated escalation triggers on civic officer resolution SLAs"
+        "Mobile inspection application with offline geo-tagged photo capture"
       ],
       icon: FileText,
       color: "text-blue-400"
@@ -111,8 +112,24 @@ export default function ProjectsPage() {
             <span className="gradient-text-fiber">Infrastructure Blueprints</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Real-world deployments and reference engineering architectures demonstrating our capability in executing carrier-grade optical fiber backbones, smart city sensorization, and public digital empowerment grids.
+            Real-world deployments and reference engineering architectures demonstrating our capability in delivering solutions architecture and PMP-grade management of optical fiber backbones, smart city sensorization, and citizen empowerment grids.
           </p>
+        </div>
+
+        {/* FEATURE IMAGE BANNER */}
+        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+          <img
+            src="/images/projects_survey.jpg"
+            alt="Field Engineering Team Conducting Route Planning and GPS Surveying"
+            className="w-full h-[320px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
+            <div className="font-bold text-white text-sm">PMP-Grade Field Engineering &amp; Route Precision</div>
+            <p className="text-slate-400 text-[11px] mt-1">
+              On-site optical route surveying, total station alignment, and underground duct GIS digitization ensuring zero-error execution.
+            </p>
+          </div>
         </div>
 
         {/* CASE STUDIES LIST */}
@@ -153,7 +170,7 @@ export default function ProjectsPage() {
 
                     <div className="space-y-2 pt-2">
                       <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                        Key Engineering Scope:
+                        Key Architecture Scope:
                       </div>
                       <ul className="space-y-1.5 text-xs text-slate-300">
                         {study.deliverables.map((del, dIdx) => (
@@ -183,9 +200,9 @@ export default function ProjectsPage() {
         {/* BOTTOM CTA */}
         <div className="p-8 rounded-2xl bg-gradient-to-r from-telecom-900 to-slate-900 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-bold text-white">Have a Similar Deployment in Scope?</h3>
+            <h3 className="text-xl font-bold text-white">Have a Similar Infrastructure Project in Scope?</h3>
             <p className="text-xs text-slate-400 mt-1">
-              Submit your project terms of reference or RFP documents to our engineering committee for technical review.
+              Submit your project terms of reference or RFP documentation to our solutions architecture committee.
             </p>
           </div>
 

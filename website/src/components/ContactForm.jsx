@@ -8,7 +8,7 @@ export default function ContactForm({ initialSolution = "" }) {
     phone: "",
     email: "",
     organization: "",
-    solution_interest: initialSolution || "Telecom & Fiber Engineering (OFC/FTTH)",
+    solution_interest: initialSolution || "Solutions Architecture & Project Management (PMP Grade)",
     message: "",
     _gotcha: "", // Honeypot field
   });
@@ -52,7 +52,6 @@ export default function ContactForm({ initialSolution = "" }) {
     };
 
     try {
-      // Use URLSearchParams with no-cors or JSON body to safely navigate Google Apps Script CORS redirects
       await fetch(webhookUrl, {
         method: "POST",
         mode: "no-cors",
@@ -68,13 +67,12 @@ export default function ContactForm({ initialSolution = "" }) {
         phone: "",
         email: "",
         organization: "",
-        solution_interest: "Telecom & Fiber Engineering (OFC/FTTH)",
+        solution_interest: "Solutions Architecture & Project Management (PMP Grade)",
         message: "",
         _gotcha: "",
       });
     } catch (err) {
       console.error("Submission error:", err);
-      // Fallback: If network is completely offline
       setStatus({
         submitting: false,
         submitted: false,
@@ -93,7 +91,7 @@ export default function ContactForm({ initialSolution = "" }) {
           Submit Infrastructure RFP or Technical Inquiry
         </h3>
         <p className="text-xs text-slate-400 mt-1">
-          Direct inquiry route to RAPIDO INFRATEL LLP technical solutions design team.
+          Direct inquiry route to RAPIDO INFRATEL LLP solutions architecture team.
         </p>
       </div>
 
@@ -102,7 +100,7 @@ export default function ContactForm({ initialSolution = "" }) {
           <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto" />
           <h4 className="text-lg font-bold text-white">Inquiry Received Successfully</h4>
           <p className="text-xs text-slate-300 max-w-md mx-auto">
-            Thank you for reaching out to <strong>RAPIDO INFRATEL LLP</strong>. Your inquiry has been routed via our master agency system (relayBuoy). Our infrastructure engineering architects will review your project parameters and respond promptly.
+            Thank you for reaching out to <strong>RAPIDO INFRATEL LLP</strong>. Your inquiry has been logged via our master agency system (relayBuoy). Our solution architects will evaluate your project parameters and respond promptly.
           </p>
           <button
             onClick={() => setStatus({ submitting: false, submitted: false, error: null })}
@@ -173,7 +171,7 @@ export default function ContactForm({ initialSolution = "" }) {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="name@organization.gov.in"
+                placeholder="name@organization.com"
                 className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
               />
             </div>
@@ -181,7 +179,7 @@ export default function ContactForm({ initialSolution = "" }) {
             {/* Organization / Agency */}
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1">
-                Organization / Municipal Body / Agency <span className="text-saffron-400">*</span>
+                Organization / Enterprise / Agency <span className="text-saffron-400">*</span>
               </label>
               <input
                 type="text"
@@ -189,7 +187,7 @@ export default function ContactForm({ initialSolution = "" }) {
                 required
                 value={formData.organization}
                 onChange={handleChange}
-                placeholder="e.g. Smart City SPV / Telecom ISP / Civic Body"
+                placeholder="e.g. Smart City SPV / Telecom ISP / Enterprise"
                 className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
               />
             </div>
@@ -198,7 +196,7 @@ export default function ContactForm({ initialSolution = "" }) {
           {/* Solution Area Interest */}
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1">
-              Primary Solution Focus (Digital India Pillar) <span className="text-saffron-400">*</span>
+              Primary Solution Focus <span className="text-saffron-400">*</span>
             </label>
             <select
               name="solution_interest"
@@ -206,35 +204,32 @@ export default function ContactForm({ initialSolution = "" }) {
               onChange={handleChange}
               className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-fiber-500 transition-colors"
             >
-              <option value="Telecom & Fiber Engineering (OFC/FTTH)">
-                Pillar 1: Optical Fiber Network (OFC) &amp; FTTH Rollouts
+              <option value="Solutions Architecture & Project Management (PMP Grade)">
+                Solutions Architecture &amp; PMP-Grade Project Management
               </option>
-              <option value="High-Speed Telecom Towers & Small Cell Infra">
-                Pillar 1: Telecom Towers &amp; Urban Small-Cell Infrastructure
+              <option value="Optical Fiber (OFC) & FTTH GPON Engineering">
+                Optical Fiber (OFC) &amp; FTTH GPON Transmission Network Design
               </option>
-              <option value="Digital Identity, Aadhaar Stack & PKI Verification">
-                Pillar 1: Digital Identity (Aadhaar / DigiLocker / e-Sign / PKI)
+              <option value="Enterprise AI & Machine Learning Workflows">
+                Enterprise AI &amp; Machine Learning Workflows (Bhashini-Ready)
               </option>
-              <option value="Zero-Trust Cyber Space & Edge Compute Facilities">
-                Pillar 1: Resilient Edge Compute &amp; Zero-Trust Cybersecurity
+              <option value="Mobile Applications Development (iOS & Android)">
+                Mobile Applications Development (Cloud-Native iOS &amp; Android)
               </option>
-              <option value="Paperless e-Governance Portals & Services">
-                Pillar 2: Paperless &amp; Faceless Enterprise Public Portals
+              <option value="Rapido Hosting - Cloud Infrastructure & VPS">
+                Rapido Hosting: Cloud Infrastructure, Managed VPS &amp; Datacenter
               </option>
-              <option value="Unified Municipal GIS & Smart City ICCC">
-                Pillar 2: Unified GIS Asset Mapping &amp; Smart City ICCC
+              <option value="Rapido Hosting - Domain Name Registration">
+                Rapido Hosting: Domain Registration (“We are . in domain name”)
               </option>
-              <option value="Civic Data Pipelines & Welfare Analytics">
-                Pillar 2: Data Analytics for Public Welfare &amp; Grievance Redressal
+              <option value="PM-WANI Public Wi-Fi & PDOA Grid Architecture">
+                PM-WANI Public Wi-Fi &amp; PDOA Rural Broadband Mesh
               </option>
-              <option value="PM-WANI Public Wi-Fi & Smart Village Enablers">
-                Pillar 3: PM-WANI Public Wi-Fi &amp; Rural Broadband Aggregation
+              <option value="Paperless e-Governance & Unified Municipal GIS">
+                Paperless e-Governance Systems &amp; Municipal GIS (ICCC)
               </option>
-              <option value="Universal Digital Access & Bhashini Localization">
-                Pillar 3: Universal Digital Access &amp; Bhashini Indian Languages
-              </option>
-              <option value="General Enterprise Turnkey Infrastructure RFP">
-                Comprehensive Turnkey Digital Infrastructure RFP
+              <option value="Comprehensive Turnkey Infrastructure RFP">
+                Comprehensive Turnkey Infrastructure Solution Architecture RFP
               </option>
             </select>
           </div>
@@ -242,7 +237,7 @@ export default function ContactForm({ initialSolution = "" }) {
           {/* Message / Scope */}
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1">
-              Project Scope, Route Specifications or Inquiry Details <span className="text-saffron-400">*</span>
+              Project Scope, Technical Parameters or Inquiry Details <span className="text-saffron-400">*</span>
             </label>
             <textarea
               name="message"
@@ -250,7 +245,7 @@ export default function ContactForm({ initialSolution = "" }) {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              placeholder="Outline your fiber route length, municipal jurisdiction, deployment timeline, or technical integration requirements..."
+              placeholder="Outline your route span, architectural requirements, mobile app scope, or cloud hosting specifications..."
               className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors resize-none"
             />
           </div>
@@ -281,7 +276,7 @@ export default function ContactForm({ initialSolution = "" }) {
           </button>
 
           <p className="text-[11px] text-center text-slate-500">
-            Protected by relayBuoy enterprise webhook. Encrypted submission directly to Rapido InfraTel LLP technical committee.
+            Protected by relayBuoy enterprise webhook. Encrypted submission directly to Rapido InfraTel LLP solutions architecture committee.
           </p>
         </form>
       )}
