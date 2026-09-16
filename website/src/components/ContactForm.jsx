@@ -187,7 +187,7 @@ export default function ContactForm({ initialSolution = "" }) {
                 required
                 value={formData.organization}
                 onChange={handleChange}
-                placeholder="e.g. Smart City SPV / Telecom ISP / Enterprise"
+                placeholder="e.g. Smart City SPV / Carrier ISP / Enterprise"
                 className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
               />
             </div>

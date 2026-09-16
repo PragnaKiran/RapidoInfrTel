@@ -67,7 +67,7 @@ export default function HeroSlider() {
         </>
       ),
       description:
-        "Architecting predictive data models, intelligent workflow pipelines, and mobile applications riding on high-capacity telecom infrastructure, equipped with native 22-language translation.",
+        "Architecting predictive data models, intelligent workflow pipelines, and mobile applications riding on high-capacity carrier transmission infrastructure, equipped with native 22-language translation.",
       image: "/images/hero_ai_mobile.jpg",
       imageAlt: "Software engineers developing AI models and mobile applications",
       primaryBtn: { text: "AI & Mobile Development", href: "/solutions#ai-mobile" },

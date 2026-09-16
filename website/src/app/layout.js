@@ -8,15 +8,15 @@ export const metadata = {
     default: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & IT/Mobile Products",
     template: "%s | RAPIDO INFRATEL LLP",
   },
-  description: "RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad). Designers of proprietary IT & Mobile Products used on telecommunications infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
+  description: "RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad). Designers of proprietary IT & Mobile Products used on carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
   keywords: [
     "rapido infratel llp",
     "architecting digital bharat",
     "universal human inclusion and equity",
-    "solutions architecture telecom ahmedabad",
-    "pmp grade project management telecom",
+    "solutions architecture carrier infrastructure ahmedabad",
+    "pmp grade project management carrier networks",
     "optical fiber network design OFC gujarat",
-    "it mobile products telecom infrastructure",
+    "it mobile products carrier transmission infrastructure",
     "ai mobile applications development",
     "rapido hosting domain name",
     "we are . in domain name",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   openGraph: {
     title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
-    description: "Delivering resilient solutions architecture & PMP-grade project management of IT & Mobile products on telecom infrastructure, enterprise AI, and sovereign cloud.",
+    description: "Delivering resilient solutions architecture & PMP-grade project management of IT & Mobile products on carrier transmission infrastructure, enterprise AI, and sovereign cloud.",
     url: "https://rapidoinfratel.com/",
     siteName: "RAPIDO INFRATEL LLP",
     images: [
@@ -55,7 +55,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
-    description: "Architecting Digital Bharat: Proprietary IT & Mobile products deployed on telecom infrastructure under universal human inclusion and equity.",
+    description: "Architecting Digital Bharat: Proprietary IT & Mobile products deployed on carrier transmission infrastructure under universal human inclusion and equity.",
     images: ["/Rapido-Logo.png"],
   },
   icons: {
@@ -83,7 +83,7 @@ const jsonLdData = {
       "url": "https://rapidoinfratel.com",
       "logo": "https://rapidoinfratel.com/Rapido-Logo.png",
       "image": "https://rapidoinfratel.com/Rapido-Logo.png",
-      "description": "Proprietary IT & Mobile Products engineered to ride upon telecommunications infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad Registered (LLPIN: AAV-6363).",
+      "description": "Proprietary IT & Mobile Products engineered to ride upon carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad Registered (LLPIN: AAV-6363).",
       "email": "contact@rapidoinfratel.com",
       "identifier": {
         "@type": "PropertyValue",
@@ -118,7 +118,7 @@ const jsonLdData = {
         "Universal Human Inclusion & Equity",
         "Solutions Architecture",
         "PMP Project Management",
-        "Telecommunications Engineering",
+        "Carrier Transmission Engineering",
         "Optical Fiber Cable (OFC) Network Design",
         "Enterprise AI & Mobile Applications",
         "Rapido Hosting & Domain Services",

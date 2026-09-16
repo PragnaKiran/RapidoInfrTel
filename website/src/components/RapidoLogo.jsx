@@ -40,7 +40,7 @@ export default function RapidoLogo({ showTagline = true, size = "default", class
         </div>
         {showTagline && (
           <span className={`text-slate-400 font-medium tracking-wider uppercase mt-1 ${subTextSize}`}>
-            Telecom &amp; Digital Infrastructure
+            IT & Mobile Product Architects
           </span>
         )}
       </div>

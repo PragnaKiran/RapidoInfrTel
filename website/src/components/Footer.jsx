@@ -63,7 +63,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <RapidoLogo size="default" />
             <p className="text-xs text-slate-300 leading-relaxed pr-6">
-              RAPIDO INFRATEL LLP designs and architects proprietary IT &amp; Mobile Products engineered to ride upon the high-capacity infrastructure of telecommunications carriers. Inspired by the foundational paradigm of <em>Architecting Digital Bharat</em>, our product engineering is anchored in universal human inclusion and equity—actively valuing every individual, eliminating systemic biases, and elevating diverse leadership.
+              RAPIDO INFRATEL LLP designs and architects proprietary IT &amp; Mobile Products engineered to ride upon the high-capacity infrastructure of carrier transmission networks. Inspired by the foundational paradigm of <em>Architecting Digital Bharat</em>, our product engineering is anchored in universal human inclusion and equity—actively valuing every individual, eliminating systemic biases, and elevating diverse leadership.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">

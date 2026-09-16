@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       title: "Unified Municipal GIS & Smart City Command Center",
       tagline: "Spatial Intelligence & Asset Sensorization",
       location: "Tier-1 Municipal Corporation Jurisdiction",
-      desc: "Architectural blueprint and implementation of an end-to-end municipal spatial data engine. Geo-tagged 45,000+ civic utility fixtures (sewerage, water supply, streetlights, telecom ducts) with real-time telemetry streaming into the Integrated Command and Control Center (ICCC).",
+      desc: "Architectural blueprint and implementation of an end-to-end municipal spatial data engine. Geo-tagged 45,000+ civic utility fixtures (sewerage, water supply, streetlights, network conduit ducts) with real-time telemetry streaming into the Integrated Command and Control Center (ICCC).",
       stats: [
         { label: "Mapped Assets", value: "45,000+ Units" },
         { label: "Spatial Accuracy", value: "Sub-Meter DGPS" },

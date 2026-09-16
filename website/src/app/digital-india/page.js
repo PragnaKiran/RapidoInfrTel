@@ -18,7 +18,7 @@ import {
 
 export const metadata = {
   title: "Architecting Digital Bharat | Universal Human Inclusion & Equity",
-  description: "RAPIDO INFRATEL LLP architects proprietary IT & mobile products on telecommunications infrastructure under the concept of universal human inclusion and equity, elevating quality of life across Bharat.",
+  description: "RAPIDO INFRATEL LLP architects proprietary IT & mobile products on carrier transmission infrastructure under the concept of universal human inclusion and equity, elevating quality of life across Bharat.",
 };
 
 export default function DigitalIndiaPage() {
@@ -76,7 +76,7 @@ export default function DigitalIndiaPage() {
       badge: "Urban Intelligence",
       desc: "Deploying spatial GIS databases, IoT asset sensors, and Integrated Command and Control Center (ICCC) data pipelines for municipal corporations. Enabling automated utility billing, emergency dispatch, and predictive traffic routing.",
       deliverables: [
-        "Underground utility GIS mapping (water, gas, power, telecom ducts)",
+        "Underground utility GIS mapping (water, gas, power, network conduit ducts)",
         "Real-time SCADA and IoT sensor telemetry dashboards",
         "Centralized civic grievance and dispatch automation"
       ],
@@ -98,7 +98,7 @@ export default function DigitalIndiaPage() {
             <span className="gradient-text-saffron">Universal Human Inclusion &amp; Equity</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            We are neither an IT company nor a telecommunications provider; we architect proprietary IT and mobile products designed to run on the transmission infrastructure of telecommunications companies. Inspired by the foundational paradigm of <strong>Architecting Digital Bharat</strong>, our product design is anchored in universal human inclusion and equity—actively involving and valuing every individual regardless of race, color, or gender, directly strengthening communities and elevating the quality of life for everyone.
+            We are neither an IT company nor a carrier transmission provider; we architect proprietary IT and mobile products designed to run on the transmission infrastructure of carrier companies. Inspired by the foundational paradigm of <strong>Architecting Digital Bharat</strong>, our product design is anchored in universal human inclusion and equity—actively involving and valuing every individual regardless of race, color, or gender, directly strengthening communities and elevating the quality of life for everyone.
           </p>
         </div>
 
@@ -237,7 +237,7 @@ export default function DigitalIndiaPage() {
             “Architecting Digital Bharat — Involving and valuing every individual to strengthen communities and elevate the quality of life for everyone.”
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            RAPIDO INFRATEL LLP · Designing and architecting proprietary IT &amp; Mobile Products riding on the high-capacity infrastructure of telecommunications carriers.
+            RAPIDO INFRATEL LLP · Designing and architecting proprietary IT &amp; Mobile Products riding on the high-capacity infrastructure of carrier transmission networks.
           </p>
           <div className="pt-2">
             <Link

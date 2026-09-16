@@ -22,7 +22,7 @@ import {
 
 export const metadata = {
   title: "Solutions & Architecture | IT & Mobile Products · Rapido Hosting",
-  description: "Explore the comprehensive solutions architecture portfolio of RAPIDO INFRATEL LLP: Optical Fiber & FTTH design, AI & Mobile product engineering on telecom infrastructure, Open Community Wi-Fi Mesh, and Rapido Hosting ('We are . in domain name').",
+  description: "Explore the comprehensive solutions architecture portfolio of RAPIDO INFRATEL LLP: Optical Fiber & FTTH design, AI & Mobile product engineering on carrier transmission infrastructure, Open Community Wi-Fi Mesh, and Rapido Hosting ('We are . in domain name').",
 };
 
 export default function SolutionsPage() {
@@ -39,7 +39,7 @@ export default function SolutionsPage() {
             <span className="gradient-text-fiber">Solutions Architecture</span> &amp; Digital Utilities
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            As solution architects, we deliver resilient architectural designs and PMP-grade project management of proprietary IT &amp; mobile products operating across the transmission pipelines of telecommunications carriers, sovereign cloud infrastructure, and open civic grids—founded upon universal human inclusion and equity.
+            As solution architects, we deliver resilient architectural designs and PMP-grade project management of proprietary IT &amp; mobile products operating across the transmission pipelines of carrier networks, sovereign cloud infrastructure, and open civic grids—founded upon universal human inclusion and equity.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function SolutionsPage() {
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
             src="/images/solutions_smart_city.jpg"
-            alt="Smart City Telecommunications & Digital Infrastructure"
+            alt="Smart City Digital Infrastructure & Connectivity"
             className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/30 to-transparent pointer-events-none" />
@@ -74,20 +74,20 @@ export default function SolutionsPage() {
           </div>
 
           <p className="text-sm text-slate-300 max-w-4xl leading-relaxed">
-            Delivering resilient solutions architecture designs and PMP-grade project management of carrier-neutral transmission pipelines and physical telecom facilities.
+            Delivering resilient solutions architecture designs and PMP-grade project management of carrier-neutral transmission pipelines and physical network facilities.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* 1.1 Telecom & Fiber Engineering */}
+            {/* 1.1 Optical Fiber & Network Engineering */}
             <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-slate-900 text-fiber-400 border border-slate-800">
                   <Activity className="w-5 h-5" />
                 </div>
-                <h3 className="text-base font-bold text-white">Telecom &amp; Fiber Engineering (OFC/FTTH)</h3>
+                <h3 className="text-base font-bold text-white">Optical Fiber &amp; Network Engineering (OFC/FTTH)</h3>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Turnkey architectural design of Optical Fiber Networks (OFC) utilizing 48F, 96F, and 288F armored ribbon cables, micro-duct networks, and Horizontal Directional Drilling (HDD) trenchless methodology. We provide PMP-grade project governance for high-density FTTH GPON rollouts, telecom tower infrastructure, and urban small-cell planning for 5G readiness.
+                Turnkey architectural design of Optical Fiber Networks (OFC) utilizing 48F, 96F, and 288F armored ribbon cables, micro-duct networks, and Horizontal Directional Drilling (HDD) trenchless methodology. We provide PMP-grade project governance for high-density FTTH GPON rollouts, carrier tower infrastructure, and urban small-cell planning for 5G readiness.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-400 pt-2 border-t border-slate-800/80">
                 <li className="flex items-center gap-2">
@@ -114,7 +114,7 @@ export default function SolutionsPage() {
                 <h3 className="text-base font-bold text-white">High-Speed Connectivity Enablement</h3>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Empowering telecom operators, internet service providers (ISPs), and municipal corporations to deliver high-speed, ultra-reliable digital pipelines across urban clusters and rural communities with resilient ring topologies.
+                Empowering carrier operators, internet service providers (ISPs), and municipal corporations to deliver high-speed, ultra-reliable digital pipelines across urban clusters and rural communities with resilient ring topologies.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-400 pt-2 border-t border-slate-800/80">
                 <li className="flex items-center gap-2">
@@ -503,7 +503,7 @@ export default function SolutionsPage() {
           <div>
             <h3 className="text-lg font-bold text-white">Review Detailed Technology Architecture</h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Inspect our multi-tier telecom and cloud network engineering blueprints.
+              Inspect our multi-tier network and cloud engineering blueprints.
             </p>
           </div>
           <Link

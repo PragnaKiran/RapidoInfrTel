@@ -30,13 +30,13 @@ export default function AboutPage() {
     {
       year: "2009",
       title: "Brand Inception & Trademark",
-      desc: "Establishment of the Rapido® brand identity. Official registration of the trademark in telecommunications and technology classifications, recently renewed for the next 10 years.",
+      desc: "Establishment of the Rapido® brand identity. Official registration of the trademark in technology and digital product classifications, recently renewed for the next 10 years.",
       badge: "Brand Origin"
     },
     {
       year: "2017",
       title: "Corporate Incorporation",
-      desc: "Incorporated as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) in Gujarat, cementing corporate focus on telecommunications engineering and infrastructure design.",
+      desc: "Incorporated as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) in Gujarat, cementing corporate focus on IT product engineering and solutions architecture.",
       badge: "Entity Inception"
     },
     {
@@ -80,10 +80,10 @@ export default function AboutPage() {
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Architecting Digital Bharat: <br />
-            <span className="gradient-text-fiber">IT &amp; Mobile Products</span> on Telecom Infrastructure
+            <span className="gradient-text-fiber">IT &amp; Mobile Products</span> on Carrier Transmission Networks
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing Firm. We are neither a generic IT services company nor a telecommunications operator; we architect proprietary IT &amp; Mobile Products deployed directly upon high-capacity telecommunications infrastructure under the foundational inspiration of <em>Architecting Digital Bharat</em> and universal human inclusion and equity.
+            <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing Firm. We are neither a generic IT services company nor a carrier operator; we architect proprietary IT &amp; Mobile Products deployed directly upon high-capacity carrier transmission networks under the foundational inspiration of <em>Architecting Digital Bharat</em> and universal human inclusion and equity.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
               A Legacy of Brand Trust, Equity &amp; Engineering Precision
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
-              The Rapido brand name has been actively serving enterprise telecommunications and technology domains since <strong>2009</strong>. Backed by a registered trademark (®) in telecom and technology classes that has been renewed for the next 10 years, our journey represents steadfast commercial stability and intellectual property integrity.
+              The Rapido brand name has been actively serving enterprise technology and digital product domains since <strong>2009</strong>. Backed by a registered trademark (®) in technology and digital product classes that has been renewed for the next 10 years, our journey represents steadfast commercial stability and intellectual property integrity.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               Originally incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), our corporate structure has evolved into <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad) to operate as a focused solutions architecture and product development practice.

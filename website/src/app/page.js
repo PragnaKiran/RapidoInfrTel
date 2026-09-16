@@ -23,8 +23,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & Telecom Products",
-  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products used on the infrastructure of telecommunications companies under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad (LLPIN: AAV-6363).",
+  title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & IT/Mobile Products",
+  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products used on the infrastructure of carrier transmission companies under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad (LLPIN: AAV-6363).",
 };
 
 export default function HomePage() {
@@ -41,7 +41,7 @@ export default function HomePage() {
       items: [
         "Turnkey Optical Fiber Network (OFC) & FTTH GPON architectural blueprints",
         "48F–288F armored ribbon micro-duct routes & trenchless corridor designs",
-        "Telecom transmission interfaces & small-cell densification architectures",
+        "Carrier transmission interfaces & small-cell densification architectures",
         "Zero-Trust Network Architecture (ZTNA) & edge compute facilities"
       ],
       link: "/solutions#pillar-1"
@@ -86,7 +86,7 @@ export default function HomePage() {
     {
       stat: "2009",
       label: "Brand Heritage",
-      sub: "Rapido® Trademark in Telecom & Tech"
+      sub: "Rapido® Trademark in Tech & Digital Products"
     },
     {
       stat: "PMP-Grade",
@@ -139,10 +139,10 @@ export default function HomePage() {
                 Architecting Digital Bharat · Product Philosophy
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
-                IT &amp; Mobile Products Engineered on Telecommunications Infrastructure
+                IT &amp; Mobile Products Engineered on Carrier Transmission Infrastructure
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                <strong>RAPIDO INFRATEL LLP</strong> is neither a generic IT services company nor a telecommunications network operator. Instead, we design and architect proprietary <strong>IT &amp; Mobile Products</strong> that ride directly upon high-capacity telecommunications infrastructure to drive universal civic and commercial empowerment.
+                <strong>RAPIDO INFRATEL LLP</strong> is neither a generic IT services company nor a carrier transmission network operator. Instead, we design and architect proprietary <strong>IT &amp; Mobile Products</strong> that ride directly upon high-capacity carrier transmission infrastructure to drive universal civic and commercial empowerment.
               </p>
               <p className="text-sm text-slate-300 leading-relaxed">
                 Our product architecture draws its foundational inspiration from <em>Architecting Digital Bharat</em> under the core concept of <strong>universal human inclusion and equity</strong>—which asserts that actively involving and valuing every individual, regardless of race, color, or gender, directly strengthens communities and elevates the quality of life for everyone.
@@ -239,11 +239,11 @@ export default function HomePage() {
                     <div className="flex items-center gap-2.5">
                       <Radio className="w-4 h-4 text-amber-400" />
                       <div>
-                        <div className="font-semibold text-white">Tier 1: Telecom Carrier Optical Corridors</div>
+                        <div className="font-semibold text-white">Tier 1: Carrier Optical Corridors</div>
                         <div className="text-[11px] text-slate-400">Underlying 48F–288F OFC &amp; GPON infrastructure</div>
                       </div>
                     </div>
-                    <span className="text-[10px] font-mono text-amber-400 font-bold">Telecom Physical</span>
+                    <span className="text-[10px] font-mono text-amber-400 font-bold">Carrier Physical</span>
                   </div>
                 </div>
 
