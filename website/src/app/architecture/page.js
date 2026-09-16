@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Technology Architecture | Blueprints, AI & Sovereign Cloud Stack",
-  description: "Explore the multi-tier engineering blueprints of RAPIDO INFRATEL LLP: Optical fiber backhaul topology, Zero-Trust network security, Aadhaar PKI trust stack, AI/Mobile gateways, and Rapido Hosting.",
+  title: "Technology Architecture | Blueprints & Sovereign Cloud Stack",
+  description: "Explore the multi-tier engineering blueprints of RAPIDO INFRATEL LLP: Optical fiber backhaul topology, Zero-Trust network security, cryptographic trust stack, AI/Mobile gateways, and Rapido Hosting.",
 };
 
 export default function ArchitecturePage() {
@@ -98,15 +98,31 @@ export default function ArchitecturePage() {
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-            Solutions Architecture Blueprints
+            Architecting Digital Bharat · Technology Architecture
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Multi-Tier <br />
             <span className="gradient-text-fiber">Technology Architecture</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            A granular overview of the transmission, edge, sovereign cryptographic trust, AI, mobile, and cloud hosting tiers that comprise RAPIDO INFRATEL LLP solutions.
+            A granular blueprint of the carrier transmission, edge processing, sovereign cryptographic trust, enterprise AI/mobile gateways, and high-availability cloud hosting tiers that power RAPIDO INFRATEL LLP products.
           </p>
+        </div>
+
+        {/* HERO BANNER IMAGE */}
+        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+          <img
+            src="/images/architecture_blueprint.jpg"
+            alt="National Fiber Network Topology & Operations Center Blueprint"
+            className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-xl">
+            <div className="font-bold text-white text-sm">National Broadband Fiber Network Topology &amp; NOC Operations</div>
+            <p className="text-slate-400 text-[11px] mt-1">
+              Architectural orchestration of carrier transmission backbones, edge aggregation POPs, and high-density optical routing rings.
+            </p>
+          </div>
         </div>
 
         {/* ARCHITECTURAL TIERS */}
@@ -162,7 +178,7 @@ export default function ArchitecturePage() {
           })}
         </div>
 
-        {/* PM-WANI PDOA ARCHITECTURAL HIGHLIGHT */}
+        {/* OPEN-ACCESS COMMUNITY WI-FI MESH ARCHITECTURE */}
         <div className="glass-card p-8 rounded-2xl border border-saffron-500/30 space-y-6">
           <div className="flex items-center gap-3">
             <div className="p-3 rounded-xl bg-saffron-500/10 text-saffron-400 border border-saffron-500/20">
@@ -170,33 +186,33 @@ export default function ArchitecturePage() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-white">
-                PM-WANI Public Data Office Aggregator (PDOA) Stack
+                Open-Access Community Wi-Fi Mesh Stack
               </h3>
               <p className="text-xs text-slate-400">
-                Department of Telecommunications (DoT) and C-DoT Central Registry Interoperability
+                Carrier-Neutral Edge Aggregation &amp; Open-Standard Civic Protocol Interoperability
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
             <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
-              <div className="font-bold text-white">1. PDO Access Point Mesh</div>
+              <div className="font-bold text-white">1. Community Access Point Mesh</div>
               <p className="text-slate-400 leading-relaxed">
-                Dual-band 802.11ax (Wi-Fi 6) access points installed at local commercial hubs, Gram Panchayats, and civic points with captive portal handshakes.
+                Dual-band 802.11ax (Wi-Fi 6) access points installed across public plazas, transit hubs, and civic nodes with seamless captive portal handshakes.
               </p>
             </div>
 
             <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
-              <div className="font-bold text-white">2. PDOA Gateway Controller</div>
+              <div className="font-bold text-white">2. Gateway Controller &amp; Mesh Director</div>
               <p className="text-slate-400 leading-relaxed">
-                Centralized authentication, user session management, bandwidth throttling, and integration with the DoT Central Registry via token exchange.
+                Decentralized session routing, bandwidth allocation, quality-of-service (QoS) prioritization, and privacy-preserving token verification.
               </p>
             </div>
 
             <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
-              <div className="font-bold text-white">3. App Provider &amp; Payment Bus</div>
+              <div className="font-bold text-white">3. Open Authentication &amp; Sachet Bus</div>
               <p className="text-slate-400 leading-relaxed">
-                Interoperable user discovery, instant KYC authorization, and seamless micro-payments via UPI for sachet data consumption.
+                Interoperable user discovery, instant KYC authorization, and seamless micro-payments via UPI for sachet civic connectivity.
               </p>
             </div>
           </div>

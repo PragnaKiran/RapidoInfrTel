@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
-                <span>Architecting Bharat · Corporate Entity</span>
+                <span>Architecting Digital Bharat · Corporate Entity</span>
                 <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-1.5 py-0.2 rounded font-medium">
                   Verified
                 </span>
@@ -63,7 +63,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <RapidoLogo size="default" />
             <p className="text-xs text-slate-300 leading-relaxed pr-6">
-              RAPIDO INFRATEL LLP is a premier Technology Solutions Designing &amp; Telecom Infrastructure Engineering Firm. As solution architects, we deliver resilient architectural designs and PMP-grade project governance of ultra-high-speed digital pipelines, enterprise AI applications, and sovereign cloud infrastructure for citizens, enterprises, and public institutions.
+              RAPIDO INFRATEL LLP designs and architects proprietary IT &amp; Mobile Products engineered to ride upon the high-capacity infrastructure of telecommunications carriers. Inspired by the foundational paradigm of <em>Architecting Digital Bharat</em>, our product engineering is anchored in universal human inclusion and equity—actively valuing every individual, eliminating systemic biases, and elevating diverse leadership.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">
@@ -73,10 +73,10 @@ export default function Footer() {
                   <strong>Registered Office:</strong> B2, Rangkrupa Complex, B/s Gujarat Gas Bldg., Parimal Garden Cross Road, C.G. Road, Ahmedabad, Gujarat - 380006, India
                 </span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <ShieldCheck className="w-4 h-4 text-fiber-400 flex-shrink-0" />
+              <div className="flex items-start gap-2.5">
+                <ShieldCheck className="w-4 h-4 text-fiber-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Trademark renewed for 10 years)
+                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Trademark renewed for 10 years) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (LLPIN: AAV-6363, RoC Ahmedabad, Gujarat)
                 </span>
               </div>
             </div>
@@ -98,13 +98,13 @@ export default function Footer() {
               <li>
                 <Link href="/solutions#pillar-2" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>e-Governance &amp; GIS Stack</span>
+                  <span>Sovereign Portals &amp; GIS Stack</span>
                 </Link>
               </li>
               <li>
                 <Link href="/solutions#pillar-3" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>PM-WANI Public Wi-Fi</span>
+                  <span>Open Community Wi-Fi Mesh</span>
                 </Link>
               </li>
               <li>
@@ -144,7 +144,7 @@ export default function Footer() {
               <li>
                 <Link href="/digital-india" className="hover:text-white transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Digital India Initiatives</span>
+                  <span>Architecting Digital Bharat</span>
                 </Link>
               </li>
               <li>
@@ -156,7 +156,7 @@ export default function Footer() {
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Technical RFP Inquiries</span>
+                  <span>Solutions Consultations</span>
                 </Link>
               </li>
             </ul>
@@ -196,7 +196,7 @@ export default function Footer() {
               className="w-4 h-4 object-contain"
             />
             <span>
-              &copy; {new Date().getFullYear()} <strong>RAPIDO INFRATEL LLP</strong>. Architecting Bharat. All rights reserved.
+              &copy; {new Date().getFullYear()} <strong>RAPIDO INFRATEL LLP</strong>. Architecting Digital Bharat. All rights reserved.
             </span>
           </div>
 

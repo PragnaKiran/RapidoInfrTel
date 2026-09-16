@@ -21,8 +21,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Solutions & Architecture | Telecom, AI, Mobile & Rapido Hosting",
-  description: "Explore the comprehensive solutions architecture portfolio of RAPIDO INFRATEL LLP: Optical Fiber & FTTH design, AI & Mobile app development, PM-WANI Wi-Fi, and Rapido Hosting ('We are . in domain name').",
+  title: "Solutions & Architecture | IT & Mobile Products · Rapido Hosting",
+  description: "Explore the comprehensive solutions architecture portfolio of RAPIDO INFRATEL LLP: Optical Fiber & FTTH design, AI & Mobile product engineering on telecom infrastructure, Open Community Wi-Fi Mesh, and Rapido Hosting ('We are . in domain name').",
 };
 
 export default function SolutionsPage() {
@@ -32,14 +32,14 @@ export default function SolutionsPage() {
         {/* Page Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-            Solutions Architecture &amp; PMP Governance
+            Architecting Digital Bharat · Solutions Architecture
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Comprehensive <br />
             <span className="gradient-text-fiber">Solutions Architecture</span> &amp; Digital Utilities
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            As solution architects, we deliver resilient architectural designs and PMP-grade project management of ultra-high-speed digital pipelines, enterprise AI applications, and sovereign cloud infrastructure as fundamental civic utilities for every citizen, enterprise, and public institution.
+            As solution architects, we deliver resilient architectural designs and PMP-grade project management of proprietary IT &amp; mobile products operating across the transmission pipelines of telecommunications carriers, sovereign cloud infrastructure, and open civic grids—founded upon universal human inclusion and equity.
           </p>
         </div>
 
@@ -286,9 +286,9 @@ export default function SolutionsPage() {
               <div className="p-2 rounded-lg bg-slate-900 text-saffron-400 border border-slate-800 w-fit">
                 <Wifi className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-bold text-white">Public Wi-Fi &amp; Smart Villages (PM-WANI)</h3>
+              <h3 className="text-base font-bold text-white">Open Community Wi-Fi Mesh &amp; Civic Grids</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Public Data Office Aggregator (PDOA) compliant architectures bringing high-speed connectivity to underserved clusters, rural markets, and village panchayats.
+                Decentralized, open-access public Wi-Fi mesh architectures engineered to deliver equitable high-speed digital connectivity to underserved clusters, civic hubs, and rural communities.
               </p>
             </div>
 
@@ -347,12 +347,60 @@ export default function SolutionsPage() {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-xl">
-                <img
-                  src="/images/hero_ai_mobile.jpg"
-                  alt="Enterprise AI and Mobile Application Engineering"
-                  className="w-full h-[280px] object-cover"
-                />
+              <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span className="text-xs font-mono font-bold text-white uppercase tracking-wider">Mobile AI Gateway · Active</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-fiber-400 bg-fiber-500/10 px-2 py-0.5 rounded border border-fiber-500/20">
+                    Bhashini 22L Mesh
+                  </span>
+                </div>
+
+                <div className="space-y-2 text-xs">
+                  <div className="p-3 rounded-xl bg-telecom-950/80 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Smartphone className="w-4 h-4 text-fiber-400" />
+                      <div>
+                        <div className="font-semibold text-white">Native Mobile App (iOS / Android)</div>
+                        <div className="text-[10px] text-slate-400">Offline Biometric Cache &amp; Encrypted Sync</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] text-emerald-400 font-mono">0.4ms</span>
+                  </div>
+
+                  <div className="flex justify-center text-slate-600 text-xs">↓</div>
+
+                  <div className="p-3 rounded-xl bg-telecom-950/80 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Cpu className="w-4 h-4 text-saffron-400" />
+                      <div>
+                        <div className="font-semibold text-white">Sovereign AI Inference Node</div>
+                        <div className="text-[10px] text-slate-400">Speech-to-Text &amp; Grievance Triage</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] text-emerald-400 font-mono">18ms</span>
+                  </div>
+
+                  <div className="flex justify-center text-slate-600 text-xs">↓</div>
+
+                  <div className="p-3 rounded-xl bg-telecom-950/80 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Radio className="w-4 h-4 text-emerald-400" />
+                      <div>
+                        <div className="font-semibold text-white">Carrier Fiber Transmission Bus</div>
+                        <div className="text-[10px] text-slate-400">Low-Latency Ring Backhaul to Cloud</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] text-emerald-400 font-mono">99.99%</span>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-fiber-500/5 border border-fiber-500/20 text-[11px] text-slate-300 flex items-center justify-between">
+                  <span>Concurrent Edge Sessions:</span>
+                  <span className="font-mono font-bold text-fiber-400">125,000+ Active</span>
+                </div>
               </div>
             </div>
           </div>
@@ -406,12 +454,44 @@ export default function SolutionsPage() {
               </div>
 
               <div className="lg:col-span-5">
-                <div className="rounded-xl overflow-hidden border border-slate-800 shadow-xl">
-                  <img
-                    src="/images/hero_hosting.jpg"
-                    alt="Rapido Hosting Cloud Datacenter Infrastructure"
-                    className="w-full h-[260px] object-cover"
-                  />
+                <div className="p-6 rounded-xl bg-slate-900/90 border border-saffron-500/20 shadow-2xl space-y-4">
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-800">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                      <span className="text-xs font-mono font-bold text-white uppercase tracking-wider">Rapido Cloud Cluster</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
+                      Tier-III Sovereign
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3 text-xs">
+                    <div className="p-3 rounded-lg bg-telecom-950/80 border border-slate-800">
+                      <div className="text-slate-400 text-[10px] uppercase tracking-wider">Anycast DNS Nodes</div>
+                      <div className="text-base font-bold text-white font-mono mt-1">12 Clusters</div>
+                      <div className="text-emerald-400 text-[10px] mt-0.5">Latency &lt; 0.8ms</div>
+                    </div>
+                    <div className="p-3 rounded-lg bg-telecom-950/80 border border-slate-800">
+                      <div className="text-slate-400 text-[10px] uppercase tracking-wider">Uptime SLA</div>
+                      <div className="text-base font-bold text-white font-mono mt-1">99.999%</div>
+                      <div className="text-emerald-400 text-[10px] mt-0.5">Zero Failover Loss</div>
+                    </div>
+                    <div className="p-3 rounded-lg bg-telecom-950/80 border border-slate-800">
+                      <div className="text-slate-400 text-[10px] uppercase tracking-wider">.IN Registry TLD</div>
+                      <div className="text-base font-bold text-white font-mono mt-1">Accredited</div>
+                      <div className="text-fiber-400 text-[10px] mt-0.5">Instant DNSSEC</div>
+                    </div>
+                    <div className="p-3 rounded-lg bg-telecom-950/80 border border-slate-800">
+                      <div className="text-slate-400 text-[10px] uppercase tracking-wider">Data Residency</div>
+                      <div className="text-base font-bold text-white font-mono mt-1">100% India</div>
+                      <div className="text-saffron-400 text-[10px] mt-0.5">Sovereign Cloud</div>
+                    </div>
+                  </div>
+
+                  <div className="p-3 rounded-lg bg-saffron-500/5 border border-saffron-500/20 text-[11px] text-slate-300 flex items-center justify-between">
+                    <span className="text-slate-400">DNS Query Throughput:</span>
+                    <span className="font-mono font-bold text-saffron-400">4.2B Requests / Mo</span>
+                  </div>
                 </div>
               </div>
             </div>

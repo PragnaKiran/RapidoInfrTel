@@ -69,8 +69,8 @@ export default function Header() {
           icon: Server
         },
         {
-          title: "Citizen Enablement & PM-WANI",
-          desc: "PDOA Public Wi-Fi Mesh & Multilingual Bhashini",
+          title: "Open Community Wi-Fi & Equity",
+          desc: "Decentralized Wi-Fi Mesh & Multilingual Bhashini",
           href: "/solutions#pillar-3",
           icon: Users
         },
@@ -89,7 +89,7 @@ export default function Header() {
       ]
     },
     { name: "Architecture", href: "/architecture" },
-    { name: "Digital India", href: "/digital-india" },
+    { name: "Digital Bharat", href: "/digital-india" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ];
@@ -107,7 +107,7 @@ export default function Header() {
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="text-fiber-400 font-semibold tracking-wide hidden lg:inline">
-              Architecting Bharat
+              Architecting Digital Bharat
             </span>
           </div>
 
@@ -225,7 +225,7 @@ export default function Header() {
               href="/contact"
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-saffron-500 to-saffron-600 hover:from-saffron-400 hover:to-saffron-500 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
             >
-              <span>Inquire / RFP</span>
+              <span>Solutions Inquiry</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
 
@@ -271,7 +271,7 @@ export default function Header() {
                 href="/contact"
                 className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold text-white bg-saffron-500 rounded-lg"
               >
-                <span>Submit RFP / Project Proposal</span>
+                <span>Connect With Solutions Team</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>

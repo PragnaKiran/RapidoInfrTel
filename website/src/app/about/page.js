@@ -16,7 +16,8 @@ import {
   Sparkles,
   Clock,
   Layers,
-  Cpu
+  Cpu,
+  Users
 } from "lucide-react";
 
 export const metadata = {
@@ -48,23 +49,23 @@ export default function AboutPage() {
 
   const values = [
     {
-      title: "Solutions Architecture Excellence",
-      desc: "Architecting carrier-grade transmission backbones, zero-trust cybersecurity perimeters, and cloud-native digital systems engineered for multi-decade durability.",
+      title: "Solutions Architecture & Product Rigor",
+      desc: "Architecting carrier-grade transmission backbones, zero-trust cybersecurity perimeters, and IT & mobile products engineered for multi-decade durability.",
       icon: Cpu,
     },
     {
-      title: "PMP-Grade Project Governance",
-      desc: "Applying rigorous Project Management Professional standards to ensure transparent milestone delivery, link loss budgeting, and carrier SLA compliance.",
-      icon: ShieldCheck,
+      title: "Universal Human Inclusion & Equity",
+      desc: "Actively valuing and involving every individual regardless of race, color, or gender; dismantling hidden prejudices, closing wage gaps, and championing female technology leadership.",
+      icon: Users,
     },
     {
-      title: "Architecting Bharat",
-      desc: "Inspired by the transformative vision of universal digital connectivity and sovereign digital infrastructure, delivered through independent engineering excellence.",
+      title: "Architecting Digital Bharat",
+      desc: "Inspired by the transformative vision of universal digital connectivity and sovereign digital infrastructure, delivered through independent private product engineering.",
       icon: Target,
     },
     {
-      title: "Intellectual Property & Trust",
-      desc: "Over 15+ years of verified brand trust, registered trademark protection, and statutory compliance with the Ministry of Corporate Affairs (RoC Ahmedabad).",
+      title: "Intellectual Property & Brand Trust",
+      desc: "Over 15+ years of verified brand trust, registered trademark protection (renewed for 10 years), and statutory compliance with the Ministry of Corporate Affairs (RoC Ahmedabad).",
       icon: Award,
     },
   ];
@@ -78,11 +79,11 @@ export default function AboutPage() {
             Corporate Profile &amp; Brand Heritage
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Architecting Bharat: <br />
-            <span className="gradient-text-fiber">Solutions Architecture</span> &amp; Engineering Governance
+            Architecting Digital Bharat: <br />
+            <span className="gradient-text-fiber">IT &amp; Mobile Products</span> on Telecom Infrastructure
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing and Telecom Infrastructure Engineering Firm. As solution architects, we deliver resilient architectural designs and PMP-grade project management for next-generation digital pipelines, enterprise AI systems, and cloud hosting infrastructure.
+            <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing Firm. We are neither a generic IT services company nor a telecommunications operator; we architect proprietary IT &amp; Mobile Products deployed directly upon high-capacity telecommunications infrastructure under the foundational inspiration of <em>Architecting Digital Bharat</em> and universal human inclusion and equity.
           </p>
         </div>
 
@@ -90,16 +91,16 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6 space-y-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              A Legacy of Brand Trust &amp; Engineering Precision
+              A Legacy of Brand Trust, Equity &amp; Engineering Precision
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
               The Rapido brand name has been actively serving enterprise telecommunications and technology domains since <strong>2009</strong>. Backed by a registered trademark (®) in telecom and technology classes that has been renewed for the next 10 years, our journey represents steadfast commercial stability and intellectual property integrity.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Originally incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), our corporate structure has evolved into <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad) to serve as a focused, agile solutions architecture practice.
+              Originally incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), our corporate structure has evolved into <strong>RAPIDO INFRATEL LLP</strong> (LLPIN: <span className="font-mono text-saffron-300">AAV-6363</span>, RoC Ahmedabad) to operate as a focused solutions architecture and product development practice.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
-              We operate independently with zero political or governmental affiliations, inspired purely by the national imperative to make high-speed digital connectivity an accessible, frictionless utility for all.
+              We operate independently as a private enterprise with zero governmental or political connections. Our foundational inspiration is <em>Architecting Digital Bharat</em> rooted in universal human inclusion and equity: actively valuing every individual, eliminating systemic prejudices and wage gaps, and championing female representation in technology and leadership.
             </p>
           </div>
 
@@ -113,7 +114,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
               <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300">
                 <div className="font-bold text-white">Solution Architecture Committee</div>
-                <div className="text-[11px] text-slate-400">Ahmedabad Tech Hub · PMP-Grade Project Governance</div>
+                <div className="text-[11px] text-slate-400">Ahmedabad Tech Hub · Female Tech Leadership &amp; PMP Governance</div>
               </div>
             </div>
           </div>

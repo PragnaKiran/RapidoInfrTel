@@ -88,7 +88,7 @@ export default function ContactForm({ initialSolution = "" }) {
 
       <div className="mb-6">
         <h3 className="text-xl font-bold text-white tracking-tight">
-          Submit Infrastructure RFP or Technical Inquiry
+          Submit Solutions Architecture &amp; Product Consultation Inquiry
         </h3>
         <p className="text-xs text-slate-400 mt-1">
           Direct inquiry route to RAPIDO INFRATEL LLP solutions architecture team.
@@ -222,14 +222,14 @@ export default function ContactForm({ initialSolution = "" }) {
               <option value="Rapido Hosting - Domain Name Registration">
                 Rapido Hosting: Domain Registration (“We are . in domain name”)
               </option>
-              <option value="PM-WANI Public Wi-Fi & PDOA Grid Architecture">
-                PM-WANI Public Wi-Fi &amp; PDOA Rural Broadband Mesh
+              <option value="Open-Access Community Wi-Fi Mesh Products">
+                Open-Access Community Wi-Fi Mesh &amp; Universal Equity Products
               </option>
-              <option value="Paperless e-Governance & Unified Municipal GIS">
-                Paperless e-Governance Systems &amp; Municipal GIS (ICCC)
+              <option value="Paperless Enterprise Portals & Spatial GIS Products">
+                Paperless Enterprise Portals &amp; Municipal GIS Products
               </option>
-              <option value="Comprehensive Turnkey Infrastructure RFP">
-                Comprehensive Turnkey Infrastructure Solution Architecture RFP
+              <option value="Comprehensive Enterprise Digital Infrastructure Architecture">
+                Comprehensive Enterprise Digital Infrastructure Architecture
               </option>
             </select>
           </div>
@@ -269,7 +269,7 @@ export default function ContactForm({ initialSolution = "" }) {
               </>
             ) : (
               <>
-                <span>Submit Technical RFP Inquiry</span>
+                <span>Submit Solutions Consultation Inquiry</span>
                 <Send className="w-4 h-4" />
               </>
             )}

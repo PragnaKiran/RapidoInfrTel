@@ -10,19 +10,21 @@ import {
   ArrowRight,
   CheckCircle2,
   Sparkles,
+  HeartHandshake,
   Layers,
-  Cpu
+  Cpu,
+  Lock
 } from "lucide-react";
 
 export const metadata = {
-  title: "Digital India Initiatives | Architecting Bharat · Infrastructure Engineering",
-  description: "How RAPIDO INFRATEL LLP architects sovereign digital infrastructure: Optical fiber connectivity, PM-WANI Wi-Fi aggregation, Digital Public Infrastructure, and Bhashini multilingual accessibility.",
+  title: "Architecting Digital Bharat | Universal Human Inclusion & Equity",
+  description: "RAPIDO INFRATEL LLP architects proprietary IT & mobile products on telecommunications infrastructure under the concept of universal human inclusion and equity, elevating quality of life across Bharat.",
 };
 
 export default function DigitalIndiaPage() {
   const initiatives = [
     {
-      name: "High-Capacity OFC & Rural Broadband Connectivity",
+      name: "High-Capacity OFC & Rural Connectivity Networks",
       badge: "Broadband for All",
       desc: "Providing high-speed optical fiber connectivity designs to rural Gram Panchayats and semi-urban clusters. We architect carrier-neutral middle-mile transmission and last-mile FTTH networks that unlock telemedicine, rural e-learning, and digitized administrative workflows.",
       deliverables: [
@@ -34,21 +36,21 @@ export default function DigitalIndiaPage() {
       color: "text-fiber-400"
     },
     {
-      name: "PM-WANI Public Wi-Fi Framework",
+      name: "Open Community Wi-Fi Mesh & Civic Grids",
       badge: "Universal Access",
-      desc: "Architecting Public Data Office Aggregator (PDOA) compliant infrastructure under the Prime Minister Wi-Fi Access Network Interface. Enabling local retail touchpoints, panchayat centers, and transit hubs to distribute affordable, micro-sachet internet access.",
+      desc: "Architecting open-access community Wi-Fi mesh networks across local retail touchpoints, panchayat centers, and transit hubs to distribute affordable, equitable internet access to every citizen.",
       deliverables: [
-        "DoT Central Registry interoperable authentication stacks",
+        "Decentralized, open-standard authentication & token verification",
         "Outdoor carrier-grade Wi-Fi 6 access point grid management",
-        "Instant UPI-based micro-billing for sachet data consumption"
+        "Instant UPI-based micro-billing for accessible civic connectivity"
       ],
       icon: Wifi,
       color: "text-saffron-400"
     },
     {
-      name: "Digital Public Infrastructure (DPI) & Sovereign Trust",
+      name: "Digital Public Infrastructure & Sovereign Trust",
       badge: "Identity & Trust",
-      desc: "Integrating the tri-layer India Stack: Identity (Aadhaar authentication), Payments (UPI / BBPS gateways), and Data (DigiLocker & Account Aggregators) into public enterprise workflows for frictionless citizen experiences.",
+      desc: "Integrating sovereign trust architectures (Aadhaar authentication protocols, UPI / BBPS gateways, and DigiLocker credential vaults) into enterprise workflows for frictionless citizen experiences.",
       deliverables: [
         "Aadhaar OTP & Biometric e-KYC integration (AUA/KUA protocols)",
         "Automated digital certificate issuance and retrieval via DigiLocker",
@@ -60,7 +62,7 @@ export default function DigitalIndiaPage() {
     {
       name: "Bhashini Multilingual Localization",
       badge: "Linguistic Inclusion",
-      desc: "Integrating the Bhashini National Language Translation platform into public portals. Ensuring that every citizen can access governance services and digital infrastructure in their native mother tongue across 22 scheduled languages.",
+      desc: "Integrating Bhashini Indian Language NLP microservices into public platforms. Ensuring that every citizen can access digital services, applications, and public information in their native mother tongue across 22 scheduled languages.",
       deliverables: [
         "Voice-enabled civic inquiry interfaces for low-literacy citizens",
         "Real-time text translation microservices across major Indian languages",
@@ -70,9 +72,9 @@ export default function DigitalIndiaPage() {
       color: "text-blue-400"
     },
     {
-      name: "Smart Cities & Municipal ICCC Systems",
+      name: "Smart Cities & Municipal Spatial Cadastre",
       badge: "Urban Intelligence",
-      desc: "Deploying spatial GIS databases, IoT asset sensors, and Integrated Command and Control Centers (ICCC) for municipal corporations. Enabling automated utility billing, emergency dispatch, and predictive traffic routing.",
+      desc: "Deploying spatial GIS databases, IoT asset sensors, and Integrated Command and Control Center (ICCC) data pipelines for municipal corporations. Enabling automated utility billing, emergency dispatch, and predictive traffic routing.",
       deliverables: [
         "Underground utility GIS mapping (water, gas, power, telecom ducts)",
         "Real-time SCADA and IoT sensor telemetry dashboards",
@@ -89,30 +91,85 @@ export default function DigitalIndiaPage() {
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
-            National Vision · Engineering Execution
+            Architecting Digital Bharat · Inclusion &amp; Equity Charter
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Architecting Bharat: <br />
-            <span className="gradient-text-saffron">Universal Digital Infrastructure</span>
+            Architecting Digital Bharat: <br />
+            <span className="gradient-text-saffron">Universal Human Inclusion &amp; Equity</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            As an independent solutions architecture and engineering firm, RAPIDO INFRATEL LLP translates the aspirations of national digital missions into robust physical and software reality — building the foundational pipelines for an interconnected nation.
+            We are neither an IT company nor a telecommunications provider; we architect proprietary IT and mobile products designed to run on the transmission infrastructure of telecommunications companies. Inspired by the foundational paradigm of <strong>Architecting Digital Bharat</strong>, our product design is anchored in universal human inclusion and equity—actively involving and valuing every individual regardless of race, color, or gender, directly strengthening communities and elevating the quality of life for everyone.
           </p>
         </div>
 
         {/* FEATURE IMAGE */}
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
-            src="/images/hero_citizen.jpg"
-            alt="Citizen Digital Empowerment and Public Wi-Fi Access"
-            className="w-full h-[320px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+            src="/images/equity_inclusion.jpg"
+            alt="Universal Human Inclusion and Diverse Leadership in Technology Innovation"
+            className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
           <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
-            <div className="font-bold text-white text-sm">Empowering Everyday Citizens</div>
+            <div className="font-bold text-white text-sm">Universal Human Inclusion &amp; Equity in Technology</div>
             <p className="text-slate-400 text-[11px] mt-1">
-              High-speed public connectivity designed to bridge urban, peri-urban, and village digital divides seamlessly.
+              Active representation, gender equity, and fair access across every digital pipeline and mobile platform we architect.
             </p>
+          </div>
+        </div>
+
+        {/* EQUITY & HUMAN INCLUSION PILLARS */}
+        <div className="p-8 sm:p-10 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-saffron-500/10 border border-saffron-500/20 flex items-center justify-center text-saffron-400">
+              <HeartHandshake className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-white">The Universal Human Inclusion &amp; Equity Charter</h3>
+              <p className="text-xs text-slate-400">Our foundational commitment across product architecture, governance, and hiring</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs text-slate-300">
+            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+              <div className="font-bold text-white flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <span>Zero Hidden Prejudices</span>
+              </div>
+              <p className="text-slate-400 leading-relaxed text-[11px]">
+                Eliminating unconscious biases that influence hiring, housing, and social interactions through transparent, meritocratic protocols.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+              <div className="font-bold text-white flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <span>Equal Opportunity &amp; Fair Treatment</span>
+              </div>
+              <p className="text-slate-400 leading-relaxed text-[11px]">
+                Dismantling systemic policies that result in unfair treatment of any community or group, guaranteeing equitable digital access.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+              <div className="font-bold text-white flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <span>Closing the Wage Gap</span>
+              </div>
+              <p className="text-slate-400 leading-relaxed text-[11px]">
+                Strict adherence to equal pay for equal work, fair compensation structures, and acknowledging unpaid domestic labor realities.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+              <div className="font-bold text-white flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <span>Female Leadership in Tech</span>
+              </div>
+              <p className="text-slate-400 leading-relaxed text-[11px]">
+                Proactively cultivating, mentoring, and appointing women into technology architecture, executive governance, and engineering roles.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -177,10 +234,10 @@ export default function DigitalIndiaPage() {
             <Sparkles className="w-6 h-6" />
           </div>
           <h3 className="text-2xl font-bold text-white max-w-2xl mx-auto">
-            “Architecting Bharat — Engineering technology as an enabler of social and economic empowerment.”
+            “Architecting Digital Bharat — Involving and valuing every individual to strengthen communities and elevate the quality of life for everyone.”
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            RAPIDO INFRATEL LLP · Dedicated to building sovereign infrastructure and high-speed digital pipelines through independent solutions engineering.
+            RAPIDO INFRATEL LLP · Designing and architecting proprietary IT &amp; Mobile Products riding on the high-capacity infrastructure of telecommunications carriers.
           </p>
           <div className="pt-2">
             <Link

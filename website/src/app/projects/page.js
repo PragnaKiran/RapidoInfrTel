@@ -15,8 +15,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Case Studies & Blueprints | Solution Architecture Track Record",
-  description: "Representative blueprints and case studies of RAPIDO INFRATEL LLP: Metropolitan optical fiber rings, municipal GIS smart city systems, and PM-WANI rural broadband clusters.",
+  title: "Case Studies & Blueprints | Architecting Digital Bharat",
+  description: "Representative blueprints and case studies of RAPIDO INFRATEL LLP: Metropolitan optical fiber rings, municipal GIS smart city systems, and open-access community Wi-Fi mesh deployments.",
 };
 
 export default function ProjectsPage() {
@@ -60,18 +60,18 @@ export default function ProjectsPage() {
       color: "text-emerald-400"
     },
     {
-      title: "PM-WANI Rural Broadband & PDOA Cluster Deployment",
-      tagline: "Bridging the Peri-Urban & Village Digital Divide",
+      title: "Open Community Wi-Fi Mesh & Civic Access Deployment",
+      tagline: "Bridging the Peri-Urban & Rural Connectivity Divide",
       location: "Semi-Urban & Gram Panchayat Clusters",
-      desc: "Turnkey engineering of a Public Data Office Aggregator (PDOA) compliant Wi-Fi mesh network. Connected local retail outlets (kirana shops), rural health clinics, and schools to high-speed GPON fiber backhauls with instant UPI micro-billing.",
+      desc: "Turnkey solutions engineering of an open-access community Wi-Fi mesh network. Connected local retail outlets (kirana shops), rural health clinics, and schools to high-speed GPON fiber backhauls with instant UPI micro-billing and multilingual support.",
       stats: [
         { label: "Wi-Fi Access Points", value: "240+ Outdoor APs" },
         { label: "Villages Covered", value: "35+ Panchayats" },
         { label: "Peak Citizens", value: "18,000+ Daily" },
-        { label: "DoT Compliance", value: "100% Central Reg" }
+        { label: "Uptime Availability", value: "99.98% Monitored" }
       ],
       deliverables: [
-        "DoT Central Registry token integration and captive portal routing",
+        "Open-standard captive portal routing and token verification",
         "Solar-assisted DC power backup for uninterrupted 24/7 connectivity",
         "Local language onboarding via Bhashini voice prompts"
       ],
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-            Engineering Track Record &amp; Blueprints
+            Architecting Digital Bharat · Track Record
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Case Studies &amp; <br />
@@ -202,7 +202,7 @@ export default function ProjectsPage() {
           <div>
             <h3 className="text-xl font-bold text-white">Have a Similar Infrastructure Project in Scope?</h3>
             <p className="text-xs text-slate-400 mt-1">
-              Submit your project terms of reference or RFP documentation to our solutions architecture committee.
+              Submit your project terms of reference or technical parameters to our solutions architecture committee.
             </p>
           </div>
 

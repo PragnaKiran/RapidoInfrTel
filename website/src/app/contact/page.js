@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us & RFP Submission | Official Corporate Inquiries",
-  description: "Contact RAPIDO INFRATEL LLP (LLPIN: AAV-6363). Registered office at Parimal Garden Cross Road, C.G. Road, Ahmedabad. Submit project feasibility inquiries, tenders, and technical RFPs.",
+  title: "Contact & Technical Inquiries | RAPIDO INFRATEL LLP",
+  description: "Contact RAPIDO INFRATEL LLP (LLPIN: AAV-6363). Registered office at Parimal Garden Cross Road, C.G. Road, Ahmedabad. Submit project feasibility inquiries, technical scoping, and solutions architecture briefs.",
 };
 
 export default function ContactPage() {
@@ -29,7 +29,7 @@ export default function ContactPage() {
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Contact &amp; <br />
-            <span className="gradient-text-saffron">RFP Submission</span>
+            <span className="gradient-text-saffron">Technical Scoping</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
             Submit your infrastructure parameters, municipal scope, AI/mobile application briefs, or enterprise hosting inquiries directly to the RAPIDO INFRATEL LLP solutions architecture team.
@@ -97,14 +97,14 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* RFP Guidelines Note */}
+            {/* Solutions Scoping Protocols Note */}
             <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-3 text-xs text-slate-300">
               <h4 className="font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
                 <FileText className="w-4 h-4 text-saffron-400" />
-                <span>RFP &amp; Tender Evaluation Protocols</span>
+                <span>Technical Scoping Protocols</span>
               </h4>
               <p className="text-slate-400 leading-relaxed">
-                For formal tenders, municipal terms of reference, or carrier route blueprints, you may initiate submission via the form or email project documentation directly to <strong className="text-white">contact@rapidoinfratel.com</strong>.
+                For formal technical scoping, municipal utility specifications, or carrier route blueprints, you may initiate submission via the form or email project documentation directly to <strong className="text-white">contact@rapidoinfratel.com</strong>.
               </p>
               <div className="flex items-center gap-2 text-fiber-400 pt-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />

@@ -23,8 +23,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "RAPIDO INFRATEL LLP | Architecting Bharat · Solution Architects & Telecom Engineering",
-  description: "RAPIDO INFRATEL LLP is a premier Technology Solutions Designing & Telecom Infrastructure Engineering Firm in Ahmedabad. We deliver resilient solutions architecture designs and PMP-grade project management for next-generation digital pipelines, enterprise AI, mobile applications, and sovereign cloud hosting.",
+  title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & Telecom Products",
+  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products used on the infrastructure of telecommunications companies under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity. RoC Ahmedabad (LLPIN: AAV-6363).",
 };
 
 export default function HomePage() {
@@ -33,15 +33,15 @@ export default function HomePage() {
       id: "pillar-1",
       number: "01",
       title: "Digital Infrastructure as a Utility",
-      tagline: "High-Speed Transmission & Trust Backbone",
-      desc: "Architecting resilient solutions designs and PMP-grade management of carrier-grade transmission corridors and physical infrastructure.",
+      tagline: "High-Speed Transmission & Carrier Backbone",
+      desc: "Architecting resilient solutions designs and PMP-grade management of carrier-grade transmission corridors and optical infrastructure.",
       borderColor: "border-fiber-500/40",
       textColor: "text-fiber-400",
       icon: Radio,
       items: [
         "Turnkey Optical Fiber Network (OFC) & FTTH GPON architectural blueprints",
-        "48F–288F armored ribbon micro-duct routes & HDD trenchless designs",
-        "Telecom tower infrastructure & urban small-cell densification",
+        "48F–288F armored ribbon micro-duct routes & trenchless corridor designs",
+        "Telecom transmission interfaces & small-cell densification architectures",
         "Zero-Trust Network Architecture (ZTNA) & edge compute facilities"
       ],
       link: "/solutions#pillar-1"
@@ -49,34 +49,34 @@ export default function HomePage() {
     {
       id: "pillar-2",
       number: "02",
-      title: "Governance & Services on Demand",
-      tagline: "Seamless, Paperless & Faceless Portals",
-      desc: "Engineering cloud-native enterprise e-governance systems, automated verification, and municipal spatial intelligence.",
+      title: "Sovereign Trust & Paperless Portals",
+      tagline: "Seamless, Paperless & Cryptographic Portals",
+      desc: "Engineering cloud-native enterprise products, automated identity verification, and municipal spatial intelligence.",
       borderColor: "border-saffron-500/40",
       textColor: "text-saffron-400",
       icon: Server,
       items: [
-        "Sovereign digital identity integration (Aadhaar AUA/KUA stack & DigiLocker)",
-        "Paperless and faceless citizen services with immutable audit ledgers",
-        "Unified GIS municipal utility mapping & Smart City ICCC integrations",
-        "Scalable civic data pipelines for welfare analytics & grievance resolution"
+        "Sovereign cryptographic identity integration (Aadhaar & DigiLocker stack)",
+        "Paperless enterprise portals with immutable audit ledgers and access control",
+        "Unified GIS municipal spatial asset intelligence & real-time monitoring",
+        "Scalable civic data pipelines for equitable utility and resource distribution"
       ],
       link: "/solutions#pillar-2"
     },
     {
       id: "pillar-3",
       number: "03",
-      title: "Digital Empowerment of Citizens",
-      tagline: "Universal Access & Community Wi-Fi",
-      desc: "Democratizing connectivity through multilingual computing, public Wi-Fi aggregation, and inclusive community portals.",
+      title: "Universal Human Inclusion & Equity",
+      tagline: "Universal Access & Open Wi-Fi Mesh",
+      desc: "Democratizing connectivity through multilingual computing, open-access community Wi-Fi, and radical digital inclusion.",
       borderColor: "border-emerald-500/40",
       textColor: "text-emerald-400",
       icon: Users,
       items: [
-        "Bhashini-ready multilingual NLP localization across 22 scheduled languages",
-        "PM-WANI Public Data Office Aggregator (PDOA) compliant Wi-Fi mesh",
-        "Affordable public Wi-Fi grids for peri-urban clusters & smart villages",
-        "Participatory civic engagement tools & citizen feedback ecosystems"
+        "Bhashini-ready multilingual NLP localization across 22 scheduled Indian languages",
+        "Decentralized open-access community Wi-Fi mesh software products",
+        "Equitable connectivity grids for peri-urban clusters and rural communities",
+        "Participatory digital tools engineered to eliminate racial and gender gaps"
       ],
       link: "/solutions#pillar-3"
     }
@@ -94,14 +94,14 @@ export default function HomePage() {
       sub: "Solution Architecture Oversight"
     },
     {
-      stat: "PM-WANI",
-      label: "PDOA Architecture",
-      sub: "DoT Central Registry Interoperable"
+      stat: "100% Inclusive",
+      label: "Human Equity Charter",
+      sub: "Dismantling Bias & Wage Gaps"
     },
     {
       stat: "LLPIN: AAV-6363",
       label: "RoC Ahmedabad",
-      sub: "Architecting Bharat"
+      sub: "Architecting Digital Bharat"
     }
   ];
 
@@ -129,60 +129,130 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. CORE MISSION & STRATEGIC POSITIONING */}
+      {/* 3. CORE MISSION & STRATEGIC POSITIONING: ARCHITECTING DIGITAL BHARAT & HUMAN EQUITY */}
       <section className="py-20 md:py-28 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Narrative (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-                Architecting Bharat · Solutions Architecture
+                Architecting Digital Bharat · Product Philosophy
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
-                Delivering Resilient Architectural Designs &amp; PMP-Grade Project Governance
+                IT &amp; Mobile Products Engineered on Telecommunications Infrastructure
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                As premier solution architects, <strong>RAPIDO INFRATEL LLP</strong> bridges the critical nexus between hard telecommunications engineering, sovereign trust frameworks, and modern enterprise software. We specialize in designing and managing the lifecycle of ultra-high-speed digital pipelines as essential civic utilities for every citizen, enterprise, and public institution.
+                <strong>RAPIDO INFRATEL LLP</strong> is neither a generic IT services company nor a telecommunications network operator. Instead, we design and architect proprietary <strong>IT &amp; Mobile Products</strong> that ride directly upon high-capacity telecommunications infrastructure to drive universal civic and commercial empowerment.
               </p>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Inspired by the profound vision of an interconnected Bharat, our methodologies apply rigorous Project Management Professional (PMP) grade standards to route surveying, optical duct budgeting, micro-trenching, GPON distribution, and cross-departmental software architecture.
+                Our product architecture draws its foundational inspiration from <em>Architecting Digital Bharat</em> under the core concept of <strong>universal human inclusion and equity</strong>—which asserts that actively involving and valuing every individual, regardless of race, color, or gender, directly strengthens communities and elevates the quality of life for everyone.
               </p>
 
+              {/* Equity & Inclusion Principles Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-fiber-500/10 text-fiber-400 flex items-center justify-center mb-2">
-                    <Activity className="w-4 h-4" />
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                  <div className="w-8 h-8 rounded-lg bg-fiber-500/10 text-fiber-400 flex items-center justify-center mb-1">
+                    <Users className="w-4 h-4" />
                   </div>
-                  <h4 className="text-sm font-bold text-white">Solution Architecture</h4>
-                  <p className="text-xs text-slate-400 mt-1">
-                    Multi-tier physical and cyber blueprints designed for 25+ year infrastructure lifespans.
+                  <h4 className="text-sm font-bold text-white">Universal Human Inclusion</h4>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    Rejecting hidden prejudices in hiring, housing, and social interactions by building transparent, equal-access software products.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
-                  <div className="w-8 h-8 rounded-lg bg-saffron-500/10 text-saffron-400 flex items-center justify-center mb-2">
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1.5">
+                  <div className="w-8 h-8 rounded-lg bg-saffron-500/10 text-saffron-400 flex items-center justify-center mb-1">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
-                  <h4 className="text-sm font-bold text-white">PMP-Grade Governance</h4>
-                  <p className="text-xs text-slate-400 mt-1">
-                    Structured milestone management, link loss auditing, and carrier-grade SLA enforcement.
+                  <h4 className="text-sm font-bold text-white">Closing the Wage &amp; Gender Gap</h4>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    Dismantling systemic inequalities, addressing unequal domestic labor, and actively advancing female technology leadership.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Right Featured Image (5 cols) */}
+            {/* Right Architectural Topology Card (5 cols - Clean Unique Visual) */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
-                <img
-                  src="/images/about_boardroom.jpg"
-                  alt="Rapido InfraTel Solution Architecture Committee"
-                  className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
-                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300">
-                  <div className="font-bold text-white">Architectural Strategy Committee</div>
-                  <div className="text-[11px] text-slate-400">Ahmedabad Headquarters · Infrastructure &amp; Telecom Solutions</div>
+              <div className="glass-card p-6 sm:p-7 rounded-2xl border border-slate-700/80 shadow-2xl relative space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <div>
+                    <span className="text-[10px] font-mono uppercase text-fiber-400 font-bold tracking-wider">
+                      Architectural Blueprint
+                    </span>
+                    <h3 className="text-base font-bold text-white mt-0.5">
+                      The Sovereign Product Stack
+                    </h3>
+                  </div>
+                  <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                    Active
+                  </span>
+                </div>
+
+                {/* Stack Layers */}
+                <div className="space-y-2.5 text-xs">
+                  <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Smartphone className="w-4 h-4 text-fiber-400" />
+                      <div>
+                        <div className="font-semibold text-white">Tier 5: Universal Mobile &amp; AI Products</div>
+                        <div className="text-[11px] text-slate-400">Voice-first Bhashini NLP (22 Languages)</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-fiber-400 font-bold">App Layer</span>
+                  </div>
+
+                  <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Lock className="w-4 h-4 text-saffron-400" />
+                      <div>
+                        <div className="font-semibold text-white">Tier 4: Sovereign Trust &amp; Paperless Ledgers</div>
+                        <div className="text-[11px] text-slate-400">Cryptographic identity &amp; document vaults</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-saffron-400 font-bold">Trust Layer</span>
+                  </div>
+
+                  <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Wifi className="w-4 h-4 text-emerald-400" />
+                      <div>
+                        <div className="font-semibold text-white">Tier 3: Open Community Wi-Fi Mesh</div>
+                        <div className="text-[11px] text-slate-400">Decentralized local merchant &amp; civic access</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-emerald-400 font-bold">Access Mesh</span>
+                  </div>
+
+                  <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Server className="w-4 h-4 text-indigo-400" />
+                      <div>
+                        <div className="font-semibold text-white">Tier 2: Rapido Cloud Hosting &amp; Domains</div>
+                        <div className="text-[11px] text-slate-400">“We are . in domain name” · 99.999% VPS</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-indigo-400 font-bold">Cloud Layer</span>
+                  </div>
+
+                  <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <Radio className="w-4 h-4 text-amber-400" />
+                      <div>
+                        <div className="font-semibold text-white">Tier 1: Telecom Carrier Optical Corridors</div>
+                        <div className="text-[11px] text-slate-400">Underlying 48F–288F OFC &amp; GPON infrastructure</div>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-amber-400 font-bold">Telecom Physical</span>
+                  </div>
+                </div>
+
+                <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800">
+                  <span>Methodology: PMP-Grade Systems Architecture</span>
+                  <Link href="/architecture" className="text-fiber-400 font-semibold hover:underline flex items-center gap-1">
+                    <span>Full Spec</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -279,15 +349,32 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Card 1: AI & Mobile Applications */}
             <div className="glass-card p-8 rounded-2xl border border-slate-800 space-y-6 relative overflow-hidden group">
-              <div className="relative rounded-xl overflow-hidden h-48 border border-slate-800">
-                <img
-                  src="/images/hero_ai_mobile.jpg"
-                  alt="AI and Mobile Applications Development"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-transparent to-transparent" />
-                <div className="absolute bottom-3 left-3 px-3 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-xs font-bold text-fiber-400">
-                  AI &amp; Mobile Development
+              {/* Bespoke Interactive UI Preview instead of duplicate image */}
+              <div className="relative rounded-xl p-5 bg-slate-950 border border-slate-800 font-mono text-xs space-y-3">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-fiber-400 animate-ping" />
+                    <span className="text-fiber-400 font-bold">BHASHINI_NLP_ENGINE_v2.6</span>
+                  </div>
+                  <span className="text-[10px] text-slate-500">22 Scheduled Languages</span>
+                </div>
+                <div className="grid grid-cols-3 gap-2 text-[11px]">
+                  <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
+                    <div className="text-slate-400">Speech-to-Text</div>
+                    <div className="text-white font-bold mt-0.5">&lt; 120ms</div>
+                  </div>
+                  <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
+                    <div className="text-slate-400">Inference Mode</div>
+                    <div className="text-emerald-400 font-bold mt-0.5">Edge-Local</div>
+                  </div>
+                  <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
+                    <div className="text-slate-400">Equity Bias</div>
+                    <div className="text-fiber-400 font-bold mt-0.5">0.00% Zero-Bias</div>
+                  </div>
+                </div>
+                <div className="p-2.5 rounded bg-slate-900/60 border border-slate-800/80 text-[11px] text-slate-300 flex items-center justify-between">
+                  <span>Voice Prompt: हिंदी · ગુજરાતી · தமிழ் · বাংলা</span>
+                  <span className="text-emerald-400 text-[10px]">Biometric Auth OK</span>
                 </div>
               </div>
 
@@ -302,7 +389,7 @@ export default function HomePage() {
                 <ul className="space-y-2 text-xs text-slate-300 pt-2 border-t border-slate-800/80">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
-                    <span>Citizen-facing mobile applications with biometric &amp; Aadhaar auth</span>
+                    <span>Citizen-facing mobile applications with sovereign biometric auth</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
@@ -310,7 +397,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
-                    <span>AI-powered automated grievance classification &amp; routing</span>
+                    <span>AI-powered automated workflow classification &amp; routing</span>
                   </li>
                 </ul>
               </div>
@@ -326,15 +413,32 @@ export default function HomePage() {
 
             {/* Card 2: Rapido Hosting & Domains */}
             <div className="glass-card p-8 rounded-2xl border border-slate-800 space-y-6 relative overflow-hidden group">
-              <div className="relative rounded-xl overflow-hidden h-48 border border-slate-800">
-                <img
-                  src="/images/hero_hosting.jpg"
-                  alt="Rapido Hosting Enterprise Datacenter"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-transparent to-transparent" />
-                <div className="absolute bottom-3 left-3 px-3 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-xs font-bold text-saffron-400">
-                  Rapido Hosting
+              {/* Bespoke Interactive Cloud Telemetry Preview instead of duplicate image */}
+              <div className="relative rounded-xl p-5 bg-slate-950 border border-slate-800 font-mono text-xs space-y-3">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-saffron-400 animate-pulse" />
+                    <span className="text-saffron-400 font-bold">RAPIDO_CLOUD_ENCLAVE</span>
+                  </div>
+                  <span className="text-[10px] text-slate-500">Tier-IV Node SLA</span>
+                </div>
+                <div className="grid grid-cols-3 gap-2 text-[11px]">
+                  <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
+                    <div className="text-slate-400">DNS Uptime</div>
+                    <div className="text-white font-bold mt-0.5">99.999%</div>
+                  </div>
+                  <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
+                    <div className="text-slate-400">Domain Auth</div>
+                    <div className="text-saffron-400 font-bold mt-0.5">.IN Accredited</div>
+                  </div>
+                  <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
+                    <div className="text-slate-400">Encryption</div>
+                    <div className="text-emerald-400 font-bold mt-0.5">TLS 1.3 Post-Q</div>
+                  </div>
+                </div>
+                <div className="p-2.5 rounded bg-slate-900/60 border border-slate-800/80 text-[11px] text-slate-300 flex items-center justify-between">
+                  <span>Edge Routing: Mumbai · Delhi · Ahmedabad</span>
+                  <span className="text-saffron-400 text-[10px]">“We are . in domain name”</span>
                 </div>
               </div>
 
@@ -407,7 +511,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. LEAD CAPTURE & TECHNICAL RFP SECTION */}
+      {/* 7. LEAD CAPTURE & TECHNICAL CONSULTATION SECTION */}
       <section id="contact" className="py-20 md:py-28 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -416,20 +520,20 @@ export default function HomePage() {
                 Direct Technical Inquiries
               </div>
               <h2 className="text-3xl font-extrabold text-white tracking-tight leading-snug">
-                Initiate Project Scoping or Submit Infrastructure RFP
+                Initiate Project Scoping or Technical Consultation
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Connect directly with our solutions architecture committee. We consult with telecom carriers, municipal bodies, enterprise organizations, and technology leaders to design and manage mission-critical digital systems.
+                Connect directly with our solutions architecture team. We consult with enterprise organizations, carriers, and digital platforms to architect and deploy mission-critical IT &amp; mobile products.
               </p>
 
               <div className="space-y-4 text-xs text-slate-300 pt-2">
                 <div className="flex items-center gap-3">
                   <ShieldCheck className="w-4 h-4 text-fiber-400" />
-                  <span>Confidential NDA &amp; RFP evaluation protocols</span>
+                  <span>Confidential NDA &amp; technical consultation protocols</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-4 h-4 text-saffron-400" />
-                  <span>PMP-grade scope definition &amp; technical feasibility</span>
+                  <span>PMP-grade scope definition &amp; architectural feasibility</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Globe2 className="w-4 h-4 text-emerald-400" />

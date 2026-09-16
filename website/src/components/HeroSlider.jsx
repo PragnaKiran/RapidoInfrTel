@@ -22,7 +22,7 @@ export default function HeroSlider() {
   const slides = [
     {
       id: 1,
-      badge: "Architecting Bharat · Solutions Architecture",
+      badge: "Architecting Digital Bharat · Solutions Architecture",
       badgeColor: "text-fiber-400 bg-fiber-500/10 border-fiber-500/30",
       headline: (
         <>
@@ -32,7 +32,7 @@ export default function HeroSlider() {
       ),
       description:
         "Specialized solutions architects delivering resilient architectural designs and PMP-grade project management of ultra-high-speed digital pipelines as fundamental civic utilities for every citizen, enterprise, and public institution.",
-      image: "/images/hero_architects.jpg",
+      image: "/images/home_hero_architects.jpg",
       imageAlt: "Solutions Architects analyzing fiber network topology",
       primaryBtn: { text: "Explore Architectural Scope", href: "/solutions" },
       secondaryBtn: { text: "Technical Architecture", href: "/architecture" },
@@ -50,8 +50,8 @@ export default function HeroSlider() {
       ),
       description:
         "Engineering high-density armored ribbon OFC ducting, micro-trenching corridors, and GPON distribution backhauls designed with sub-50ms ring protection for 25+ year infrastructure lifespans.",
-      image: "/images/hero_fiber.jpg",
-      imageAlt: "Telecom engineer testing optical distribution panel",
+      image: "/images/home_hero_fiber.jpg",
+      imageAlt: "Infrastructure engineer testing optical distribution panel",
       primaryBtn: { text: "Optical Infrastructure", href: "/solutions#pillar-1" },
       secondaryBtn: { text: "Case Studies", href: "/projects" },
       metric: { val: "Sub-50ms", label: "Ring Resilience", sub: "G.8032 ERPS Carrier Standards" }
@@ -67,9 +67,9 @@ export default function HeroSlider() {
         </>
       ),
       description:
-        "Architecting predictive civic data models, intelligent workflow pipelines, and cloud-native iOS/Android applications equipped with native Bhashini multilingual speech and text translation.",
+        "Architecting predictive data models, intelligent workflow pipelines, and mobile applications riding on high-capacity telecom infrastructure, equipped with native 22-language translation.",
       image: "/images/hero_ai_mobile.jpg",
-      imageAlt: "Software developers creating AI models and mobile applications",
+      imageAlt: "Software engineers developing AI models and mobile applications",
       primaryBtn: { text: "AI & Mobile Development", href: "/solutions#ai-mobile" },
       secondaryBtn: { text: "Consult Solutions Team", href: "/contact" },
       metric: { val: "22 Languages", label: "Bhashini Ready", sub: "Inclusive Multilingual Interfaces" }
@@ -94,21 +94,21 @@ export default function HeroSlider() {
     },
     {
       id: 5,
-      badge: "Citizen Enablement · PM-WANI & Trust Stack",
+      badge: "Civic Access & Equity · Open Wi-Fi Mesh",
       badgeColor: "text-amber-400 bg-amber-500/10 border-amber-500/30",
       headline: (
         <>
-          Universal <span className="gradient-text-saffron">Public Wi-Fi Grids</span> &amp;{" "}
-          <span className="text-white">Paperless Governance</span>
+          Universal <span className="gradient-text-saffron">Open-Access Wi-Fi Mesh</span> &amp;{" "}
+          <span className="text-white">Empowerment Products</span>
         </>
       ),
       description:
-        "Deploying PM-WANI Public Data Office Aggregator (PDOA) mesh architectures and sovereign digital identity frameworks (Aadhaar & DigiLocker) to bring seamless connectivity to every citizen.",
+        "Deploying decentralized open-access community Wi-Fi mesh software and sovereign paperless credential engines that empower local merchants, students, and citizens under universal human inclusion and equity.",
       image: "/images/hero_citizen.jpg",
-      imageAlt: "Indian citizens using public Wi-Fi on smartphones in town square",
-      primaryBtn: { text: "Universal Access", href: "/solutions#pillar-3" },
-      secondaryBtn: { text: "Digital Initiatives", href: "/digital-india" },
-      metric: { val: "PM-WANI", label: "PDOA Architecture", sub: "DoT Central Registry Interoperable" }
+      imageAlt: "Citizens using open community Wi-Fi on smartphones in town square",
+      primaryBtn: { text: "Universal Access Products", href: "/solutions#pillar-3" },
+      secondaryBtn: { text: "Digital Bharat", href: "/digital-india" },
+      metric: { val: "Open Mesh", label: "Decentralized Wi-Fi", sub: "Universal Human Equity & Access" }
     }
   ];
 
