@@ -22,93 +22,88 @@ export default function HeroSlider() {
   const slides = [
     {
       id: 1,
-      badge: "Architecting Digital Bharat · Solutions Architecture",
+      badge: "Proprietary Product Architecture · Est. 2009",
       badgeColor: "text-cloud-400 bg-cloud-500/10 border-cloud-500/30",
       headline: (
         <>
-          Delivering Resilient <span className="gradient-text-cloud">Solutions Architecture</span> &amp;{" "}
-          <span className="gradient-text-saffron">PMP-Grade Management</span>
+          Engineering Proprietary <span className="gradient-text-cloud">IT &amp; Mobile Products</span> with High-Precision Architecture
         </>
       ),
       description:
-        "Specialized solutions architects delivering resilient architectural designs and PMP-grade project management of ultra-high-speed digital pipelines as fundamental civic utilities for every citizen, enterprise, and public institution.",
-      image: "/images/home_hero_architects.jpg",
-      imageAlt: "Solutions Architects analyzing digital infrastructure topology",
-      primaryBtn: { text: "Explore Architectural Scope", href: "/solutions" },
-      secondaryBtn: { text: "Technical Architecture", href: "/architecture" },
-      metric: { val: "PMP-Grade", label: "Project Governance", sub: "End-to-End Architectural Oversight" }
+        "We design and architect bespoke, mission-critical mobile applications and enterprise software systems engineered for long-term scalability.",
+      image: "/images/content_mobile_products.jpg",
+      imageAlt: "Two engineers at a dual-monitor workstation reviewing mobile application UI screens and code",
+      primaryBtn: { text: "Explore Proprietary Products", href: "/solutions/mobile-products" },
+      secondaryBtn: { text: "Initiate Architecture Review", href: "/contact" },
+      metric: { val: "15+ Years", label: "Continuous Engineering Heritage", sub: "Est. 2009" }
     },
     {
       id: 2,
-      badge: "Enterprise Cloud-Native Platforms · Digital Utilities",
+      badge: "Sovereign Cloud Infrastructure · Enterprise Hosting",
       badgeColor: "text-cloud-400 bg-cloud-500/10 border-cloud-500/30",
       headline: (
         <>
-          Enterprise <span className="gradient-text-cloud">Cloud Platforms</span> &amp;{" "}
-          <span className="text-white">Digital Utilities</span>
+          Sovereign <span className="gradient-text-cloud">Cloud Platforms</span> Engineered for Resilient Enterprise Data
         </>
       ),
       description:
-        "Engineering high-availability cloud-native microservices, fault-tolerant transaction pipelines, and distributed digital utility backbones running over enterprise digital networks.",
-      image: "/images/home_hero_platforms.jpg",
-      imageAlt: "Executive solution architect and engineering team reviewing cloud platform topologies",
-      primaryBtn: { text: "Cloud Platforms", href: "/solutions/enterprise-platforms" },
-      secondaryBtn: { text: "Case Studies", href: "/projects" },
-      metric: { val: "Sub-50ms", label: "Failover Resilience", sub: "Distributed Cloud Utility Architecture" }
+        "Under the Rapido Hosting brand, we provide high-availability sovereign cloud environments, managed VPS, and localized data residency compliant with Indian regulatory standards.",
+      image: "/images/content_rapido_hosting.jpg",
+      imageAlt: "Systems engineers in an enterprise operations center monitoring cloud telemetry",
+      primaryBtn: { text: "Explore Sovereign Cloud", href: "/solutions/rapido-hosting" },
+      secondaryBtn: { text: "Enterprise Cloud Specs", href: "/architecture" },
+      metric: { val: "99.999%", label: "Target Cloud Availability SLA", sub: "High-Availability Sovereign Datacenters" }
     },
     {
       id: 3,
-      badge: "Intelligent Systems · Mobile Engineering",
+      badge: "Civic Digital Systems · Digital Bharat",
       badgeColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
       headline: (
         <>
-          Advanced <span className="gradient-text-cloud">AI Systems</span> &amp;{" "}
-          <span className="gradient-text-saffron">Multilingual Mobile Apps</span>
+          Architecting <span className="gradient-text-cloud">Civic Digital Systems</span> for Bharat’s Scale
         </>
       ),
       description:
-        "Architecting predictive data models, intelligent workflow pipelines, and mobile applications running on high-capacity enterprise digital infrastructure, equipped with native 22-language translation.",
-      image: "/images/hero_ai_mobile.jpg",
-      imageAlt: "Software engineers developing AI models and mobile applications",
-      primaryBtn: { text: "Mobile Applications", href: "/solutions/mobile-products" },
-      secondaryBtn: { text: "Sovereign AI Intelligence", href: "/solutions/ai-intelligence" },
-      metric: { val: "22 Languages", label: "Bhashini Ready", sub: "Inclusive Multilingual Interfaces" }
+        "Designing inclusive, paperless digital utilities and citizen portals that eliminate operational barriers and ensure seamless public service delivery.",
+      image: "/images/content_civic_inclusion.jpg",
+      imageAlt: "Professional interacting with a citizen using a mobile tablet in a modern civic service center",
+      primaryBtn: { text: "Explore Civic Systems", href: "/solutions/civic-inclusion" },
+      secondaryBtn: { text: "Digital Bharat Vision", href: "/digital-india" },
+      metric: { val: "Universal", label: "Civic Accessibility & Transparent Governance", sub: "Inclusive Interfaces" }
     },
     {
       id: 4,
-      badge: "Rapido Hosting · Domain Infrastructure",
+      badge: "Sovereign AI Intelligence · 22 Indian Languages",
       badgeColor: "text-saffron-400 bg-saffron-500/10 border-saffron-500/30",
       headline: (
         <>
-          Sovereign Cloud Hosting &amp; <br />
-          <span className="gradient-text-saffron">“We are . in domain name”</span>
+          Voice-First AI &amp; Multilingual Computing in <span className="gradient-text-saffron">22 Scheduled Languages</span>
         </>
       ),
       description:
-        "Under the trusted Rapido Hosting brand, we provide high-availability enterprise cloud servers, managed VPS, edge compute enclaves, and premier domain name registration solutions.",
-      image: "/images/hero_hosting.jpg",
-      imageAlt: "Enterprise cloud datacenter and server cluster",
-      primaryBtn: { text: "Rapido Hosting Solutions", href: "/solutions/rapido-hosting" },
-      secondaryBtn: { text: "Domain Services", href: "/solutions/rapido-hosting#domains" },
-      metric: { val: "99.999%", label: "Cloud Uptime", sub: "High-Availability Sovereign Datacenters" }
+        "Integrating state-of-the-art Bhashini language models into mobile and enterprise platforms, enabling voice-driven citizen and customer interactions.",
+      image: "/images/about_banner.jpg",
+      imageAlt: "Senior tech architects discussing a blueprint on a conference screen",
+      primaryBtn: { text: "Explore AI Solutions", href: "/solutions/ai-intelligence" },
+      secondaryBtn: { text: "Technical Specs", href: "/architecture" },
+      metric: { val: "22 Languages", label: "Bhashini-Ready Sovereign NLP Models", sub: "Inclusive Multilingual Interfaces" }
     },
     {
       id: 5,
-      badge: "Universal Human Inclusion & Equity · Civic Access",
+      badge: "Strategic Technology Partnerships · Enterprise Advisory",
       badgeColor: "text-amber-400 bg-amber-500/10 border-amber-500/30",
       headline: (
         <>
-          Universal <span className="gradient-text-saffron">Human Inclusion</span> &amp;{" "}
-          <span className="text-white">Civic Digital Products</span>
+          Architectural Guidance for Enterprise CTOs and <span className="text-white">Public Institutions</span>
         </>
       ),
       description:
-        "Empowering every citizen, merchant, and student through barrier-free digital civic products and paperless service engines built on the universal human inclusion principle of equity and mutual respect.",
-      image: "/images/home_hero_civic_inclusion.jpg",
-      imageAlt: "Diverse cross-functional engineering and civic leadership team collaborating on inclusive digital products",
-      primaryBtn: { text: "Civic Inclusion Products", href: "/solutions/civic-inclusion" },
-      secondaryBtn: { text: "Architecting Digital Bharat", href: "/digital-india" },
-      metric: { val: "100% Inclusive", label: "Zero-Barrier Access", sub: "Universal Human Equity & Civic Dignity" }
+        "Collaborating directly with enterprise leadership and government departments to scope, prototype, and deploy high-reliability digital architectures.",
+      image: "/images/about_boardroom.jpg",
+      imageAlt: "Executive leadership and architects around a clean wooden meeting table",
+      primaryBtn: { text: "Initiate Architecture Review", href: "/contact" },
+      secondaryBtn: { text: "Our Engagement Lifecycle", href: "/about" },
+      metric: { val: "Milestone-Driven", label: "Structured Architectural Oversight", sub: "Milestone-Driven Solutions" }
     }
   ];
 

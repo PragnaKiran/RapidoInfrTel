@@ -15,8 +15,7 @@ import {
   Server,
   Users,
   Cpu,
-  Globe2,
-  Building2
+  Globe2
 } from "lucide-react";
 
 export default function Header() {
@@ -74,12 +73,6 @@ export default function Header() {
           desc: "Paperless Civic Delivery & Public Infrastructure",
           href: "/solutions/civic-inclusion",
           icon: Users
-        },
-        {
-          title: "Spatial GIS & Infrastructure Modeling",
-          desc: "3D Building Information Modeling, Layout Planning & Cadastre",
-          href: "/solutions/spatial-gis",
-          icon: Building2
         }
       ]
     },
@@ -96,7 +89,7 @@ export default function Header() {
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
             <span className="inline-flex items-center gap-1.5 font-semibold text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
               <ShieldCheck className="w-3.5 h-3.5" />
-              Ahmedabad Headquartered · Est. September 2, 2009
+              Ahmedabad Headquartered · Est. 2009
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="text-cloud-400 font-semibold tracking-wide hidden lg:inline">

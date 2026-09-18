@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import HeroSection from "@/components/HeroSection";
+import HeroSlider from "@/components/HeroSlider";
 import ContactForm from "@/components/ContactForm";
 import { 
   Server, 
@@ -45,7 +45,7 @@ export default function HomePage() {
       sub: "Data residency compliance & localized disaster recovery."
     },
     {
-      stat: "PMP-Grade",
+      stat: "Milestone-Driven",
       label: "Enterprise Governance",
       sub: "Rigorous architecture oversight & documented milestones."
     }
@@ -127,7 +127,7 @@ export default function HomePage() {
     <div className="relative overflow-hidden bg-rapido-950">
       {/* 1. HERO SECTION */}
       <section className="border-b border-slate-800/80">
-        <HeroSection />
+        <HeroSlider />
       </section>
 
       {/* 2. INSTITUTIONAL AUTHORITY STRIP */}
@@ -247,7 +247,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
-              PMP-Grade Governance
+              Structured Architectural Governance
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               The 5-Stage Architecture Engagement Lifecycle
@@ -325,7 +325,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-4 h-4 text-saffron-400" />
-                  <span>PMP-grade scope definition &amp; architectural feasibility</span>
+                  <span>Milestone-driven scope definition &amp; architectural feasibility</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Globe2 className="w-4 h-4 text-emerald-400" />

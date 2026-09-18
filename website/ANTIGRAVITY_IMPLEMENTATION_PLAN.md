@@ -1,204 +1,132 @@
-# Antigravity IDE Implementation Plan & Execution Prompt
-## Project: RAPIDO INFRATEL LLP Website Refactoring (`/Users/viki/Developer/Websites/RILLP/website`)
+# Antigravity IDE Implementation Plan — Refinement Round 2
+## Project: RAPIDO INFRATEL LLP Website (`/Users/viki/Developer/Websites/RILLP/website`)
 
 ---
 
-### Executive Context & Architectural Grounding
+### Executive Review of Previous Run
 
-* **Entity:** RAPIDO INFRATEL LLP
-* **Headquarters:** Parimal Garden Cross Road, C.G. Road, Ahmedabad, Gujarat, India.
-* **Origin Date:** September 2, 2009 (15+ Years Track Record).
-* **Firm Positioning:** Technology Solutions Designing Firm architecting proprietary IT & mobile products and sovereign cloud platforms with high-precision engineering.
-* **Core Value Statement:** 
-  > *“Proprietary Product Architecture & Sovereign Cloud Solutions: Engineering Resilient Digital Systems for Enterprises and Civic Institutions Since 2009.”*
-* **Target Audience (ICP):**
-  1. *Enterprise Leadership & CTOs:* Seeking custom, scalable, proprietary mobile and enterprise software architecture.
-  2. *Civic & Government Institutions:* PSUs and state/central bodies requiring secure, compliant sovereign cloud platforms and paperless civic delivery for Digital Bharat.
-  3. *Strategic Co-Builders:* Enterprise partners requiring joint architecture agreements and product integrations.
-* **Primary Conversion Goal:**
-  * Primary: **"Initiate Solution Architecture Review"** (Structured qualification intake).
-  * Secondary: **"Schedule Executive Consultation"** (Technical discovery).
+#### Actions Completed:
+* Created branch `refactor/business-centric-redesign`.
+* Refactored `Header.jsx`, `HeroSection.jsx`, `ContactForm.jsx`, and `page.js`.
+* Successfully built and deployed to Firebase Hosting (`https://rapidoinfr.web.app`).
 
----
-
-### Key Strategic Directives (De-AI & De-Telecom Protocol)
-
-1. **Eradicate the "Telecom Operator" Confusion:**
-   * Strip out all language implying cellular towers, fiber networks, SIM aggregators, bulk SMS resellers, or "digital network backbones."
-   * Replace with software engineering, proprietary product architecture, and sovereign cloud hosting terminology.
-   * Remove Lucide icons associated with telcos (`Radio`, `Wifi`, `Layers` where representing network towers) and replace with `Cpu`, `Layers`, `ShieldCheck`, `Terminal`, `Workflow`, `Server`.
-
-2. **De-AI-ify the Visual Design & Content:**
-   * **No Gamified Elements:** Absolutely no confetti, sparkles, or consumer cashback sliders.
-   * **No Generic Crypto/AI Canvas Tropes:** Remove random constellation particle lines and glowing floating balls.
-   * **Replace 5-Slide Rotating Hero Slider:** Replace with a single, commanding, static Hero section featuring high-authority value copy and an interactive/bespoke Architectural Topology schematic.
-   * **Clean Institutional Visual Depth:** Utilize GPU-accelerated, calm ambient mesh lighting (`#060D17` deep navy base with low-opacity `#EA6320` saffron and `#0EA5E9` cloud blue glows) that maintains high readability.
-   * **Realistic Human Imagery:** Replace dark neon sci-fi graphics with authentic, daylight-balanced editorial photography of Indian technology architects and engineering reviews.
+#### Missed Actions & Required Fixes from Audit:
+1. **`Footer.jsx` Was Skipped:** Viewed by the agent but not included in git commit `84de1cd`. It still contains legacy links and needs updating.
+2. **Spatial GIS Still Exists:** `src/app/solutions/spatial-gis` is still present in the filesystem and linked in navigation.
+3. **Date Precision:** "September 2" must be pruned across all components down to simply **"2009"** / **"Est. 2009"**.
+4. **PMP Overuse:** "PMP-Grade" was placed in prominent stats and needs to be minimized/softened.
+5. **Hero Component Evolution:** User requested a **New 5-Slide Rotating Hero Slider** aligned with the new business-centric messaging (rebuilding `HeroSlider.jsx` to replace the static hero).
+6. **Images Not Updated:** 8 specific images in `/public/images/` must be replaced with realistic human editorial photography.
 
 ---
 
-### Phase-by-Phase Execution Steps for Antigravity
+### Specific Refinement Directives
 
-```
-[Phase 1: Environment & Token Setup]
-  │── Verify Git branch (`git checkout -b refactor/business-centric-redesign`)
-  │── Validate tailwind.config.js brand tokens
-  └── Setup ambient mesh utilities in globals.css
-  
-[Phase 2: Component Architecture Refactor]
-  │── Refactor `src/components/Header.jsx` (Institutional bar & refined CTAs)
-  │── Replace `src/components/HeroSlider.jsx` with static `src/components/HeroSection.jsx`
-  │── Refactor `src/components/ContactForm.jsx` (Structured Architecture Review Intake)
-  └── Refactor `src/components/Footer.jsx` (Clean corporate & practice taxonomy)
+#### 1. Complete Removal of `solutions/spatial-gis`
+* Delete directory: `src/app/solutions/spatial-gis/`.
+* Remove all links to `/solutions/spatial-gis` in:
+  * `src/components/Header.jsx` (remove from Solutions dropdown).
+  * `src/components/Footer.jsx`.
+  * `src/app/page.js` (remove pillar links or references).
+  * `src/app/solutions/page.js`.
 
-[Phase 3: Page Assembly & Content Overhaul]
-  │── Refactor `src/app/page.js` to 7-section high-conversion structure
-  └── Synchronize Metadata & OpenGraph tags
+#### 2. Date Standardization: "2009" Only
+* Replace all instances of `September 2, 2009` or `September 2009` with:
+  * In badges: `Est. 2009` or `Since 2009`.
+  * In narrative copy: `...architecting proprietary solutions since 2009.`
+  * In statutory cards: `Rapido® brand established in 2009.`
 
-[Phase 4: Imagery & Asset Replacement]
-  │── Update `/public/images/` references with realistic human editorial placeholders
-  └── Ensure accessible alt text and responsive image optimizations
+#### 3. New 5-Slide Business-Centric Hero Slider (`src/components/HeroSlider.jsx`)
+Replace the static hero in `page.js` with an updated, high-authority 5-slide rotating slider. Every slide must be grounded in real engineering—no telco or generic filler:
 
-[Phase 5: Build & Quality Verification]
-  │── Execute `npm run build` or `npm run lint`
-  └── Audit for zero broken routes and zero leftover telecom references
-```
+* **Slide 1: Proprietary IT & Mobile Products (Core Flagship)**
+  * *Badge:* `Proprietary Product Architecture · Est. 2009`
+  * *Headline:* `Engineering Proprietary IT & Mobile Products with High-Precision Architecture`
+  * *Subtext:* `We design and architect bespoke, mission-critical mobile applications and enterprise software systems engineered for long-term scalability.`
+  * *CTA 1:* `Explore Proprietary Products` (`/solutions/mobile-products`)
+  * *CTA 2:* `Initiate Architecture Review` (`#contact`)
+  * *Metric:* `15+ Years` | `Continuous Engineering Heritage (Est. 2009)`
 
----
+* **Slide 2: Sovereign Cloud Platforms & Hosting**
+  * *Badge:* `Sovereign Cloud Infrastructure · Enterprise Hosting`
+  * *Headline:* `Sovereign Cloud Platforms Engineered for Resilient Enterprise Data`
+  * *Subtext:* `Under the Rapido Hosting brand, we provide high-availability sovereign cloud environments, managed VPS, and localized data residency compliant with Indian regulatory standards.`
+  * *CTA 1:* `Explore Sovereign Cloud` (`/solutions/rapido-hosting`)
+  * *CTA 2:* `Enterprise Cloud Specs` (`/architecture`)
+  * *Metric:* `99.999%` | `Target Cloud Availability SLA`
 
-### Detailed File Specifications
+* **Slide 3: Civic Digital Public Infrastructure (Digital Bharat)**
+  * *Badge:* `Civic Digital Systems · Digital Bharat`
+  * *Headline:* `Architecting Civic Digital Systems for Bharat’s Scale`
+  * *Subtext:* `Designing inclusive, paperless digital utilities and citizen portals that eliminate operational barriers and ensure seamless public service delivery.`
+  * *CTA 1:* `Explore Civic Systems` (`/solutions/civic-inclusion`)
+  * *CTA 2:* `Digital Bharat Vision` (`/digital-india`)
+  * *Metric:* `Universal` | `Civic Accessibility & Transparent Governance`
 
-#### 1. `src/components/Header.jsx`
-* **Top Statutory Bar:**
-  * Change text to: `Ahmedabad Headquartered · Est. September 2, 2009 | Architecting Digital Bharat`.
-  * Display official registered trademark status and contact coordinates clearly.
-* **Navigation Links:**
-  * **Solutions Dropdown:**
-    * *Proprietary IT & Mobile Products* (`/solutions/mobile-products`)
-    * *Sovereign Cloud Platforms & Hosting* (`/solutions/rapido-hosting`)
-    * *Civic Digital Systems & Portals* (`/solutions/civic-inclusion`)
-    * *Spatial GIS & Infrastructure Modeling* (`/solutions/spatial-gis`)
-  * **Architecture Framework** (`/architecture`)
-  * **About Firm** (`/about`)
-  * **Contact & RFP** (`/contact`)
-* **Primary Header CTA Button:**
-  * Label: `Initiate Architecture Review` (links to `#architecture-review` or `/contact`).
-  * Style: High-contrast saffron gradient (`bg-saffron-500 hover:bg-saffron-400 text-white font-semibold`).
+* **Slide 4: Multilingual AI & Bhashini NLP Engineering**
+  * *Badge:* `Sovereign AI Intelligence · 22 Indian Languages`
+  * *Headline:* `Voice-First AI & Multilingual Computing in 22 Scheduled Languages`
+  * *Subtext:* `Integrating state-of-the-art Bhashini language models into mobile and enterprise platforms, enabling voice-driven citizen and customer interactions.`
+  * *CTA 1:* `Explore AI Solutions` (`/solutions/ai-intelligence`)
+  * *CTA 2:* `Technical Specs` (`/architecture`)
+  * *Metric:* `22 Languages` | `Bhashini-Ready Sovereign NLP Models`
 
-#### 2. `src/components/HeroSection.jsx` (Replaces `HeroSlider.jsx`)
-* **Layout:** Single static 12-column grid (`lg:grid-cols-12`) with ambient mesh background.
-* **Left Column (7 Cols):**
-  * **Institutional Badge:** `Ahmedabad Headquartered · Est. September 2, 2009 · Solution Architects`.
-  * **H1 Headline:** 
-    `Proprietary Product Architecture & `
-    `<span className="text-transparent bg-clip-text bg-gradient-to-r from-cloud-400 to-saffron-400">Sovereign Cloud Solutions</span>`
-  * **Subheadline:** 
-    `Engineering resilient digital systems, custom IT & mobile products, and mission-critical cloud platforms for enterprises and civic institutions since 2009.`
-  * **Action Block:**
-    * Primary CTA: `Initiate Solution Architecture Review →` (Anchor to contact intake)
-    * Secondary CTA: `Explore Engineering Practices ↓` (Smooth scroll to practice overview)
-  * **Key Operational Metrics Strip (3 Items):**
-    * `15+ Years` | `Engineering Heritage (Est. 2009)`
-    * `100% Sovereign` | `Domestic Data Residency & Compliance`
-    * `PMP-Grade` | `System Architecture & Milestone Governance`
-* **Right Column (5 Cols) - The Sovereign Architecture Blueprint Card:**
-  * Visual interactive card displaying the 3-tier sovereign product stack:
-    * *Tier 1 (Top): Civic & Enterprise Mobile Interfaces* (Native iOS/Android, Voice-first Bhashini NLP).
-    * *Tier 2 (Middle): In-House Proprietary Product Engines* (High-throughput microservices, cryptographic identity verification).
-    * *Tier 3 (Foundation): Sovereign Cloud Enclaves & Datacenters* (99.999% SLA, localized disaster recovery).
-  * Crisp typography, border glows on hover, and active status indicators.
-
-#### 3. `src/app/page.js` (Homepage Structure)
-* **Section 1: Hero Section** (`<HeroSection />`)
-* **Section 2: Institutional Authority Strip**
-  * 4 glass cards showcasing:
-    1. *Origin 2009:* 15+ years continuous solutions designing heritage in Gujarat.
-    2. *Proprietary IP:* In-house engineered software platforms and product blueprints.
-    3. *Sovereign Cloud:* Domestic hosting, data residency compliance, and localized disaster recovery.
-    4. *PMP & Enterprise Governance:* Rigorous architecture oversight and documented milestones.
-* **Section 3: Core Mission & Positioning**
-  * Remove vague references to domestic labor or generic network carriers.
-  * Focus text: How RAPIDO INFRATEL LLP partners with enterprise leadership and government departments to architect sovereign software and resilient digital public infrastructure.
-* **Section 4: The Two Core Engineering Practices**
-  * **Practice A: Proprietary IT & Mobile Product Engineering**
-    * Focus: Scalable microservices, offline-first mobile apps, real-time transaction pipelines, and Bhashini multilingual NLP integration across 22 Indian languages.
-    * Target: CTOs, Product Heads, and Tech Innovators.
-  * **Practice B: Sovereign Cloud Platforms & Civic Digital Systems**
-    * Focus: High-availability sovereign cloud hosting (`Rapido Hosting`), paperless civic portals, GIS municipal asset monitoring, and compliant data residency.
-    * Target: PSUs, State/Central Government Bodies, and Regulated Enterprises.
-* **Section 5: The 5-Stage Architecture Engagement Lifecycle**
-  1. *Feasibility & Architecture Discovery:* Scoping technical, regulatory, and scalability requirements.
-  2. *System Design & Blueprinting:* Component topologies, database schema, and security threat models.
-  3. *Proprietary Engineering:* Clean-code implementation, modular APIs, and continuous integration.
-  4. *Sovereign Deployment & Verification:* Domestic cloud hardening, vulnerability testing, and SLA verification.
-  5. *Lifecycle Governance:* Architecture audits, capacity scaling, and ongoing support.
-* **Section 6: Corporate Heritage & Statutory Verification**
-  * Official corporate details: Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551), structured as RAPIDO INFRATEL LLP. Registered Office at Parimal Garden Cross Road, C.G. Road, Ahmedabad.
-* **Section 7: High-Conversion Intake Section** (`#architecture-review`)
-  * Clear briefing on confidential NDA protocols, architectural feasibility, and structured qualification.
-  * Form component: `<ContactForm />`.
-
-#### 4. `src/components/ContactForm.jsx`
-* Refactor the form fields to qualify enterprise and institutional leads:
-  1. **Full Name & Official Designation** (e.g., "CTO / Director of IT / Project Officer")
-  2. **Official Organization Name & Email**
-  3. **Organization Type:** Dropdown (*Enterprise / PSU or Government / Growth Tech / Other*)
-  4. **Engagement Scope:** Dropdown (*Proprietary Mobile/IT Product / Sovereign Cloud Platform / Civic Digital System / Architecture Audit*)
-  5. **Estimated Deployment Timeline:** (*Immediate (0-30 days) / 1-3 Months / 3-6 Months / RFP Evaluation*)
-  6. **Brief Architecture Requirements:** Textarea
-  7. **NDA Requested Checkbox:** `Request Mutual NDA prior to technical disclosure`
-  8. **Submit Button:** `Submit Architecture Brief →`
-
-#### 5. `src/components/Footer.jsx`
-* Remove any remaining telco language.
-* Add clean category columns:
-  * *Practices:* Proprietary IT & Mobile Products, Sovereign Cloud Platforms, Civic Digital Systems, Spatial GIS.
-  * *Framework:* Solutions Architecture, PMP Governance, Sovereign Compliance, Digital Bharat.
-  * *Corporate:* Brand Heritage (Est. 2009), Ahmedabad Registered Office, Privacy Policy, Terms of Engagement.
+* **Slide 5: Enterprise Solutions Architecture & Strategic Partnerships**
+  * *Badge:* `Strategic Technology Partnerships · Enterprise Advisory`
+  * *Headline:* `Architectural Guidance for Enterprise CTOs and Public Institutions`
+  * *Subtext:* `Collaborating directly with enterprise leadership and government departments to scope, prototype, and deploy high-reliability digital architectures.`
+  * *CTA 1:* `Initiate Architecture Review` (`#contact`)
+  * *CTA 2:* `Our Engagement Lifecycle` (`/about`)
+  * *Metric:* `Milestone-Driven` | `Structured Architectural Oversight`
 
 ---
 
-### Image Asset Replacement Specifications (`/public/images/`)
-
-Replace AI-generated / sci-fi artwork with realistic human editorial photography:
-
-1. **`home_hero_architects.jpg`:**
-   * *Subject:* Senior Indian solutions architects collaborating at a glass whiteboard in a naturally lit, modern tech office.
-   * *Tone:* Focused, analytical, authentic professional attire. No neon or floating holograms.
-2. **`content_mobile_products.jpg` / `hero_ai_mobile.jpg`:**
-   * *Subject:* Software engineers at clean dual-monitor workstations reviewing mobile application flows and data architecture.
-3. **`content_enterprise_platforms.jpg` / `hero_hosting.jpg`:**
-   * *Subject:* Technical team in an executive conference room reviewing system architecture diagrams on a conference screen.
-4. **`content_civic_inclusion.jpg` / `equity_inclusion.jpg`:**
-   * *Subject:* Realistic deployment of civic technology: professional interacting with a citizen/merchant using an intuitive tablet interface.
+#### 4. Tone Down "PMP" Language Across the Site
+* Do not brag about PMP.
+* Replace `PMP-Grade Project Governance` or `PMP-Grade Systems Architecture` with:
+  * `Structured Architectural Governance`
+  * `Milestone-Driven Project Delivery`
+  * `Rigorous Systems Engineering`
+* Remove "PMP" from the top stats strip and hero badges.
 
 ---
 
-### Antigravity Prompt (Copy-Paste Ready)
+#### 5. Image Replacement Specifications (`/public/images/`)
+All 8 images must be replaced with realistic human editorial photography featuring South Asian / Indian technology professionals in authentic, naturally lit modern office settings. No neon blue/purple sci-fi lighting, no glowing holographic graphics. Only real people collaborating:
 
-```text
-You are tasked with refactoring the Next.js website for RAPIDO INFRATEL LLP located at:
-/Users/viki/Developer/Websites/RILLP/website
+1. **`about_banner.jpg` (Wide Banner):**
+   * *Visual:* Senior tech architects in an open, modern Indian tech workspace discussing a blueprint on a conference screen. Natural sunlight from windows.
+2. **`about_boardroom.jpg` (Executive Team):**
+   * *Visual:* Executive leadership and architects around a clean wooden meeting table with laptops, notebooks, and architectural plans. Professional and authentic.
+3. **`content_civic_inclusion.jpg` (Civic Tech Deployment):**
+   * *Visual:* A professional interacting with a citizen/merchant using a mobile tablet in a clean, modern civic service center.
+4. **`content_mobile_products.jpg` (Mobile Engineering):**
+   * *Visual:* Two engineers at a dual-monitor workstation reviewing mobile application UI screens and code.
+5. **`content_rapido_hosting.jpg` (Cloud Infrastructure):**
+   * *Visual:* Systems engineers in an enterprise operations center monitoring cloud telemetry on clean dashboard monitors.
+6. **`architecture_blueprint.jpg` (System Blueprint):**
+   * *Visual:* Clean, high-resolution architectural schematic or whiteboarding session showing multi-tier software system layers.
+7. **`banner_contact.jpg` (Contact Header Banner):**
+   * *Visual:* Modern reception or consultation area in an Ahmedabad corporate tech park.
+8. **`content_contact.jpg` (Consultation Intake):**
+   * *Visual:* A solution architect in a one-on-one discovery meeting with a client stakeholder.
 
-Review and execute the complete specifications documented in ANTIGRAVITY_IMPLEMENTATION_PLAN.md:
+---
 
-1. POSITIONING & IDENTITY:
-   - Rapido Infratel LLP is an Ahmedabad-headquartered Technology Solutions Designing Firm (Est. September 2, 2009).
-   - Core value proposition: "Proprietary Product Architecture & Sovereign Cloud Solutions: Engineering Resilient Digital Systems for Enterprises and Civic Institutions Since 2009."
-   - Eradicate all telecom, cellular tower, carrier, and network operator terminology.
-   - Eliminate all generic AI visual tropes: no confetti, no gamification, no random floating particle networks.
+### Step-by-Step Execution Sequence for Antigravity
 
-2. COMPONENT & LAYOUT REFACTORING:
-   - Refactor `src/components/Header.jsx`: Update statutory top bar, refine navigation taxonomy, and set primary CTA to "Initiate Architecture Review".
-   - Replace `src/components/HeroSlider.jsx` with a static, commanding `src/components/HeroSection.jsx` featuring dual CTAs and the interactive 3-tier Sovereign Product Stack card.
-   - Refactor `src/app/page.js` to implement the 7-section structure: Hero, Institutional Authority Strip, Mission Positioning, Two Core Engineering Practices, 5-Stage Architecture Engagement Lifecycle, Corporate Heritage Card, and Solution Architecture Intake.
-   - Refactor `src/components/ContactForm.jsx` into a structured Enterprise & Government Architecture Review qualification intake.
-   - Refactor `src/components/Footer.jsx` with aligned practice categories and Ahmedabad headquarters details.
-
-3. STYLING & ASSETS:
-   - Ensure subtle, GPU-accelerated ambient mesh lighting using brand hex tokens: Deep Navy (#060D17), Saffron (#EA6320), and Cloud Blue (#0EA5E9).
-   - Update image references and placeholders to realistic human editorial photography standards per the specification.
-
-4. BUILD & VERIFICATION:
-   - Run `npm run build` to confirm zero compilation or lint errors.
-```
+1. **Delete Route:**
+   `rm -rf src/app/solutions/spatial-gis`
+2. **Refactor Components:**
+   * Update `src/components/Header.jsx` (remove spatial-gis link, update "2009" text).
+   * Update `src/components/Footer.jsx` (remove spatial-gis link, clean telco remnants, update "2009" text).
+   * Rebuild `src/components/HeroSlider.jsx` with the 5 new business-centric slides, replacing `HeroSection.jsx` in `src/app/page.js`.
+   * Update `src/app/page.js` to tone down PMP mentions and update year references.
+3. **Image Placeholders / Updates:**
+   * Update the 8 images in `/public/images/` according to the art direction.
+4. **Build & Verify:**
+   `npm run build`
+5. **Deploy:**
+   `git add . && git commit -m "refactor: remove spatial-gis, install 5-slide business hero, tone down PMP, and align 2009 branding"`
+   `git push`
+   `firebase deploy --only hosting`

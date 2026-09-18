@@ -18,8 +18,7 @@ import {
   Activity,
   Smartphone,
   Sparkles,
-  Zap,
-  MapPin
+  Zap
 } from "lucide-react";
 
 export const metadata = {
@@ -54,14 +53,6 @@ export default function SolutionsPage() {
       badge: "Sovereign AI"
     },
     {
-      title: "Spatial GIS & Building Complex BIM",
-      desc: "Centimeter-accurate geospatial site cadastre, 3D Building Information Modeling (BIM), and commercial complex infrastructure engineering as AMC Licensed Developers.",
-      href: "/solutions/spatial-gis",
-      icon: MapPin,
-      color: "text-saffron-400 border-saffron-500/30",
-      badge: "BIM & Cadastre"
-    },
-    {
       title: "Rapido Hosting & Domains",
       desc: "“We are . in domain name” · 15+ years brand heritage, accredited domain registrar, sovereign managed VPS, and 99.999% SLA Anycast cloud.",
       href: "/solutions/rapido-hosting",
@@ -83,7 +74,7 @@ export default function SolutionsPage() {
             Proprietary <span className="gradient-text-cloud">IT &amp; Mobile Products</span> on Enterprise Digital Infrastructure
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            As solution architects, we deliver resilient architectural designs and PMP-grade project management of proprietary IT &amp; mobile products operating across enterprise digital infrastructure, sovereign cloud infrastructure, and private complex infrastructure—anchored in universal human inclusion and equity.
+            As solution architects, we deliver resilient architectural designs and milestone-driven project delivery of proprietary IT &amp; mobile products operating across enterprise digital infrastructure, sovereign cloud infrastructure, and private complex infrastructure—anchored in universal human inclusion and equity.
           </p>
         </div>
 
@@ -237,57 +228,7 @@ export default function SolutionsPage() {
               </ul>
             </div>
           </div>
-        </section>
-
-        {/* PILLAR 2: SPATIAL GIS & BUILDING INFORMATION MODELING (AMC LICENSED DEVELOPERS) */}
-        <section id="pillar-2" className="scroll-mt-24 space-y-8 pt-12 border-t border-slate-800">
-          <div className="flex items-center justify-between flex-wrap gap-4 border-b border-slate-800 pb-4">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-saffron-500/10 border border-saffron-500/30 flex items-center justify-center text-saffron-400">
-                <MapPin className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">Pillar 02</span>
-                <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-                  Spatial GIS &amp; Building Information Modeling (BIM)
-                </h2>
-              </div>
-            </div>
-            <Link
-              href="/solutions/spatial-gis"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-saffron-500/10 hover:bg-saffron-500/20 text-saffron-300 border border-saffron-500/30 text-xs font-semibold transition-colors"
-            >
-              <span>View Spatial GIS &amp; BIM Solutions</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-slate-900 text-saffron-400 border border-slate-800">
-                  <Layers className="w-5 h-5" />
-                </div>
-                <h3 className="text-base font-bold text-white">AMC Licensed Developer Credentials</h3>
-              </div>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                As AMC Licensed Developers, we possess licensed engineering standing to construct modern residential towers, commercial complexes, retail developments, and private campus infrastructure with full regulatory compliance.
-              </p>
-            </div>
-
-            <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-slate-900 text-saffron-400 border border-slate-800">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <h3 className="text-base font-bold text-white">Spatial Cadastre &amp; 3D Digital Twin BIM</h3>
-              </div>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Centimeter-accurate land parcel cadastre, 3D Building Information Modeling (BIM), subterranean conduit layout mapping, and integrated IoT environmental sensors for high-performance buildings.
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
 
         {/* SECTION 4: AI & MOBILE APPLICATIONS */}
         <section id="ai-mobile" className="scroll-mt-24 space-y-8 pt-12 border-t border-slate-800">

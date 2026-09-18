@@ -108,12 +108,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/spatial-gis" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
-                  <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Spatial GIS &amp; Complex BIM</span>
-                </Link>
-              </li>
-              <li>
                 <Link href="/solutions/rapido-hosting" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Rapido Cloud Hosting</span>
@@ -176,9 +170,9 @@ export default function Footer() {
                 </div>
               </div>
               <div className="p-2.5 rounded-lg bg-slate-900/90 border border-slate-800">
-                <div className="text-white font-semibold">PMP-Grade Project Governance</div>
+                <div className="text-white font-semibold">Structured Architectural Governance</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">
-                  PMBOK-aligned solutions oversight and agile software delivery.
+                  Milestone-driven solutions oversight and agile software delivery.
                 </div>
               </div>
             </div>
