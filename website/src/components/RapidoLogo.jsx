@@ -31,7 +31,7 @@ export default function RapidoLogo({ showTagline = true, size = "default", class
           <span className={`font-black tracking-tight text-white ${mainTextSize}`}>
             RAPIDO
           </span>
-          <span className={`font-bold tracking-wider text-fiber-400 ${mainTextSize}`}>
+          <span className={`font-bold tracking-wider text-cloud-400 ${mainTextSize}`}>
             INFRATEL
           </span>
           <span className="text-[10px] font-semibold text-slate-400 border border-slate-700/80 px-1 py-0.5 rounded tracking-wide ml-0.5">

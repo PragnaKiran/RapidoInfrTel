@@ -24,7 +24,7 @@ import {
 
 export const metadata = {
   title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & IT/Mobile Products",
-  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products used on the infrastructure of carrier transmission companies under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
+  description: "RAPIDO INFRATEL LLP creates proprietary IT & Mobile Products for enterprise digital infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
 };
 
 export default function HomePage() {
@@ -34,13 +34,13 @@ export default function HomePage() {
       number: "01",
       title: "Enterprise Cloud Platforms & Digital Utilities",
       tagline: "High-Availability Distributed Backbones",
-      desc: "Architecting resilient cloud-native microservices, fault-tolerant transaction pipelines, and digital utilities operating on carrier telecommunication infrastructure.",
-      borderColor: "border-fiber-500/40",
-      textColor: "text-fiber-400",
+      desc: "Architecting resilient cloud-native microservices, fault-tolerant transaction pipelines, and digital utilities operating on enterprise digital infrastructure.",
+      borderColor: "border-cloud-500/40",
+      textColor: "text-cloud-400",
       icon: Server,
       items: [
         "Cloud-native microservices and distributed transaction pipelines",
-        "Carrier network interface abstractions and high-throughput data buses",
+        "Enterprise network interface abstractions and high-throughput data buses",
         "Sub-50ms failover orchestration & zero-downtime deployment pipelines",
         "Zero-Trust Network Architecture (ZTNA) and sovereign edge facilities"
       ],
@@ -86,7 +86,7 @@ export default function HomePage() {
     {
       stat: "2009",
       label: "Brand Heritage",
-      sub: "Rapido® Trademark in Tech & Digital Products"
+      sub: "Rapido® Registered Trademark"
     },
     {
       stat: "PMP-Grade",
@@ -106,14 +106,14 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="relative overflow-hidden bg-telecom-950">
+    <div className="relative overflow-hidden bg-rapido-950">
       {/* 1. ANIMATED 5-SLIDE HERO SLIDER */}
       <section className="border-b border-slate-800/80">
         <HeroSlider />
       </section>
 
       {/* 2. STATS & TELEMETRY STRIP */}
-      <section className="py-8 bg-telecom-900/80 border-b border-slate-800/60">
+      <section className="py-8 bg-rapido-900/80 border-b border-slate-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {highlights.map((item) => (
@@ -121,7 +121,7 @@ export default function HomePage() {
                 <div className="text-2xl sm:text-3xl font-black text-white tracking-tight font-mono">
                   {item.stat}
                 </div>
-                <div className="text-xs font-semibold text-fiber-400 mt-1">{item.label}</div>
+                <div className="text-xs font-semibold text-cloud-400 mt-1">{item.label}</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">{item.sub}</div>
               </div>
             ))}
@@ -135,14 +135,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Narrative (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
                 Architecting Digital Bharat · Product Philosophy
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
-                IT &amp; Mobile Products Engineered on Carrier Transmission Infrastructure
+                IT &amp; Mobile Products Engineered for Enterprise Digital Infrastructure
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                <strong>RAPIDO INFRATEL LLP</strong> is neither a generic IT services company nor a carrier transmission network operator. Instead, we design and architect proprietary <strong>IT &amp; Mobile Products</strong> that ride directly upon high-capacity carrier transmission infrastructure to drive universal civic and commercial empowerment.
+                <strong>RAPIDO INFRATEL LLP</strong> is neither a generic IT services company nor a network infrastructure operator. Instead, we design and architect proprietary <strong>IT &amp; Mobile Products</strong> that drive universal civic and commercial empowerment across enterprise digital infrastructure.
               </p>
               <p className="text-sm text-slate-300 leading-relaxed">
                 Our product architecture draws its foundational inspiration from <em>Architecting Digital Bharat</em> under the core concept of <strong>universal human inclusion and equity</strong>—which asserts that actively involving and valuing every individual, regardless of race, color, or gender, directly strengthens communities and elevates the quality of life for everyone.
@@ -151,7 +151,7 @@ export default function HomePage() {
               {/* Equity & Inclusion Principles Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1.5">
-                  <div className="w-8 h-8 rounded-lg bg-fiber-500/10 text-fiber-400 flex items-center justify-center mb-1">
+                  <div className="w-8 h-8 rounded-lg bg-cloud-500/10 text-cloud-400 flex items-center justify-center mb-1">
                     <Users className="w-4 h-4" />
                   </div>
                   <h4 className="text-sm font-bold text-white">Universal Human Inclusion</h4>
@@ -177,7 +177,7 @@ export default function HomePage() {
               <div className="glass-card p-6 sm:p-7 rounded-2xl border border-slate-700/80 shadow-2xl relative space-y-5">
                 <div className="flex items-center justify-between border-b border-slate-800 pb-4">
                   <div>
-                    <span className="text-[10px] font-mono uppercase text-fiber-400 font-bold tracking-wider">
+                    <span className="text-[10px] font-mono uppercase text-cloud-400 font-bold tracking-wider">
                       Architectural Blueprint
                     </span>
                     <h3 className="text-base font-bold text-white mt-0.5">
@@ -193,13 +193,13 @@ export default function HomePage() {
                 <div className="space-y-2.5 text-xs">
                   <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
                     <div className="flex items-center gap-2.5">
-                      <Smartphone className="w-4 h-4 text-fiber-400" />
+                      <Smartphone className="w-4 h-4 text-cloud-400" />
                       <div>
                         <div className="font-semibold text-white">Tier 5: Universal Mobile &amp; AI Products</div>
                         <div className="text-[11px] text-slate-400">Voice-first Bhashini NLP (22 Languages)</div>
                       </div>
                     </div>
-                    <span className="text-[10px] font-mono text-fiber-400 font-bold">App Layer</span>
+                    <span className="text-[10px] font-mono text-cloud-400 font-bold">App Layer</span>
                   </div>
 
                   <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-center justify-between">
@@ -239,17 +239,17 @@ export default function HomePage() {
                     <div className="flex items-center gap-2.5">
                       <Radio className="w-4 h-4 text-amber-400" />
                       <div>
-                        <div className="font-semibold text-white">Tier 1: Carrier Transmission Infrastructure</div>
-                        <div className="text-[11px] text-slate-400">High-capacity optical transmission &amp; carrier telecom buses</div>
+                        <div className="font-semibold text-white">Tier 1: Enterprise Digital Infrastructure</div>
+                        <div className="text-[11px] text-slate-400">High-capacity digital network backbone</div>
                       </div>
                     </div>
-                    <span className="text-[10px] font-mono text-amber-400 font-bold">Carrier Network</span>
+                    <span className="text-[10px] font-mono text-amber-400 font-bold">Enterprise Network</span>
                   </div>
                 </div>
 
                 <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800">
                   <span>Methodology: PMP-Grade Systems Architecture</span>
-                  <Link href="/architecture" className="text-fiber-400 font-semibold hover:underline flex items-center gap-1">
+                  <Link href="/architecture" className="text-cloud-400 font-semibold hover:underline flex items-center gap-1">
                     <span>Full Spec</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
@@ -261,7 +261,7 @@ export default function HomePage() {
       </section>
 
       {/* 4. THE THREE VISION PILLARS */}
-      <section className="py-16 md:py-24 bg-telecom-900/60 border-y border-slate-800/80 relative">
+      <section className="py-16 md:py-24 bg-rapido-900/60 border-y border-slate-800/80 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
@@ -335,14 +335,14 @@ export default function HomePage() {
       <section className="py-20 md:py-28 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
               Full-Stack Digital Capabilities
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               AI, Mobile Applications &amp; Sovereign Cloud Hosting
             </h2>
             <p className="text-sm text-slate-300">
-              Beyond optical conduits, we deliver the intelligent applications, mobile interfaces, and sovereign hosting infrastructure that power modern digital ecosystems.
+              Beyond infrastructure, we deliver the intelligent applications, mobile interfaces, and sovereign hosting infrastructure that power modern digital ecosystems.
             </p>
           </div>
 
@@ -353,8 +353,8 @@ export default function HomePage() {
               <div className="relative rounded-xl p-5 bg-slate-950 border border-slate-800 font-mono text-xs space-y-3">
                 <div className="flex items-center justify-between border-b border-slate-800 pb-2">
                   <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-fiber-400 animate-ping" />
-                    <span className="text-fiber-400 font-bold">BHASHINI_NLP_ENGINE_v2.6</span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-cloud-400 animate-ping" />
+                    <span className="text-cloud-400 font-bold">BHASHINI_NLP_ENGINE_v2.6</span>
                   </div>
                   <span className="text-[10px] text-slate-500">22 Scheduled Languages</span>
                 </div>
@@ -369,7 +369,7 @@ export default function HomePage() {
                   </div>
                   <div className="p-2 rounded bg-slate-900 border border-slate-800 text-center">
                     <div className="text-slate-400">Equity Bias</div>
-                    <div className="text-fiber-400 font-bold mt-0.5">0.00% Zero-Bias</div>
+                    <div className="text-cloud-400 font-bold mt-0.5">0.00% Zero-Bias</div>
                   </div>
                 </div>
                 <div className="p-2.5 rounded bg-slate-900/60 border border-slate-800/80 text-[11px] text-slate-300 flex items-center justify-between">
@@ -380,7 +380,7 @@ export default function HomePage() {
 
               <div className="space-y-3">
                 <h3 className="text-xl font-bold text-white tracking-tight">
-                  Enterprise AI Models &amp; Multilingual Mobile Apps
+                  Advanced AI Models &amp; Multilingual Mobile Apps
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   We engineer intelligent workflow automation, predictive civic intelligence, and cloud-native iOS and Android applications. Incorporating Bhashini language models, our applications provide voice-first and multilingual accessibility across 22 scheduled Indian languages.
@@ -388,15 +388,15 @@ export default function HomePage() {
 
                 <ul className="space-y-2 text-xs text-slate-300 pt-2 border-t border-slate-800/80">
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400" />
                     <span>Citizen-facing mobile applications with sovereign biometric auth</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400" />
                     <span>Field-force utility tracking &amp; GIS mobile inspection tools</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400" />
                     <span>AI-powered automated workflow classification &amp; routing</span>
                   </li>
                 </ul>
@@ -404,7 +404,7 @@ export default function HomePage() {
 
               <Link
                 href="/solutions/mobile-products"
-                className="inline-flex items-center gap-2 text-xs font-bold text-fiber-400 hover:underline pt-2"
+                className="inline-flex items-center gap-2 text-xs font-bold text-cloud-400 hover:underline pt-2"
               >
                 <span>Learn about AI &amp; Mobile Solutions</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -452,7 +452,7 @@ export default function HomePage() {
                   “We are . in domain name”
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Under the established <strong>Rapido Hosting</strong> brand, we are one of the leading hosting service providers and domain name authorities. We deliver high-availability sovereign cloud hosting, managed VPS, edge compute enclaves, and instant domain registrations with carrier-grade DNS resilience.
+                  Under the established <strong>Rapido Hosting</strong> brand, we are one of the leading hosting service providers and domain name authorities. We deliver high-availability sovereign cloud hosting, managed VPS, edge compute enclaves, and instant domain registrations with enterprise-grade DNS resilience.
                 </p>
 
                 <ul className="space-y-2 text-xs text-slate-300 pt-2 border-t border-slate-800/80">
@@ -484,7 +484,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. CORPORATE HERITAGE & VERIFIED ENTITY CARD */}
-      <section className="py-12 bg-gradient-to-r from-telecom-950 via-slate-900 to-telecom-950 border-t border-slate-800">
+      <section className="py-12 bg-gradient-to-r from-rapido-950 via-slate-900 to-rapido-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-8 rounded-2xl border border-saffron-500/20 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
@@ -496,7 +496,7 @@ export default function HomePage() {
                   RAPIDO INFRATEL LLP · 15+ Years Brand Heritage
                 </h3>
                 <p className="text-xs text-slate-300 mt-1 max-w-3xl leading-relaxed">
-                  Rapido® brand established in <strong>2009</strong> with registered Trademark (renewed for the next 10 years). Incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), currently structured as <strong>RAPIDO INFRATEL LLP</strong>. Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.
+                  Rapido® brand established in <strong>2009</strong> with registered Trademark (®). Incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), currently structured as <strong>RAPIDO INFRATEL LLP</strong>. Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.
                 </p>
               </div>
             </div>
@@ -523,12 +523,12 @@ export default function HomePage() {
                 Initiate Project Scoping or Technical Consultation
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Connect directly with our solutions architecture team. We consult with enterprise organizations, carriers, and digital platforms to architect and deploy mission-critical IT &amp; mobile products.
+                Connect directly with our solutions architecture team. We consult with enterprise organizations, digital platform owners, and municipal bodies to architect and deploy mission-critical IT &amp; mobile products.
               </p>
 
               <div className="space-y-4 text-xs text-slate-300 pt-2">
                 <div className="flex items-center gap-3">
-                  <ShieldCheck className="w-4 h-4 text-fiber-400" />
+                  <ShieldCheck className="w-4 h-4 text-cloud-400" />
                   <span>Confidential NDA &amp; technical consultation protocols</span>
                 </div>
                 <div className="flex items-center gap-3">

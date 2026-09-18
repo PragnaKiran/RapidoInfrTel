@@ -84,7 +84,7 @@ export default function ContactForm({ initialSolution = "" }) {
   return (
     <div className="w-full glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 shadow-2xl relative overflow-hidden">
       {/* Glow highlight */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-fiber-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-cloud-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mb-6">
         <h3 className="text-xl font-bold text-white tracking-tight">
@@ -104,7 +104,7 @@ export default function ContactForm({ initialSolution = "" }) {
           </p>
           <button
             onClick={() => setStatus({ submitting: false, submitted: false, error: null })}
-            className="mt-2 text-xs font-semibold text-fiber-400 hover:text-fiber-300 underline"
+            className="mt-2 text-xs font-semibold text-cloud-400 hover:text-cloud-300 underline"
           >
             Submit another inquiry
           </button>
@@ -138,7 +138,7 @@ export default function ContactForm({ initialSolution = "" }) {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="e.g. Rajesh Patel"
-                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
+                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cloud-500 transition-colors"
               />
             </div>
 
@@ -154,7 +154,7 @@ export default function ContactForm({ initialSolution = "" }) {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+91 98765 43210"
-                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
+                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cloud-500 transition-colors"
               />
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function ContactForm({ initialSolution = "" }) {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="name@organization.com"
-                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
+                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cloud-500 transition-colors"
               />
             </div>
 
@@ -187,8 +187,8 @@ export default function ContactForm({ initialSolution = "" }) {
                 required
                 value={formData.organization}
                 onChange={handleChange}
-                placeholder="e.g. Smart City SPV / Carrier ISP / Enterprise"
-                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors"
+                placeholder="e.g. Smart City SPV / Enterprise / Government Agency"
+                className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cloud-500 transition-colors"
               />
             </div>
           </div>
@@ -202,13 +202,13 @@ export default function ContactForm({ initialSolution = "" }) {
               name="solution_interest"
               value={formData.solution_interest}
               onChange={handleChange}
-              className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-fiber-500 transition-colors"
+              className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-cloud-500 transition-colors"
             >
               <option value="Solutions Architecture & Project Management (PMP Grade)">
                 Solutions Architecture &amp; PMP-Grade Project Management
               </option>
-              <option value="Optical Fiber (OFC) & FTTH GPON Engineering">
-                Optical Fiber (OFC) &amp; FTTH GPON Transmission Network Design
+              <option value="Enterprise Digital Infrastructure Solutions">
+                Enterprise Digital Infrastructure Solutions
               </option>
               <option value="Enterprise AI & Machine Learning Workflows">
                 Enterprise AI &amp; Machine Learning Workflows (Bhashini-Ready)
@@ -245,8 +245,8 @@ export default function ContactForm({ initialSolution = "" }) {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              placeholder="Outline your route span, architectural requirements, mobile app scope, or cloud hosting specifications..."
-              className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-fiber-500 transition-colors resize-none"
+              placeholder="Outline your project scope, architectural requirements, mobile app scope, or cloud hosting specifications..."
+              className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cloud-500 transition-colors resize-none"
             />
           </div>
 
@@ -276,7 +276,7 @@ export default function ContactForm({ initialSolution = "" }) {
           </button>
 
           <p className="text-[11px] text-center text-slate-500">
-            Protected by relayBuoy enterprise webhook. Encrypted submission directly to Rapido InfraTel LLP solutions architecture committee.
+            Protected by relayBuoy enterprise webhook. Encrypted submission directly to RAPIDO INFRATEL LLP solutions architecture committee.
           </p>
         </form>
       )}

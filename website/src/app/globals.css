@@ -43,8 +43,8 @@ body {
   box-shadow: 0 12px 30px -10px rgba(14, 165, 233, 0.2);
 }
 
-/* Fiber glow effects */
-.fiber-glow {
+/* Cloud glow effects */
+.cloud-glow {
   box-shadow: 0 0 25px -5px rgba(14, 165, 233, 0.35);
 }
 
@@ -52,7 +52,7 @@ body {
   box-shadow: 0 0 25px -5px rgba(234, 99, 32, 0.35);
 }
 
-.gradient-text-fiber {
+.gradient-text-cloud {
   background: linear-gradient(135deg, #38BDF8 0%, #0EA5E9 50%, #0284C7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,7 +65,7 @@ body {
 }
 
 /* Grid & Dots background pattern */
-.bg-telecom-grid {
+.bg-rapido-grid {
   background-image: 
     linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(14, 165, 233, 0.05) 1px, transparent 1px);

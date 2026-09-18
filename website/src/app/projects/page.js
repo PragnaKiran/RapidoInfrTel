@@ -16,7 +16,7 @@ import {
 
 export const metadata = {
   title: "Case Studies & Blueprints | Architecting Digital Bharat",
-  description: "Representative blueprints and case studies of RAPIDO INFRATEL LLP: Metropolitan optical fiber rings, municipal GIS smart city systems, and open-access community Wi-Fi mesh deployments.",
+  description: "Representative blueprints and case studies of RAPIDO INFRATEL LLP: Enterprise digital infrastructure deployments, municipal GIS smart city systems, and open-access community Wi-Fi mesh deployments.",
 };
 
 export default function ProjectsPage() {
@@ -25,20 +25,20 @@ export default function ProjectsPage() {
       title: "Enterprise Digital Infrastructure & High-Throughput Platform Deployment",
       tagline: "Solutions Architecture & PMP-Grade Platform Management",
       location: "Ahmedabad – Gandhinagar Technology Corridor, Gujarat",
-      desc: "High-throughput solutions architecture and PMP-grade project management of a distributed enterprise platform operating across high-speed carrier optical infrastructure, connecting major IT parks, financial institutions, and municipal edge datacenters with sub-50ms failover resilience.",
+      desc: "High-throughput solutions architecture and PMP-grade project management of a distributed enterprise platform operating across high-speed enterprise digital infrastructure, connecting major IT parks, financial institutions, and municipal edge datacenters with sub-50ms failover resilience.",
       stats: [
-        { label: "Carrier Pipeline", value: "120+ km Interconnect" },
+        { label: "Digital Backbone", value: "120+ km Interconnect" },
         { label: "Throughput Capacity", value: "Multi-Terabit Bus" },
         { label: "POP Enclaves", value: "14 Cloud Nodes" },
         { label: "Ring Resilience", value: "Sub-50ms Failover" }
       ],
       deliverables: [
-        "Direct carrier transmission peering and Layer-2/Layer-3 software data bus",
+        "Direct enterprise network peering and Layer-2/Layer-3 software data bus",
         "Distributed enterprise platform deployment with active-active failover",
         "Sub-50ms service mesh resilience and comprehensive real-time telemetry"
       ],
       icon: Server,
-      color: "text-fiber-400"
+      color: "text-cloud-400"
     },
     {
       title: "Unified Municipal GIS & Smart City Command Center",
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
       title: "Open Community Wi-Fi Mesh & Civic Access Deployment",
       tagline: "Bridging the Peri-Urban & Rural Connectivity Divide",
       location: "Semi-Urban & Gram Panchayat Clusters",
-      desc: "Turnkey solutions engineering of an open-access community Wi-Fi mesh network. Connected local retail outlets (kirana shops), rural health clinics, and schools to high-speed GPON fiber backhauls with instant UPI micro-billing and multilingual support.",
+      desc: "Turnkey solutions engineering of an open-access community Wi-Fi mesh network. Connected local retail outlets (kirana shops), rural health clinics, and schools to high-speed enterprise digital backhauls with instant UPI micro-billing and multilingual support.",
       stats: [
         { label: "Wi-Fi Access Points", value: "240+ Outdoor APs" },
         { label: "Villages Covered", value: "35+ Panchayats" },
@@ -100,19 +100,19 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
             Architecting Digital Bharat · Track Record
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Case Studies &amp; <br />
-            <span className="gradient-text-fiber">Infrastructure Blueprints</span>
+            <span className="gradient-text-cloud">Infrastructure Blueprints</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Real-world deployments and reference engineering architectures demonstrating our capability in delivering solutions architecture and PMP-grade management of optical fiber backbones, smart city sensorization, and citizen empowerment grids.
+            Real-world deployments and reference engineering architectures demonstrating our capability in delivering solutions architecture and PMP-grade management of enterprise digital infrastructure, smart city sensorization, and citizen empowerment grids.
           </p>
         </div>
 
@@ -123,11 +123,11 @@ export default function ProjectsPage() {
             alt="Field Engineering Team Conducting Route Planning and GPS Surveying"
             className="w-full h-[320px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
           <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
             <div className="font-bold text-white text-sm">PMP-Grade Field Engineering &amp; Route Precision</div>
             <p className="text-slate-400 text-[11px] mt-1">
-              On-site optical route surveying, total station alignment, and underground duct GIS digitization ensuring zero-error execution.
+              On-site infrastructure route surveying, total station alignment, and underground duct GIS digitization ensuring zero-error execution.
             </p>
           </div>
         </div>
@@ -197,8 +197,44 @@ export default function ProjectsPage() {
           })}
         </div>
 
+        {/* PROJECT DELIVERY SHOWCASE */}
+        <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-cloud-400">PMP-Grade Project Governance</span>
+            <h3 className="text-2xl font-bold text-white tracking-tight">
+              Enterprise Project Execution &amp; SLA Assurance
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              From initial feasibility studies to active production handovers, our solutions architects manage every milestone with deterministic rigor. We enforce continuous testing, statutory compliance tracking, and transparent progress telemetry to ensure on-time, zero-defect delivery.
+            </p>
+            <ul className="space-y-2 text-xs text-slate-300">
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cloud-400" />
+                <span>Deterministic milestone governance compliant with PMP methodologies</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cloud-400" />
+                <span>Real-time executive dashboards reporting key performance indicators</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cloud-400" />
+                <span>Comprehensive acceptance testing and non-repudiation audit trails</span>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
+              <img
+                src="/images/home_hero_platforms.jpg"
+                alt="Executive solutions architecture committee reviewing enterprise project telemetry"
+                className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* BOTTOM CTA */}
-        <div className="p-8 rounded-2xl bg-gradient-to-r from-telecom-900 to-slate-900 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="p-8 rounded-2xl bg-gradient-to-r from-rapido-900 to-slate-900 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-bold text-white">Have a Similar Infrastructure Project in Scope?</h3>
             <p className="text-xs text-slate-400 mt-1">

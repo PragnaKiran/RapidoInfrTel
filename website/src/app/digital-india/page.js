@@ -18,7 +18,7 @@ import {
 
 export const metadata = {
   title: "Architecting Digital Bharat | Universal Human Inclusion & Equity",
-  description: "RAPIDO INFRATEL LLP architects proprietary IT & mobile products on carrier transmission infrastructure under the concept of universal human inclusion and equity, elevating quality of life across Bharat.",
+  description: "RAPIDO INFRATEL LLP architects proprietary IT & mobile products for enterprise digital infrastructure under the concept of universal human inclusion and equity, elevating quality of life across Bharat.",
 };
 
 export default function DigitalIndiaPage() {
@@ -26,14 +26,14 @@ export default function DigitalIndiaPage() {
     {
       name: "Universal High-Throughput Digital Pipelines & Platforms",
       badge: "Broadband Utility for All",
-      desc: "Architecting software platforms and solutions designs operating over carrier-neutral high-speed optical pipelines for rural Gram Panchayats and semi-urban clusters. We unlock telemedicine, rural e-learning, and digitized administrative workflows.",
+      desc: "Architecting software platforms and solutions designs operating over high-speed enterprise digital pipelines for rural Gram Panchayats and semi-urban clusters. We unlock telemedicine, rural e-learning, and digitized administrative workflows.",
       deliverables: [
-        "Carrier-interfaced digital pipeline design along state & rural corridors",
+        "Enterprise digital pipeline design along state & rural corridors",
         "Point of Presence (POP) cloud enclaves with solar & battery backups",
         "High-throughput civic utility routing with 99.99% uptime targets"
       ],
       icon: Radio,
-      color: "text-fiber-400"
+      color: "text-cloud-400"
     },
     {
       name: "Open Community Wi-Fi Mesh & Civic Grids",
@@ -41,7 +41,7 @@ export default function DigitalIndiaPage() {
       desc: "Architecting open-access community Wi-Fi mesh networks across local retail touchpoints, panchayat centers, and transit hubs to distribute affordable, equitable internet access to every citizen.",
       deliverables: [
         "Decentralized, open-standard authentication & token verification",
-        "Outdoor carrier-grade Wi-Fi 6 access point grid management",
+        "Outdoor enterprise-grade Wi-Fi 6 access point grid management",
         "Instant UPI-based micro-billing for accessible civic connectivity"
       ],
       icon: Wifi,
@@ -86,7 +86,7 @@ export default function DigitalIndiaPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
@@ -98,18 +98,33 @@ export default function DigitalIndiaPage() {
             <span className="gradient-text-saffron">Universal Human Inclusion &amp; Equity</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            We are neither an IT company nor a carrier transmission provider; we architect proprietary IT and mobile products designed to run on the transmission infrastructure of carrier companies. Inspired by the foundational paradigm of <strong>Architecting Digital Bharat</strong>, our product design is anchored in universal human inclusion and equity—actively involving and valuing every individual regardless of race, color, or gender, directly strengthening communities and elevating the quality of life for everyone.
+            We are neither an IT services firm nor a network infrastructure provider; we architect proprietary IT and mobile products designed to empower citizens through established enterprise digital networks. Inspired by the foundational paradigm of <strong>Architecting Digital Bharat</strong>, our product design is anchored in universal human inclusion and equity—actively involving and valuing every individual regardless of race, color, or gender, directly strengthening communities and elevating the quality of life for everyone.
           </p>
         </div>
 
-        {/* FEATURE IMAGE */}
+        {/* HERO BANNER */}
+        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+          <img
+            src="/images/banner_civic_inclusion.jpg"
+            alt="Digital Bharat Connectivity and Universal Inclusion"
+            className="w-full h-[280px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+            <div>
+              <span className="font-bold text-white">Architecting Digital Bharat</span>
+              <span className="hidden sm:inline text-slate-400"> · Sovereign IT &amp; Mobile Products for 1.4 Billion Citizens</span>
+            </div>
+            <span className="text-saffron-400 font-mono text-[11px] font-semibold">Universal Equity Paradigm</span>
+          </div>
+        </div>
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
             src="/images/equity_inclusion.jpg"
             alt="Universal Human Inclusion and Diverse Leadership in Technology Innovation"
             className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
           <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
             <div className="font-bold text-white text-sm">Universal Human Inclusion &amp; Equity in Technology</div>
             <p className="text-slate-400 text-[11px] mt-1">
@@ -131,7 +146,7 @@ export default function DigitalIndiaPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs text-slate-300">
-            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+            <div className="p-4 rounded-xl bg-rapido-950/80 border border-slate-800 space-y-2">
               <div className="font-bold text-white flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span>Zero Hidden Prejudices</span>
@@ -141,7 +156,7 @@ export default function DigitalIndiaPage() {
               </p>
             </div>
 
-            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+            <div className="p-4 rounded-xl bg-rapido-950/80 border border-slate-800 space-y-2">
               <div className="font-bold text-white flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span>Equal Opportunity &amp; Fair Treatment</span>
@@ -151,7 +166,7 @@ export default function DigitalIndiaPage() {
               </p>
             </div>
 
-            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+            <div className="p-4 rounded-xl bg-rapido-950/80 border border-slate-800 space-y-2">
               <div className="font-bold text-white flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span>Closing the Wage Gap</span>
@@ -161,7 +176,7 @@ export default function DigitalIndiaPage() {
               </p>
             </div>
 
-            <div className="p-4 rounded-xl bg-telecom-950/80 border border-slate-800 space-y-2">
+            <div className="p-4 rounded-xl bg-rapido-950/80 border border-slate-800 space-y-2">
               <div className="font-bold text-white flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span>Female Leadership in Tech</span>
@@ -217,7 +232,7 @@ export default function DigitalIndiaPage() {
                 <div className="pt-4">
                   <Link
                     href={`/contact?initiative=${encodeURIComponent(item.name)}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-fiber-400 hover:text-fiber-300 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cloud-400 hover:text-cloud-300 transition-colors"
                   >
                     <span>Inquire regarding solution design</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -229,7 +244,7 @@ export default function DigitalIndiaPage() {
         </div>
 
         {/* BOTTOM MOTTO BANNER */}
-        <div className="p-8 sm:p-12 rounded-2xl bg-gradient-to-r from-telecom-900 via-slate-900 to-telecom-950 border border-slate-800 text-center space-y-4">
+        <div className="p-8 sm:p-12 rounded-2xl bg-gradient-to-r from-rapido-900 via-slate-900 to-rapido-950 border border-slate-800 text-center space-y-4">
           <div className="w-12 h-12 rounded-full bg-saffron-500/10 border border-saffron-500/20 text-saffron-400 flex items-center justify-center mx-auto">
             <Sparkles className="w-6 h-6" />
           </div>
@@ -237,7 +252,7 @@ export default function DigitalIndiaPage() {
             “Architecting Digital Bharat — Involving and valuing every individual to strengthen communities and elevate the quality of life for everyone.”
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            RAPIDO INFRATEL LLP · Designing and architecting proprietary IT &amp; Mobile Products riding on the high-capacity infrastructure of carrier transmission networks.
+            RAPIDO INFRATEL LLP · Designing and architecting proprietary IT &amp; Mobile Products built for enterprise digital infrastructure.
           </p>
           <div className="pt-2">
             <Link

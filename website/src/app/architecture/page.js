@@ -20,28 +20,28 @@ import {
 
 export const metadata = {
   title: "Technology Architecture | Blueprints & Sovereign Cloud Stack",
-  description: "Explore the multi-tier engineering blueprints of RAPIDO INFRATEL LLP: Optical fiber backhaul topology, Zero-Trust network security, cryptographic trust stack, AI/Mobile gateways, and Rapido Hosting.",
+  description: "Explore the multi-tier engineering blueprints of RAPIDO INFRATEL LLP: Enterprise network topology, Zero-Trust network security, cryptographic trust stack, AI/Mobile gateways, and Rapido Hosting.",
 };
 
 export default function ArchitecturePage() {
   const architecturalTiers = [
     {
-      tier: "Tier 1: Carrier Transmission Interface & Telecommunications Bus",
-      tagline: "Carrier-Grade Peering & High-Throughput Optical Interface",
-      desc: "Software and hardware interface layer abstracting underlying carrier-neutral dark fiber, high-density optical corridors, and Dense Wavelength Division Multiplexing (DWDM) pipelines.",
+      tier: "Tier 1: Enterprise Digital Network Interface & Integration Bus",
+      tagline: "High-Throughput Network Interface & Enterprise Peering",
+      desc: "Software and hardware interface layer abstracting underlying high-capacity enterprise digital backbone networks and data pipelines.",
       specs: [
-        "Network Interconnect: Direct Layer-2/Layer-3 direct carrier transmission peering",
-        "Carrier Standards: Interfacing with ITU-T G.652.D single-mode carrier transmission rings",
-        "Throughput Capacity: Multi-terabit carrier routing interface with sub-millisecond queuing",
-        "Resilience Bus: Automated G.8032 ERPS transmission failover coordination"
+        "Network Interconnect: Direct Layer-2/Layer-3 enterprise network peering",
+        "Multi-gigabit ring topology interfaces with automated failover",
+        "Throughput Capacity: Multi-terabit routing interface with sub-millisecond queuing",
+        "Resilience Bus: Automated ring protection failover coordination"
       ],
       icon: Radio,
-      color: "text-fiber-400"
+      color: "text-cloud-400"
     },
     {
       tier: "Tier 2: Edge Aggregation & Cloud POP Facilities",
       tagline: "Ultra-Low Latency Edge Processing & Data Routing",
-      desc: "Strategically sited Point of Presence (POP) software gateways with redundant DC power, environmental monitoring, and carrier-grade optical edge routing nodes.",
+      desc: "Strategically sited Point of Presence (POP) software gateways with redundant DC power, environmental monitoring, and enterprise-grade edge routing nodes.",
       specs: [
         "Routing Protocol: BGP Anycast routing with sub-10ms localized packet steering",
         "Power Backup: N+1 SMPS Rectifiers with Lithium Ferro Phosphate (LFP) banks",
@@ -93,19 +93,19 @@ export default function ArchitecturePage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
             Architecting Digital Bharat · Technology Architecture
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Multi-Tier <br />
-            <span className="gradient-text-fiber">Technology Architecture</span>
+            <span className="gradient-text-cloud">Technology Architecture</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            A granular blueprint of the carrier transmission, edge processing, sovereign cryptographic trust, enterprise AI/mobile gateways, and high-availability cloud hosting tiers that power RAPIDO INFRATEL LLP products.
+            A granular blueprint of the enterprise network integration, edge processing, sovereign cryptographic trust, enterprise AI/mobile gateways, and high-availability cloud hosting tiers that power RAPIDO INFRATEL LLP products.
           </p>
         </div>
 
@@ -113,14 +113,14 @@ export default function ArchitecturePage() {
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
             src="/images/architecture_blueprint.jpg"
-            alt="National Fiber Network Topology & Operations Center Blueprint"
+            alt="Enterprise Network Topology & Technology Architecture Blueprint"
             className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
           <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-xl">
-            <div className="font-bold text-white text-sm">National Broadband Fiber Network Topology &amp; NOC Operations</div>
+            <div className="font-bold text-white text-sm">Enterprise Network Topology &amp; Edge Operations</div>
             <p className="text-slate-400 text-[11px] mt-1">
-              Architectural orchestration of carrier transmission backbones, edge aggregation POPs, and high-density optical routing rings.
+              Architectural orchestration of enterprise network backbones, edge aggregation POPs, and high-availability routing rings.
             </p>
           </div>
         </div>
@@ -159,14 +159,14 @@ export default function ArchitecturePage() {
 
                   <div className="lg:col-span-6 bg-slate-900/90 p-5 rounded-xl border border-slate-800 space-y-3">
                     <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                      <Terminal className="w-3.5 h-3.5 text-fiber-400" />
+                      <Terminal className="w-3.5 h-3.5 text-cloud-400" />
                       <span>Engineering Specifications &amp; Standards</span>
                     </div>
 
                     <ul className="space-y-2 text-xs text-slate-300">
                       {tier.specs.map((spec, sIdx) => (
                         <li key={sIdx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400 flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400 flex-shrink-0 mt-0.5" />
                           <span>{spec}</span>
                         </li>
                       ))}
@@ -189,7 +189,7 @@ export default function ArchitecturePage() {
                 Open-Access Community Wi-Fi Mesh Stack
               </h3>
               <p className="text-xs text-slate-400">
-                Carrier-Neutral Edge Aggregation &amp; Open-Standard Civic Protocol Interoperability
+                Network-Neutral Edge Aggregation &amp; Open-Standard Civic Protocol Interoperability
               </p>
             </div>
           </div>
@@ -218,10 +218,46 @@ export default function ArchitecturePage() {
           </div>
         </div>
 
+        {/* SOLUTIONS ARCHITECTURE REVIEW SHOWCASE */}
+        <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-cloud-400">PMP-Grade Systems Engineering</span>
+            <h3 className="text-2xl font-bold text-white tracking-tight">
+              Solutions Architecture Governance &amp; Multi-Tier Review
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Every systems design undergoes rigorous cross-functional peer reviews by our Solutions Architecture Committee in Ahmedabad. We enforce strict architectural separation between enterprise network interfaces, microservice pipelines, and cryptographic enclaves to guarantee multi-decade operational durability.
+            </p>
+            <ul className="space-y-2 text-xs text-slate-300">
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cloud-400" />
+                <span>Deterministic data bus latency evaluation under peak transactional load</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cloud-400" />
+                <span>Zero-trust cryptographic isolation across all external API boundaries</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-cloud-400" />
+                <span>Automated regression and chaos verification before production rollout</span>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
+              <img
+                src="/images/home_hero_architects.jpg"
+                alt="Executive solution architects reviewing cloud platform topologies in Ahmedabad"
+                className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* BOTTOM CTA */}
         <div className="text-center space-y-4 pt-6">
           <h3 className="text-xl font-bold text-white">
-            Need a Customized Blueprint for Your Municipal, Carrier or Cloud Network?
+            Need a Customized Blueprint for Your Municipal, Enterprise or Cloud Network?
           </h3>
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
             Our solutions architecture team prepares detailed Architecture Blueprints, Data Flow Topology Maps, and Systems Specifications.

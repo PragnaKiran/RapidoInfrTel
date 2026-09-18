@@ -8,15 +8,14 @@ export const metadata = {
     default: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture & IT/Mobile Products",
     template: "%s | RAPIDO INFRATEL LLP",
   },
-  description: "RAPIDO INFRATEL LLP. Designers of proprietary IT & Mobile Products used on carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
+  description: "RAPIDO INFRATEL LLP. Designers of proprietary IT & Mobile Products for enterprise digital infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
   keywords: [
     "rapido infratel llp",
     "architecting digital bharat",
     "universal human inclusion and equity",
-    "solutions architecture carrier infrastructure ahmedabad",
-    "pmp grade project management carrier networks",
-    "optical fiber network design OFC gujarat",
-    "it mobile products carrier transmission infrastructure",
+    "solutions architecture enterprise digital infrastructure ahmedabad",
+    "pmp grade project management enterprise platforms",
+    "it mobile products enterprise digital infrastructure",
     "ai mobile applications development",
     "rapido hosting domain name",
     "we are . in domain name",
@@ -38,7 +37,7 @@ export const metadata = {
   },
   openGraph: {
     title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
-    description: "Delivering resilient solutions architecture & PMP-grade project management of IT & Mobile products on carrier transmission infrastructure, enterprise AI, and sovereign cloud.",
+    description: "Delivering resilient solutions architecture & PMP-grade project management of IT & Mobile products on enterprise digital infrastructure, enterprise AI, and sovereign cloud.",
     url: "https://rapidoinfratel.com/",
     siteName: "RAPIDO INFRATEL LLP",
     images: [
@@ -55,7 +54,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
-    description: "Architecting Digital Bharat: Proprietary IT & Mobile products deployed on carrier transmission infrastructure under universal human inclusion and equity.",
+    description: "Architecting Digital Bharat: Proprietary IT & Mobile products on enterprise digital infrastructure under universal human inclusion and equity.",
     images: ["/Rapido-Logo.png"],
   },
   icons: {
@@ -83,7 +82,7 @@ const jsonLdData = {
       "url": "https://rapidoinfratel.com",
       "logo": "https://rapidoinfratel.com/Rapido-Logo.png",
       "image": "https://rapidoinfratel.com/Rapido-Logo.png",
-      "description": "Proprietary IT & Mobile Products engineered to ride upon carrier transmission infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
+      "description": "Proprietary IT & Mobile Products engineered for enterprise digital infrastructure under the foundational inspiration of Architecting Digital Bharat and universal human inclusion & equity.",
       "email": "contact@rapidoinfratel.com",
       "address": {
         "@type": "PostalAddress",
@@ -113,13 +112,13 @@ const jsonLdData = {
         "Universal Human Inclusion & Equity",
         "Solutions Architecture",
         "PMP Project Management",
-        "Carrier Transmission Engineering",
-        "Optical Fiber Cable (OFC) Network Design",
         "Enterprise AI & Mobile Applications",
         "Rapido Hosting & Domain Services",
         "Open-Access Community Wi-Fi Mesh Products",
         "Sovereign Cryptographic Trust Architecture",
         "Smart City Spatial GIS Intelligence",
+        "Enterprise Digital Infrastructure",
+        "Cloud-Native Platform Engineering",
       ],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -150,7 +149,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-telecom-950 text-slate-200 antialiased selection:bg-fiber-500 selection:text-telecom-950">
+      <body className="min-h-screen flex flex-col bg-rapido-950 text-slate-200 antialiased selection:bg-cloud-500 selection:text-rapido-950">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

@@ -23,10 +23,10 @@ export default function HeroSlider() {
     {
       id: 1,
       badge: "Architecting Digital Bharat · Solutions Architecture",
-      badgeColor: "text-fiber-400 bg-fiber-500/10 border-fiber-500/30",
+      badgeColor: "text-cloud-400 bg-cloud-500/10 border-cloud-500/30",
       headline: (
         <>
-          Delivering Resilient <span className="gradient-text-fiber">Solutions Architecture</span> &amp;{" "}
+          Delivering Resilient <span className="gradient-text-cloud">Solutions Architecture</span> &amp;{" "}
           <span className="gradient-text-saffron">PMP-Grade Management</span>
         </>
       ),
@@ -41,15 +41,15 @@ export default function HeroSlider() {
     {
       id: 2,
       badge: "Enterprise Cloud-Native Platforms · Digital Utilities",
-      badgeColor: "text-fiber-400 bg-fiber-500/10 border-fiber-500/30",
+      badgeColor: "text-cloud-400 bg-cloud-500/10 border-cloud-500/30",
       headline: (
         <>
-          Enterprise <span className="gradient-text-fiber">Cloud Platforms</span> &amp;{" "}
+          Enterprise <span className="gradient-text-cloud">Cloud Platforms</span> &amp;{" "}
           <span className="text-white">Digital Utilities</span>
         </>
       ),
       description:
-        "Engineering high-availability cloud-native microservices, fault-tolerant transaction pipelines, and distributed digital utility backbones running over carrier telecommunication networks.",
+        "Engineering high-availability cloud-native microservices, fault-tolerant transaction pipelines, and distributed digital utility backbones running over enterprise digital networks.",
       image: "/images/home_hero_platforms.jpg",
       imageAlt: "Executive solution architect and engineering team reviewing cloud platform topologies",
       primaryBtn: { text: "Cloud Platforms", href: "/solutions/enterprise-platforms" },
@@ -62,12 +62,12 @@ export default function HeroSlider() {
       badgeColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
       headline: (
         <>
-          Enterprise <span className="gradient-text-fiber">AI Systems</span> &amp;{" "}
+          Advanced <span className="gradient-text-cloud">AI Systems</span> &amp;{" "}
           <span className="gradient-text-saffron">Multilingual Mobile Apps</span>
         </>
       ),
       description:
-        "Architecting predictive data models, intelligent workflow pipelines, and mobile applications riding on high-capacity carrier transmission infrastructure, equipped with native 22-language translation.",
+        "Architecting predictive data models, intelligent workflow pipelines, and mobile applications running on high-capacity enterprise digital infrastructure, equipped with native 22-language translation.",
       image: "/images/hero_ai_mobile.jpg",
       imageAlt: "Software engineers developing AI models and mobile applications",
       primaryBtn: { text: "Mobile Applications", href: "/solutions/mobile-products" },
@@ -131,12 +131,12 @@ export default function HeroSlider() {
 
   return (
     <div 
-      className="relative overflow-hidden bg-telecom-950 min-h-[600px] md:min-h-[665px] flex items-center"
+      className="relative overflow-hidden bg-rapido-950 min-h-[600px] md:min-h-[665px] flex items-center"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Background ambient lighting */}
-      <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-fiber-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-cloud-500/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] bg-saffron-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Slide Container */}
@@ -157,7 +157,7 @@ export default function HeroSlider() {
                 <div className="lg:col-span-7 space-y-5">
                   {/* Badge */}
                   <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs font-semibold">
-                    <span className="w-2 h-2 rounded-full bg-fiber-400 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-cloud-400 animate-pulse" />
                     <span className={slide.badgeColor}>{slide.badge}</span>
                   </div>
 
@@ -175,7 +175,7 @@ export default function HeroSlider() {
                   <div className="flex flex-wrap items-center gap-4 pt-2">
                     <Link
                       href={slide.primaryBtn.href}
-                      className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-telecom-950 bg-fiber-400 hover:bg-fiber-300 shadow-xl shadow-fiber-500/20 transition-all flex items-center gap-2"
+                      className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-rapido-950 bg-cloud-400 hover:bg-cloud-300 shadow-xl shadow-cloud-500/20 transition-all flex items-center gap-2"
                     >
                       <span>{slide.primaryBtn.text}</span>
                       <ArrowRight className="w-4 h-4" />
@@ -194,7 +194,7 @@ export default function HeroSlider() {
                       {slide.metric.val}
                     </div>
                     <div className="text-xs">
-                      <div className="font-semibold text-fiber-400">{slide.metric.label}</div>
+                      <div className="font-semibold text-cloud-400">{slide.metric.label}</div>
                       <div className="text-slate-400 text-[11px]">{slide.metric.sub}</div>
                     </div>
                   </div>
@@ -208,7 +208,7 @@ export default function HeroSlider() {
                       alt={slide.imageAlt}
                       className="w-full h-[320px] sm:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-telecom-950 via-telecom-950/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
                     
                     {/* Bottom overlay badge */}
                     <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs flex items-center justify-between">
@@ -232,7 +232,7 @@ export default function HeroSlider() {
                 onClick={() => setCurrent(idx)}
                 className={`transition-all duration-300 rounded-full h-2 ${
                   idx === current
-                    ? "w-8 bg-fiber-400"
+                    ? "w-8 bg-cloud-400"
                     : "w-2.5 bg-slate-700 hover:bg-slate-500"
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}

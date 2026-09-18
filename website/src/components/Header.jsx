@@ -103,16 +103,16 @@ export default function Header() {
   return (
     <>
       {/* 1. TOP STATUTORY & ENTITY BAR */}
-      <div className="bg-telecom-950 border-b border-slate-800/80 text-[11px] text-slate-300 py-1.5 px-4">
+      <div className="bg-rapido-950 border-b border-slate-800/80 text-[11px] text-slate-300 py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
           {/* Entity Status */}
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
             <span className="inline-flex items-center gap-1.5 font-semibold text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
               <ShieldCheck className="w-3.5 h-3.5" />
-              Official Corporate Platform
+              A Legacy of Trust
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
-            <span className="text-fiber-400 font-semibold tracking-wide hidden lg:inline">
+            <span className="text-cloud-400 font-semibold tracking-wide hidden lg:inline">
               Architecting Digital Bharat
             </span>
           </div>
@@ -121,9 +121,9 @@ export default function Header() {
           <div className="flex items-center gap-4 flex-wrap justify-center md:justify-end">
             <a 
               href="mailto:contact@rapidoinfratel.com" 
-              className="inline-flex items-center gap-1.5 text-slate-300 hover:text-fiber-400 transition-colors"
+              className="inline-flex items-center gap-1.5 text-slate-300 hover:text-cloud-400 transition-colors"
             >
-              <Mail className="w-3 h-3 text-fiber-400" />
+              <Mail className="w-3 h-3 text-cloud-400" />
               <span>contact@rapidoinfratel.com</span>
             </a>
             <span className="text-slate-600 hidden sm:inline">|</span>
@@ -139,8 +139,8 @@ export default function Header() {
       <header
         className={`w-full z-50 transition-all duration-300 ${
           isSticky
-            ? "fixed top-0 left-0 right-0 glass-nav py-3.5 shadow-2xl shadow-black/50 border-b border-fiber-500/20"
-            : "relative bg-telecom-900/90 py-5 border-b border-slate-800/60"
+            ? "fixed top-0 left-0 right-0 glass-nav py-3.5 shadow-2xl shadow-black/50 border-b border-cloud-500/20"
+            : "relative bg-rapido-900/90 py-5 border-b border-slate-800/60"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -164,7 +164,7 @@ export default function Header() {
                       href={link.href}
                       className={`inline-flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                         isActive
-                          ? "text-fiber-400 bg-fiber-500/10"
+                          ? "text-cloud-400 bg-cloud-500/10"
                           : "text-slate-200 hover:text-white hover:bg-slate-800/50"
                       }`}
                     >
@@ -180,7 +180,7 @@ export default function Header() {
                           : "opacity-0 invisible -translate-y-2 pointer-events-none"
                       }`}
                     >
-                      <div className="p-2 rounded-xl bg-telecom-950/95 backdrop-blur-2xl border border-slate-700/80 shadow-2xl shadow-black/80 w-80 space-y-1">
+                      <div className="p-2 rounded-xl bg-rapido-950/95 backdrop-blur-2xl border border-slate-700/80 shadow-2xl shadow-black/80 w-80 space-y-1">
                         {link.subItems.map((sub) => {
                           const Icon = sub.icon;
                           return (
@@ -189,11 +189,11 @@ export default function Header() {
                               href={sub.href}
                               className="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/70 transition-colors group/sub"
                             >
-                              <div className="p-2 rounded-lg bg-fiber-500/10 text-fiber-400 border border-fiber-500/20 group-hover/sub:bg-fiber-500 group-hover/sub:text-telecom-950 transition-colors">
+                              <div className="p-2 rounded-lg bg-cloud-500/10 text-cloud-400 border border-cloud-500/20 group-hover/sub:bg-cloud-500 group-hover/sub:text-rapido-950 transition-colors">
                                 <Icon className="w-4 h-4" />
                               </div>
                               <div>
-                                <div className="text-xs font-semibold text-white group-hover/sub:text-fiber-300">
+                                <div className="text-xs font-semibold text-white group-hover/sub:text-cloud-300">
                                   {sub.title}
                                 </div>
                                 <div className="text-[11px] text-slate-400 line-clamp-1 mt-0.5">
@@ -215,7 +215,7 @@ export default function Header() {
                   href={link.href}
                   className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                     isActive
-                      ? "text-fiber-400 bg-fiber-500/10 font-semibold"
+                      ? "text-cloud-400 bg-cloud-500/10 font-semibold"
                       : "text-slate-200 hover:text-white hover:bg-slate-800/50"
                   }`}
                 >
@@ -248,12 +248,12 @@ export default function Header() {
 
         {/* 3. MOBILE SLIDE-DOWN DRAWER */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-telecom-950/95 backdrop-blur-2xl border-b border-slate-800 px-4 pt-4 pb-6 mt-3 space-y-2">
+          <div className="lg:hidden bg-rapido-950/95 backdrop-blur-2xl border-b border-slate-800 px-4 pt-4 pb-6 mt-3 space-y-2">
             {navLinks.map((link) => (
               <div key={link.name}>
                 <Link
                   href={link.href}
-                  className="block px-3 py-2 text-base font-medium text-slate-200 hover:text-fiber-400 hover:bg-slate-900/60 rounded-lg"
+                  className="block px-3 py-2 text-base font-medium text-slate-200 hover:text-cloud-400 hover:bg-slate-900/60 rounded-lg"
                 >
                   {link.name}
                 </Link>
@@ -263,7 +263,7 @@ export default function Header() {
                       <Link
                         key={sub.title}
                         href={sub.href}
-                        className="block py-1.5 text-xs text-slate-400 hover:text-fiber-300"
+                        className="block py-1.5 text-xs text-slate-400 hover:text-cloud-300"
                       >
                         {sub.title}
                       </Link>

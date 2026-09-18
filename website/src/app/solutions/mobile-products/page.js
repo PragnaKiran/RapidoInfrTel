@@ -16,7 +16,7 @@ import {
 
 export const metadata = {
   title: "Mobile Applications & Intelligent Mobility | RAPIDO INFRATEL LLP",
-  description: "Native iOS and Android enterprise applications, offline-first field synchronization engines, and citizen-facing mobile solutions engineered on carrier network pipelines.",
+  description: "Native iOS and Android enterprise applications, offline-first field synchronization engines, and citizen-facing mobile solutions engineered on enterprise digital networks.",
 };
 
 export default function MobileProductsPage() {
@@ -39,7 +39,7 @@ export default function MobileProductsPage() {
       points: [
         "Encrypted SQLite / Realm local storage on mobile endpoints",
         "Conflict-free replicated data types (CRDT) for conflictless multi-user sync",
-        "Automated background sync upon carrier signal restoration",
+        "Automated background sync upon network signal restoration",
         "Optimized payload compression reducing mobile data bandwidth by up to 70%"
       ]
     },
@@ -75,20 +75,39 @@ export default function MobileProductsPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header Breadcrumb & Title */}
-        <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Architecting Digital Bharat · Mobile Products</span>
+        <div className="space-y-6">
+          <div className="max-w-3xl space-y-4">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span>Architecting Digital Bharat · Mobile Products</span>
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+              Intelligent Mobility &amp; <span className="gradient-text-cloud">Native Mobile Applications</span>
+            </h1>
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              We engineer proprietary mobile applications and field operations engines that run directly on high-capacity enterprise digital networks, delivering inclusive multilingual citizen experiences and resilient offline-first utility operations.
+            </p>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Intelligent Mobility &amp; <span className="gradient-text-fiber">Native Mobile Applications</span>
-          </h1>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            We engineer proprietary mobile applications and field operations engines that ride directly on high-capacity carrier transmission backbones, delivering inclusive multilingual citizen experiences and resilient offline-first utility operations.
-          </p>
+
+          {/* Banner Image */}
+          <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+            <img
+              src="/images/banner_mobile_products.jpg"
+              alt="Multilingual Indian Mobile Application Interfaces and Touch UI"
+              className="w-full h-[260px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+              <div>
+                <span className="font-bold text-white">Multilingual Mobile UI Engineering</span>
+                <span className="hidden sm:inline text-slate-400"> · Native Swift &amp; Kotlin with 22 Scheduled Indian Languages</span>
+              </div>
+              <span className="text-emerald-400 font-mono text-[11px] font-semibold">Bhashini Voice Integration</span>
+            </div>
+          </div>
         </div>
 
         {/* Telemetry Strip */}
@@ -100,6 +119,42 @@ export default function MobileProductsPage() {
               <div className="text-[11px] text-slate-400 mt-0.5">{m.sub}</div>
             </div>
           ))}
+        </div>
+
+        {/* Explanatory Content Section with Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-card p-6 sm:p-8 rounded-2xl border border-slate-800">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">Mobile Engineering Studio</span>
+            <h2 className="text-2xl font-bold text-white tracking-tight">
+              Collaborative Engineering &amp; Offline-First Delta Sync
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              At our Ahmedabad software engineering lab, our mobile architects develop and test native mobile applications under real-world connectivity constraints. We implement conflict-free replicated data types (CRDTs) to ensure mobile crews in rural and semi-urban areas can record inspections, process payments, and capture geospatial coordinates offline with automatic sync upon reconnection.
+            </p>
+            <ul className="space-y-2 text-xs text-slate-300">
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Zero-loss encrypted local databases with background delta sync</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Touch-optimized intuitive workflows for diverse literacy demographics</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Direct hardware camera EXIF geo-tagging for municipal verification</span>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
+              <img
+                src="/images/content_mobile_products.jpg"
+                alt="Mobile engineering studio team developing responsive user interfaces in Ahmedabad"
+                className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Core Modules Grid */}
@@ -156,7 +211,7 @@ export default function MobileProductsPage() {
             </Link>
             <Link
               href="/contact"
-              className="px-5 py-3 rounded-xl text-xs font-bold text-telecom-950 bg-emerald-400 hover:bg-emerald-300 shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2"
+              className="px-5 py-3 rounded-xl text-xs font-bold text-rapido-950 bg-emerald-400 hover:bg-emerald-300 shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2"
             >
               <span>Consult Mobile Architects</span>
               <ArrowRight className="w-4 h-4" />

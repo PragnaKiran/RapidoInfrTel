@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        telecom: {
+        rapido: {
           950: "#060D17",
           900: "#0A192F",
           850: "#0D1F38",
@@ -16,7 +16,7 @@ module.exports = {
           700: "#1E3A5F",
           600: "#2B4C7E",
         },
-        fiber: {
+        cloud: {
           300: "#7DD3FC",
           400: "#38BDF8",
           500: "#0EA5E9",

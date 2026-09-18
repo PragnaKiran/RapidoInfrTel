@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header */}
         <div className="max-w-3xl space-y-4">
@@ -34,6 +34,23 @@ export default function ContactPage() {
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
             Submit your infrastructure parameters, municipal scope, AI/mobile application briefs, or enterprise hosting inquiries directly to the RAPIDO INFRATEL LLP solutions architecture team.
           </p>
+        </div>
+
+        {/* HERO BANNER IMAGE */}
+        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+          <img
+            src="/images/about_banner.jpg"
+            alt="Rapido Solutions Architecture Studio in Ahmedabad"
+            className="w-full h-[240px] sm:h-[340px] object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+            <div>
+              <span className="font-bold text-white">Solutions Architecture Studio · Ahmedabad</span>
+              <span className="hidden sm:inline text-slate-400"> · Parimal Garden Cross Road, C.G. Road Tech Corridor</span>
+            </div>
+            <span className="text-saffron-400 font-mono text-[11px] font-semibold">Direct Corporate Channel</span>
+          </div>
         </div>
 
         {/* MAIN LAYOUT: CONTACT DETAILS + FORM */}
@@ -62,10 +79,10 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Mail className="w-4 h-4 text-fiber-400 flex-shrink-0 mt-0.5" />
+                  <Mail className="w-4 h-4 text-cloud-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block mb-0.5">Primary Contact Email:</strong>
-                    <a href="mailto:contact@rapidoinfratel.com" className="text-fiber-400 hover:underline">
+                    <a href="mailto:contact@rapidoinfratel.com" className="text-cloud-400 hover:underline">
                       contact@rapidoinfratel.com
                     </a>
                   </div>
@@ -91,7 +108,7 @@ export default function ContactPage() {
                   <ShieldCheck className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block mb-0.5">Corporate Heritage:</strong>
-                    <span>Rapido® brand established 2009 (Registered Trademark renewed for 10 years)</span>
+                    <span>Rapido® brand established 2009 (Registered Trademark ®)</span>
                   </div>
                 </div>
               </div>
@@ -104,17 +121,31 @@ export default function ContactPage() {
                 <span>Technical Scoping Protocols</span>
               </h4>
               <p className="text-slate-400 leading-relaxed">
-                For formal technical scoping, municipal utility specifications, or carrier route blueprints, you may initiate submission via the form or email project documentation directly to <strong className="text-white">contact@rapidoinfratel.com</strong>.
+                For formal technical scoping, municipal utility specifications, or infrastructure project specifications, you may initiate submission via the form or email project documentation directly to <strong className="text-white">contact@rapidoinfratel.com</strong>.
               </p>
-              <div className="flex items-center gap-2 text-fiber-400 pt-1">
+              <div className="flex items-center gap-2 text-cloud-400 pt-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Sub-24h turnaround on formal project inquiries</span>
               </div>
             </div>
 
+            {/* Consultation Committee Image */}
+            <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-xl relative group">
+              <img
+                src="/images/about_boardroom.jpg"
+                alt="Rapido Solutions Architecture Consultation Committee in Ahmedabad"
+                className="w-full h-[200px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-lg bg-slate-900/90 backdrop-blur-md border border-slate-800 text-[11px] text-slate-300">
+                <span className="font-bold text-white">Solutions Architecture Consultation Desk</span>
+                <span className="block text-slate-400 text-[10px]">C.G. Road Technology Office · Ahmedabad</span>
+              </div>
+            </div>
+
             {/* Location Reference */}
             <div className="rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 h-48 relative flex items-center justify-center p-4 text-center">
-              <div className="absolute inset-0 bg-telecom-grid opacity-60 pointer-events-none" />
+              <div className="absolute inset-0 bg-rapido-grid opacity-60 pointer-events-none" />
               <div className="relative z-10 space-y-2">
                 <MapPin className="w-8 h-8 text-saffron-400 mx-auto animate-bounce" />
                 <div className="text-xs font-bold text-white">Parimal Garden Cross Road, C.G. Road</div>
@@ -123,7 +154,7 @@ export default function ContactPage() {
                   href="https://maps.google.com/?q=Rangkrupa+Complex+Parimal+Garden+Cross+Road+CG+Road+Ahmedabad"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[11px] text-fiber-400 hover:underline pt-1"
+                  className="inline-flex items-center gap-1 text-[11px] text-cloud-400 hover:underline pt-1"
                 >
                   <span>Open in Google Maps</span>
                   <ExternalLink className="w-3 h-3" />

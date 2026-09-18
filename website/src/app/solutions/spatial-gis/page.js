@@ -74,20 +74,39 @@ export default function SpatialGisPage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header Breadcrumb & Title */}
-        <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-saffron-400 animate-pulse" />
-            <span>Architecting Digital Bharat · Spatial Intelligence</span>
+        <div className="space-y-6">
+          <div className="max-w-3xl space-y-4">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-saffron-400 animate-pulse" />
+              <span>Architecting Digital Bharat · Spatial Intelligence</span>
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+              Municipal <span className="gradient-text-saffron">Spatial GIS</span> &amp; Urban Sensor Telemetry
+            </h1>
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              We architect municipal spatial GIS platforms, digital twin layers, and high-frequency IoT sensor telemetry engines that provide city administrators with complete real-time visibility over urban utilities and public infrastructure.
+            </p>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Municipal <span className="gradient-text-saffron">Spatial GIS</span> &amp; Urban Sensor Telemetry
-          </h1>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            We architect municipal spatial GIS platforms, digital twin layers, and high-frequency IoT sensor telemetry engines that provide city administrators with complete real-time visibility over urban utilities and public infrastructure.
-          </p>
+
+          {/* Banner Image */}
+          <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+            <img
+              src="/images/banner_spatial_gis.jpg"
+              alt="3D GIS Satellite and Drone Digital Twin of Urban Utilities"
+              className="w-full h-[260px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+              <div>
+                <span className="font-bold text-white">Geospatial Digital Twin &amp; Subsurface Mapping</span>
+                <span className="hidden sm:inline text-slate-400"> · Drone LIDAR &amp; Sensor Telemetry Overlay</span>
+              </div>
+              <span className="text-saffron-400 font-mono text-[11px] font-semibold">Sub-Meter Precision</span>
+            </div>
+          </div>
         </div>
 
         {/* Telemetry Strip */}
@@ -101,10 +120,46 @@ export default function SpatialGisPage() {
           ))}
         </div>
 
+        {/* Explanatory Content Section with Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-card p-6 sm:p-8 rounded-2xl border border-slate-800">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-cloud-400">Urban Engineering Practice</span>
+            <h2 className="text-2xl font-bold text-white tracking-tight">
+              AMC Licensed Developers &amp; Municipal Infrastructure GIS
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Operating as accredited <strong>AMC Licensed Developers</strong> in Ahmedabad, our spatial engineering team fuses high-density drone photogrammetry with ground-penetrating radar data. We deliver synchronized digital twins that enable municipal engineers to locate underground pipelines, verify Right-of-Way (RoW) alignments, and prevent accidental excavation strikes.
+            </p>
+            <ul className="space-y-2 text-xs text-slate-300">
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-saffron-400" />
+                <span>Underground utility clash detection and 3D subsurface models</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-saffron-400" />
+                <span>Real-time IoT telemetry from water, gas, and power grid nodes</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-saffron-400" />
+                <span>Automated spatial ticket dispatch for municipal ward maintenance</span>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
+              <img
+                src="/images/content_spatial_gis.jpg"
+                alt="AMC Geospatial surveying team reviewing 3D LIDAR models in Ahmedabad"
+                className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Capabilities */}
         <div className="space-y-6">
           <div className="border-b border-slate-800 pb-4">
-            <span className="text-xs font-bold uppercase tracking-wider text-fiber-400">Geospatial Architecture</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-cloud-400">Geospatial Architecture</span>
             <h2 className="text-2xl font-bold text-white mt-1">
               Geospatial Layers, Sensors &amp; Digital Twin Engines
             </h2>
@@ -155,7 +210,7 @@ export default function SpatialGisPage() {
             </Link>
             <Link
               href="/contact"
-              className="px-5 py-3 rounded-xl text-xs font-bold text-telecom-950 bg-saffron-400 hover:bg-saffron-300 shadow-lg shadow-saffron-500/20 transition-all flex items-center gap-2"
+              className="px-5 py-3 rounded-xl text-xs font-bold text-rapido-950 bg-saffron-400 hover:bg-saffron-300 shadow-lg shadow-saffron-500/20 transition-all flex items-center gap-2"
             >
               <span>Consult GIS Architects</span>
               <ArrowRight className="w-4 h-4" />

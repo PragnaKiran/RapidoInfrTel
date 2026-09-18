@@ -18,9 +18,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-telecom-950 border-t border-slate-800 text-slate-400 overflow-hidden">
+    <footer className="relative bg-rapido-950 border-t border-slate-800 text-slate-400 overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-fiber-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-cloud-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-saffron-500/5 rounded-full blur-3xl pointer-events-none" />
 
       {/* 1. TOP STATUTORY INSIGNIA BADGE */}
@@ -47,7 +47,7 @@ export default function Footer() {
             <span className="hidden sm:inline">Official Communications:</span>
             <a
               href="mailto:contact@rapidoinfratel.com"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 text-fiber-400 border border-slate-700 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 text-cloud-400 border border-slate-700 transition-colors"
             >
               <Mail className="w-3.5 h-3.5" />
               <span>contact@rapidoinfratel.com</span>
@@ -63,7 +63,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <RapidoLogo size="default" />
             <p className="text-xs text-slate-300 leading-relaxed pr-6">
-              RAPIDO INFRATEL LLP designs and architects proprietary IT &amp; Mobile Products engineered to ride upon the high-capacity infrastructure of carrier transmission networks. Inspired by the foundational paradigm of <em>Architecting Digital Bharat</em>, our product engineering is anchored in universal human inclusion and equity—actively valuing every individual, eliminating systemic biases, and elevating diverse leadership.
+              RAPIDO INFRATEL LLP designs and architects proprietary IT &amp; Mobile Products engineered for enterprise digital infrastructure. Inspired by the foundational paradigm of <em>Architecting Digital Bharat</em>, our product engineering is anchored in universal human inclusion and equity—actively valuing every individual, eliminating systemic biases, and elevating diverse leadership.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">
@@ -74,9 +74,9 @@ export default function Footer() {
                 </span>
               </div>
               <div className="flex items-start gap-2.5">
-                <ShieldCheck className="w-4 h-4 text-fiber-400 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 text-cloud-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Trademark renewed for 10 years) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (Ahmedabad, Gujarat)
+                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Registered Trademark ®) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (Ahmedabad, Gujarat)
                 </span>
               </div>
             </div>
@@ -85,42 +85,42 @@ export default function Footer() {
           {/* Col 3: Core Architectural Pillars */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
-              <Layers className="w-3.5 h-3.5 text-fiber-400" />
+              <Layers className="w-3.5 h-3.5 text-cloud-400" />
               <span>Solutions Architecture</span>
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/solutions/enterprise-platforms" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/enterprise-platforms" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Enterprise Cloud Platforms</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/mobile-products" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/mobile-products" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Mobile Applications &amp; Mobility</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/ai-intelligence" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/ai-intelligence" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Sovereign AI &amp; Intelligence</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/spatial-gis" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/spatial-gis" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Municipal Spatial GIS</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/civic-inclusion" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/civic-inclusion" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Universal Human Inclusion</span>
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/rapido-hosting" className="hover:text-fiber-300 transition-colors flex items-center gap-1">
+                <Link href="/solutions/rapido-hosting" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
                   <span>Rapido Cloud Hosting</span>
                 </Link>
@@ -176,7 +176,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-xs text-slate-400">
               <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
-                <div className="text-fiber-400 font-bold">“We are . in domain name”</div>
+                <div className="text-cloud-400 font-bold">“We are . in domain name”</div>
                 <div className="text-[11px] text-slate-300 mt-1">
                   Leading domain name registrar and high-availability sovereign enterprise cloud hosting infrastructure.
                 </div>
@@ -209,11 +209,11 @@ export default function Footer() {
           <div className="flex items-center gap-4 text-slate-400">
             <span>Ahmedabad, Gujarat</span>
             <span>·</span>
-            <Link href="/about" className="hover:text-fiber-300">
+            <Link href="/about" className="hover:text-cloud-300">
               About Practice
             </Link>
             <span>·</span>
-            <Link href="/contact" className="text-fiber-400 hover:underline">
+            <Link href="/contact" className="text-cloud-400 hover:underline">
               Corporate Inquiries
             </Link>
           </div>

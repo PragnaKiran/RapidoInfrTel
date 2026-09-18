@@ -8,9 +8,9 @@ import {
   ArrowRight, 
   Users, 
   Activity, 
-  Layers,
-  Lock,
-  Share2
+  Layers, 
+  Lock, 
+  Share2 
 } from "lucide-react";
 
 export const metadata = {
@@ -54,8 +54,8 @@ export default function AiIntelligencePage() {
       ]
     },
     {
-      title: "Edge AI Inference on Carrier-Interface Points",
-      desc: "Deploying quantized neural networks directly to carrier edge datacenters and small-cell compute units, minimizing backhaul bandwidth and ensuring localized privacy.",
+      title: "Edge AI Inference at Enterprise Network Points",
+      desc: "Deploying quantized neural networks directly to enterprise edge datacenters and distributed compute units, minimizing backhaul bandwidth and ensuring localized privacy.",
       icon: Activity,
       points: [
         "INT8 / FP16 quantized model deployment on edge server clusters",
@@ -74,20 +74,39 @@ export default function AiIntelligencePage() {
   ];
 
   return (
-    <div className="bg-telecom-950 py-10 md:py-16">
+    <div className="bg-rapido-950 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Header Breadcrumb & Title */}
-        <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-fiber-400 bg-fiber-500/10 border border-fiber-500/20 px-3 py-1 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-fiber-400 animate-pulse" />
-            <span>Architecting Digital Bharat · Sovereign AI</span>
+        <div className="space-y-6">
+          <div className="max-w-3xl space-y-4">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-cloud-400 animate-pulse" />
+              <span>Architecting Digital Bharat · Sovereign AI</span>
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+              Sovereign AI &amp; <span className="gradient-text-cloud">Multilingual Intelligence</span>
+            </h1>
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              We architect sovereign predictive AI systems, automated workflow intelligence, and 22-language Bhashini NLP models engineered under universal human equity to empower every citizen in their native tongue with zero bias.
+            </p>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Sovereign AI &amp; <span className="gradient-text-fiber">Multilingual Intelligence</span>
-          </h1>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            We architect sovereign predictive AI systems, automated workflow intelligence, and 22-language Bhashini NLP models engineered under universal human equity to empower every citizen in their native tongue with zero bias.
-          </p>
+
+          {/* Banner Image */}
+          <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+            <img
+              src="/images/banner_ai_intelligence.jpg"
+              alt="Neural Network Architecture and Multidimensional Tensor Embeddings"
+              className="w-full h-[260px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+              <div>
+                <span className="font-bold text-white">Sovereign Deep Learning &amp; Tensor Vector Spaces</span>
+                <span className="hidden sm:inline text-slate-400"> · Audited Bias-Free Model Architecture</span>
+              </div>
+              <span className="text-cloud-400 font-mono text-[11px] font-semibold">Sub-120ms Edge Inference</span>
+            </div>
+          </div>
         </div>
 
         {/* Telemetry Strip */}
@@ -95,10 +114,46 @@ export default function AiIntelligencePage() {
           {highlights.map((h) => (
             <div key={h.label} className="glass-card p-5 rounded-xl border border-slate-800">
               <div className="text-xl sm:text-2xl font-black text-white font-mono">{h.val}</div>
-              <div className="text-xs font-semibold text-fiber-400 mt-1">{h.label}</div>
+              <div className="text-xs font-semibold text-cloud-400 mt-1">{h.label}</div>
               <div className="text-[11px] text-slate-400 mt-0.5">{h.sub}</div>
             </div>
           ))}
+        </div>
+
+        {/* Explanatory Content Section with Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-card p-6 sm:p-8 rounded-2xl border border-slate-800">
+          <div className="lg:col-span-6 space-y-4">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">Civic Analytics &amp; Machine Learning</span>
+            <h2 className="text-2xl font-bold text-white tracking-tight">
+              Predictive Analytics &amp; Natural Language Governance
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Our AI intelligence practice bridges deep learning research with production-grade civic delivery. By continuously evaluating model fairness across demographic cross-sections, our NLP models transcribe and summarize citizen inquiries across 22 scheduled languages with transparent auditability and zero training bias.
+            </p>
+            <ul className="space-y-2 text-xs text-slate-300">
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400" />
+                <span>Quantized neural networks running at regional edge compute nodes</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400" />
+                <span>Real-time municipal ticket sentiment analysis and automated routing</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400" />
+                <span>Explainable AI (XAI) transparent decisions for public auditability</span>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
+              <img
+                src="/images/content_ai_intelligence.jpg"
+                alt="AI data science team reviewing civic classification and NLP dashboards"
+                className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Modules Grid */}
@@ -116,7 +171,7 @@ export default function AiIntelligencePage() {
               return (
                 <div key={mod.title} className="glass-card p-7 rounded-2xl border border-slate-800 space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-fiber-400">
+                    <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-cloud-400">
                       <Icon className="w-5 h-5" />
                     </div>
                     <h3 className="text-base font-bold text-white leading-snug">{mod.title}</h3>
@@ -125,7 +180,7 @@ export default function AiIntelligencePage() {
                   <ul className="space-y-2 pt-3 border-t border-slate-800/80 text-xs text-slate-300">
                     {mod.points.map((pt, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-fiber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-cloud-400 flex-shrink-0 mt-0.5" />
                         <span>{pt}</span>
                       </li>
                     ))}
@@ -137,7 +192,7 @@ export default function AiIntelligencePage() {
         </div>
 
         {/* CTA */}
-        <div className="glass-card p-8 rounded-2xl border border-fiber-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="glass-card p-8 rounded-2xl border border-cloud-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 max-w-2xl">
             <h3 className="text-xl font-bold text-white">
               Integrate Inclusive AI Systems into Your Enterprise Workflows
@@ -155,7 +210,7 @@ export default function AiIntelligencePage() {
             </Link>
             <Link
               href="/contact"
-              className="px-5 py-3 rounded-xl text-xs font-bold text-telecom-950 bg-fiber-400 hover:bg-fiber-300 shadow-lg shadow-fiber-500/20 transition-all flex items-center gap-2"
+              className="px-5 py-3 rounded-xl text-xs font-bold text-rapido-950 bg-cloud-400 hover:bg-cloud-300 shadow-lg shadow-cloud-500/20 transition-all flex items-center gap-2"
             >
               <span>Consult AI Architects</span>
               <ArrowRight className="w-4 h-4" />
