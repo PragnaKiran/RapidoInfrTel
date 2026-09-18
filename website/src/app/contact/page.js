@@ -39,8 +39,8 @@ export default function ContactPage() {
         {/* HERO BANNER IMAGE */}
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
-            src="/images/about_banner.jpg"
-            alt="Rapido Solutions Architecture Studio in Ahmedabad"
+            src="/images/banner_contact.jpg"
+            alt="Rapido Solutions Architecture Studio Consultation Desk in Ahmedabad"
             className="w-full h-[240px] sm:h-[340px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
@@ -132,7 +132,7 @@ export default function ContactPage() {
             {/* Consultation Committee Image */}
             <div className="rounded-2xl overflow-hidden border border-slate-800 shadow-xl relative group">
               <img
-                src="/images/about_boardroom.jpg"
+                src="/images/content_contact.jpg"
                 alt="Rapido Solutions Architecture Consultation Committee in Ahmedabad"
                 className="w-full h-[200px] object-cover transition-transform duration-700 group-hover:scale-105"
               />

@@ -83,6 +83,12 @@ export default function CivicInclusionPage() {
               <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
               <span>Architecting Digital Bharat · Human Inclusion</span>
             </div>
+            <div className="p-3 bg-blue-500/10 border border-blue-500/20 rounded-lg text-xs text-blue-200 flex items-center justify-between gap-4">
+              <span>Civic Inclusion &amp; Universal Equity is now featured in Rapido&apos;s Founding Charter on our <strong>About Us</strong> page.</span>
+              <Link href="/about#civic-inclusion" className="inline-flex items-center gap-1 font-bold text-blue-400 hover:text-white underline shrink-0">
+                View About Charter &rarr;
+              </Link>
+            </div>
             <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
               Universal <span className="gradient-text-saffron">Human Inclusion</span> &amp; Civic Digital Products
             </h1>

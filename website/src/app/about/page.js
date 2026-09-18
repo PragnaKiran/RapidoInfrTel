@@ -304,7 +304,7 @@ export default function AboutPage() {
             </div>
 
             <div className="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-lg">
-              <CheckCircle2 className="w-4 h-4" /> Active &amp; Verified Entity
+              <CheckCircle2 className="w-4 h-4" /> Anchored in universal human inclusion and equity
             </div>
           </div>
 
@@ -338,7 +338,60 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* SECTION 6: CORE ARCHITECTURAL & ETHICAL VALUES */}
+        {/* SECTION 6: UNIVERSAL HUMAN INCLUSION & CIVIC DIGNITY CHARTER */}
+        <div className="glass-card p-8 sm:p-10 rounded-2xl border border-emerald-500/30 space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
+                <Users className="w-3.5 h-3.5" />
+                <span>Foundational Social Ethics &amp; Equity Charter</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Universal Human Inclusion &amp; Civic Equity
+              </h2>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                At RAPIDO INFRATEL LLP, our core ethos is anchored in universal human inclusion and equity. We adhere to the foundational conviction that every human being possesses equal dignity and worth, regardless of race, color, gender, or background.
+              </p>
+              <div className="space-y-3 pt-2">
+                <div className="flex items-start gap-3 text-xs text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-white">Dismantling Bias &amp; Closing Wage Gaps:</strong> We intentionally engineer systems, hiring protocols, and workplace standards that eliminate hidden prejudices, close gender wage disparities, and empower women in executive and technological leadership.
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 text-xs text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-white">Universal Accessibility (Bhashini 22-Language NLP):</strong> Designing digital platforms with multimodal voice, vernacular dialect understanding, and zero-barrier navigation so that every citizen can participate fully without literacy obstacles.
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 text-xs text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="text-white">Paperless Civic Dignity:</strong> Delivering privacy-preserving, self-sovereign digital credential validation that protects citizen sovereignty and upholds personal dignity.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+                <img
+                  src="/images/content_civic_inclusion.jpg"
+                  alt="Universal human inclusion and digital civic dignity mobile interface"
+                  className="w-full h-[280px] sm:h-[340px] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+                <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-[11px] text-slate-300">
+                  <div className="font-bold text-white text-xs">Universal Digital Dignity</div>
+                  <div className="text-slate-400">Zero-barrier accessibility &amp; human empowerment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* SECTION 7: CORE ARCHITECTURAL & ETHICAL VALUES */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {values.map((val) => {
             const Icon = val.icon;

@@ -15,7 +15,8 @@ import {
   Server,
   Users,
   Cpu,
-  Globe2
+  Globe2,
+  Building2
 } from "lucide-react";
 
 export default function Header() {
@@ -75,16 +76,10 @@ export default function Header() {
           icon: Cpu
         },
         {
-          title: "Municipal Spatial GIS & Sensors",
-          desc: "Urban Digital Twin Mapping & IoT Telemetry Sensors",
+          title: "Spatial GIS & Complex BIM",
+          desc: "3D Building Information Modeling, Layout Planning & Cadastre",
           href: "/solutions/spatial-gis",
-          icon: Radio
-        },
-        {
-          title: "Universal Human Inclusion",
-          desc: "Zero-Barrier Civic Portals, Digital Equity & Public Dignity",
-          href: "/solutions/civic-inclusion",
-          icon: Users
+          icon: Building2
         },
         {
           title: "Rapido Hosting & Domains",

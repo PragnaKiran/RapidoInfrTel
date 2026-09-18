@@ -246,7 +246,7 @@ export default function ArchitecturePage() {
           <div className="lg:col-span-6">
             <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
               <img
-                src="/images/home_hero_architects.jpg"
+                src="/images/content_architecture.jpg"
                 alt="Executive solution architects reviewing cloud platform topologies in Ahmedabad"
                 className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
               />

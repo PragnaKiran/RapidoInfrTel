@@ -105,7 +105,7 @@ export default function DigitalIndiaPage() {
         {/* HERO BANNER */}
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
-            src="/images/banner_civic_inclusion.jpg"
+            src="/images/banner_digital_india.jpg"
             alt="Digital Bharat Connectivity and Universal Inclusion"
             className="w-full h-[280px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -120,7 +120,7 @@ export default function DigitalIndiaPage() {
         </div>
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
-            src="/images/equity_inclusion.jpg"
+            src="/images/content_digital_india.jpg"
             alt="Universal Human Inclusion and Diverse Leadership in Technology Innovation"
             className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
           />

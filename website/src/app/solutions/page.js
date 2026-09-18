@@ -54,20 +54,12 @@ export default function SolutionsPage() {
       badge: "Sovereign AI"
     },
     {
-      title: "Municipal Spatial GIS",
-      desc: "Centimeter-accurate geospatial asset intelligence, digital twin modeling, and real-time IoT utility sensor telemetry pipelines.",
+      title: "Spatial GIS & Building Complex BIM",
+      desc: "Centimeter-accurate geospatial site cadastre, 3D Building Information Modeling (BIM), and commercial complex infrastructure engineering as AMC Licensed Developers.",
       href: "/solutions/spatial-gis",
       icon: MapPin,
       color: "text-saffron-400 border-saffron-500/30",
-      badge: "Digital Twin"
-    },
-    {
-      title: "Universal Human Inclusion",
-      desc: "Zero-barrier civic portals, decentralized community Wi-Fi mesh software, and paperless sovereign credential engines built for equity.",
-      href: "/solutions/civic-inclusion",
-      icon: Users,
-      color: "text-amber-400 border-amber-500/30",
-      badge: "Civic Equity"
+      badge: "BIM & Cadastre"
     },
     {
       title: "Rapido Hosting & Domains",
@@ -91,7 +83,7 @@ export default function SolutionsPage() {
             Proprietary <span className="gradient-text-cloud">IT &amp; Mobile Products</span> on Enterprise Digital Infrastructure
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            As solution architects, we deliver resilient architectural designs and PMP-grade project management of proprietary IT &amp; mobile products operating across enterprise digital infrastructure, sovereign cloud infrastructure, and open civic grids—anchored in universal human inclusion and equity.
+            As solution architects, we deliver resilient architectural designs and PMP-grade project management of proprietary IT &amp; mobile products operating across enterprise digital infrastructure, sovereign cloud infrastructure, and private complex infrastructure—anchored in universal human inclusion and equity.
           </p>
         </div>
 
@@ -108,7 +100,7 @@ export default function SolutionsPage() {
               Enterprise Networks as the Delivery Backbone for IT &amp; Mobile Products
             </div>
             <p className="text-slate-300 text-[11px] mt-1.5 leading-relaxed">
-              We do not build raw physical connectivity or lay cables; we harness established high-capacity enterprise digital infrastructure to deliver resilient, cloud-native IT platforms, mobile applications, and civic empowerment products.
+              We do not build raw physical connectivity or lay cables; we harness established high-capacity enterprise digital infrastructure to deliver resilient, cloud-native IT platforms, mobile applications, and complex engineering products.
             </p>
           </div>
         </div>
@@ -118,7 +110,7 @@ export default function SolutionsPage() {
           <div className="border-b border-slate-800 pb-4">
             <span className="text-xs font-bold uppercase tracking-wider text-saffron-400">Dedicated Practice Areas</span>
             <h2 className="text-2xl font-bold text-white mt-1">
-              Explore Our Six Dedicated Solution Architectures
+              Explore Our Five Dedicated Solution Architectures
             </h2>
             <p className="text-xs text-slate-300 mt-1">
               Select an architectural practice to review in-depth engineering specifications, telemetry models, and deployment blueprints.
@@ -247,17 +239,17 @@ export default function SolutionsPage() {
           </div>
         </section>
 
-        {/* PILLAR 2: SOVEREIGN TRUST & PAPERLESS PORTALS */}
+        {/* PILLAR 2: SPATIAL GIS & BUILDING INFORMATION MODELING (AMC LICENSED DEVELOPERS) */}
         <section id="pillar-2" className="scroll-mt-24 space-y-8 pt-12 border-t border-slate-800">
           <div className="flex items-center justify-between flex-wrap gap-4 border-b border-slate-800 pb-4">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl bg-saffron-500/10 border border-saffron-500/30 flex items-center justify-center text-saffron-400">
-                <Lock className="w-6 h-6" />
+                <MapPin className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">Pillar 02</span>
                 <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-                  Sovereign Trust &amp; Paperless Portals
+                  Spatial GIS &amp; Building Information Modeling (BIM)
                 </h2>
               </div>
             </div>
@@ -265,7 +257,7 @@ export default function SolutionsPage() {
               href="/solutions/spatial-gis"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-saffron-500/10 hover:bg-saffron-500/20 text-saffron-300 border border-saffron-500/30 text-xs font-semibold transition-colors"
             >
-              <span>View Spatial GIS &amp; Sensors</span>
+              <span>View Spatial GIS &amp; BIM Solutions</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -274,12 +266,12 @@ export default function SolutionsPage() {
             <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-slate-900 text-saffron-400 border border-slate-800">
-                  <FileText className="w-5 h-5" />
+                  <Layers className="w-5 h-5" />
                 </div>
-                <h3 className="text-base font-bold text-white">Paperless &amp; Cryptographic Civic Portals</h3>
+                <h3 className="text-base font-bold text-white">AMC Licensed Developer Credentials</h3>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Architectural integration of sovereign identity stacks: Aadhaar biometric/OTP verification, automated DigiLocker repository integration, and FIPS 140-2 Level 3 HSM digital signatures.
+                As AMC Licensed Developers, we possess licensed engineering standing to construct modern residential towers, commercial complexes, retail developments, and private campus infrastructure with full regulatory compliance.
               </p>
             </div>
 
@@ -288,66 +280,10 @@ export default function SolutionsPage() {
                 <div className="p-2 rounded-lg bg-slate-900 text-saffron-400 border border-slate-800">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-base font-bold text-white">Municipal Spatial GIS &amp; Telemetry Sensors</h3>
+                <h3 className="text-base font-bold text-white">Spatial Cadastre &amp; 3D Digital Twin BIM</h3>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Municipal asset mapping, underground utility spatial tracking, and Integrated Command and Control Center (ICCC) integrations with high-frequency IoT telemetry sensors.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* PILLAR 3: UNIVERSAL HUMAN INCLUSION & EQUITY */}
-        <section id="pillar-3" className="scroll-mt-24 space-y-8 pt-12 border-t border-slate-800">
-          <div className="flex items-center justify-between flex-wrap gap-4 border-b border-slate-800 pb-4">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                <Users className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400">Pillar 03</span>
-                <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-                  Universal Human Inclusion &amp; Equity
-                </h2>
-              </div>
-            </div>
-            <Link
-              href="/solutions/civic-inclusion"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition-colors"
-            >
-              <span>View Civic Inclusion Page</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-              <div className="p-2 rounded-lg bg-slate-900 text-emerald-400 border border-slate-800 w-fit">
-                <Globe2 className="w-5 h-5" />
-              </div>
-              <h3 className="text-base font-bold text-white">Bhashini 22-Language NLP</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Universal access across 22 scheduled Indian languages with voice prompts and natural dialect recognition, dismantling literacy barriers.
-              </p>
-            </div>
-
-            <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-              <div className="p-2 rounded-lg bg-slate-900 text-saffron-400 border border-slate-800 w-fit">
-                <Wifi className="w-5 h-5" />
-              </div>
-              <h3 className="text-base font-bold text-white">Open Community Wi-Fi Mesh</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Decentralized open-access community Wi-Fi mesh routing software bringing high-speed connectivity to underserved local merchants and students.
-              </p>
-            </div>
-
-            <div className="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
-              <div className="p-2 rounded-lg bg-slate-900 text-cloud-400 border border-slate-800 w-fit">
-                <Users className="w-5 h-5" />
-              </div>
-              <h3 className="text-base font-bold text-white">Dismantling Bias &amp; Wage Gaps</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Engineering software systems that actively eliminate hidden prejudices in everyday interactions, close the wage gap, and elevate diverse leadership.
+                Centimeter-accurate land parcel cadastre, 3D Building Information Modeling (BIM), subterranean conduit layout mapping, and integrated IoT environmental sensors for high-performance buildings.
               </p>
             </div>
           </div>
@@ -463,7 +399,7 @@ export default function SolutionsPage() {
             <div className="lg:col-span-5">
               <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
                 <img
-                  src="/images/banner_enterprise_platforms.jpg"
+                  src="/images/content_solutions_hosting.jpg"
                   alt="Sovereign cloud server infrastructure and Anycast DNS telemetry"
                   className="w-full h-[220px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />

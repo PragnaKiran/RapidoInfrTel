@@ -31,10 +31,10 @@ export default function Footer() {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
-                <span>Architecting Digital Bharat · Corporate Entity</span>
-                <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-1.5 py-0.2 rounded font-medium">
-                  Verified
+              <div className="text-xs font-bold uppercase tracking-wider text-white flex flex-wrap items-center gap-2">
+                <span>Architecting Digital Bharat</span>
+                <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded font-medium">
+                  Anchored in universal human inclusion and equity
                 </span>
               </div>
               <div className="text-xs text-slate-400 mt-0.5">
@@ -110,13 +110,7 @@ export default function Footer() {
               <li>
                 <Link href="/solutions/spatial-gis" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
                   <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Municipal Spatial GIS</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/solutions/civic-inclusion" className="hover:text-cloud-300 transition-colors flex items-center gap-1">
-                  <ArrowRight className="w-3 h-3 text-slate-600" />
-                  <span>Universal Human Inclusion</span>
+                  <span>Spatial GIS &amp; Complex BIM</span>
                 </Link>
               </li>
               <li>
@@ -202,7 +196,7 @@ export default function Footer() {
               className="w-4 h-4 object-contain"
             />
             <span>
-              &copy; {new Date().getFullYear()} <strong>RAPIDO INFRATEL LLP</strong>. Architecting Digital Bharat. All rights reserved.
+              &copy;2009 to {new Date().getFullYear()} <strong>RAPIDO INFRATEL LLP.</strong> All rights reserved.
             </span>
           </div>
 

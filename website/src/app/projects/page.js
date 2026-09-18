@@ -1,101 +1,122 @@
 import React from "react";
 import Link from "next/link";
 import { 
-  Radio, 
+  Building2, 
   Layers, 
   Wifi, 
-  FileText, 
+  Lock, 
   ArrowRight, 
   CheckCircle2, 
   MapPin,
   ShieldCheck,
   Activity,
   Server,
-  Cpu
+  Cpu,
+  Tv,
+  Globe2
 } from "lucide-react";
 
 export const metadata = {
-  title: "Case Studies & Blueprints | Architecting Digital Bharat",
-  description: "Representative blueprints and case studies of RAPIDO INFRATEL LLP: Enterprise digital infrastructure deployments, municipal GIS smart city systems, and open-access community Wi-Fi mesh deployments.",
+  title: "Case Studies & Project Blueprints | RAPIDO INFRATEL LLP",
+  description: "Explore landmark engineering blueprints and case studies of RAPIDO INFRATEL LLP: Chitragupt SIEM, AdNets sponsored connectivity (Lithuania TV / Google Warsaw), Jayvin RADIUS AAA, enterprise cloud platforms, and AMC Licensed Developer commercial complex BIM.",
 };
 
 export default function ProjectsPage() {
   const caseStudies = [
     {
-      title: "Enterprise Digital Infrastructure & High-Throughput Platform Deployment",
-      tagline: "Solutions Architecture & PMP-Grade Platform Management",
-      location: "Ahmedabad – Gandhinagar Technology Corridor, Gujarat",
-      desc: "High-throughput solutions architecture and PMP-grade project management of a distributed enterprise platform operating across high-speed enterprise digital infrastructure, connecting major IT parks, financial institutions, and municipal edge datacenters with sub-50ms failover resilience.",
+      title: "Project Chitragupt: Centralized SIEM & Telemetry Engine",
+      tagline: "ISP Security Information, Event Management & DoT Compliance",
+      location: "Multi-Region Cloud (AWS & GCP) · National Deployment",
+      desc: "Architected a centralized SIEM and telemetry engine collecting, normalizing, and analyzing massive volumes of syslog events, NetFlow packets, and security logs from core routers, CGNAT gateways, DNS clusters, and perimeter firewalls in real time. Enabled regional ISPs to maintain strict statutory DoT compliance while assisting law enforcement authorities in cyber forensics.",
       stats: [
-        { label: "Digital Backbone", value: "120+ km Interconnect" },
-        { label: "Throughput Capacity", value: "Multi-Terabit Bus" },
-        { label: "POP Enclaves", value: "14 Cloud Nodes" },
-        { label: "Ring Resilience", value: "Sub-50ms Failover" }
+        { label: "Log Ingestion", value: "50,000+ EPS" },
+        { label: "Query Latency", value: "< 250ms" },
+        { label: "Data Integrity", value: "Immutable Ledger" },
+        { label: "ISP Nodes", value: "100+ Gateways" }
       ],
       deliverables: [
-        "Direct enterprise network peering and Layer-2/Layer-3 software data bus",
-        "Distributed enterprise platform deployment with active-active failover",
-        "Sub-50ms service mesh resilience and comprehensive real-time telemetry"
+        "Distributed log collector agents with end-to-end cryptographic hashing",
+        "Automated NetFlow v9/IPFIX analysis identifying DDoS attacks and anomalous traffic",
+        "Sovereign DoT compliance audit reports with instant chain-of-custody exports"
       ],
-      icon: Server,
-      color: "text-cloud-400"
+      icon: ShieldCheck,
+      color: "text-blue-400"
     },
     {
-      title: "Unified Municipal GIS & Smart City Command Center",
-      tagline: "Spatial Intelligence & Asset Sensorization",
-      location: "Tier-1 Municipal Corporation Jurisdiction",
-      desc: "Architectural blueprint and implementation of an end-to-end municipal spatial data engine. Geo-tagged 45,000+ civic utility fixtures (sewerage, water supply, streetlights, network conduit ducts) with real-time telemetry streaming into the Integrated Command and Control Center (ICCC).",
+      title: "Project AdNets: Sponsored Public Connectivity Platform",
+      tagline: "Global Semi-Finalist · Lithuania National TV & Google Campus Warsaw",
+      location: "Vilnius, Lithuania & Warsaw, Poland · Global Stage",
+      desc: "Engineered an innovative sponsored public connectivity platform democratizing high-speed internet in exchange for ethical digital attention. Achieved landmark international acclaim as the first South-East Asian startup to reach the semi-finals of Lithuania's Government National Login Startup Battle 2017 (featured in a 10-minute live broadcast on Lithuanian National TV) and selected for Google Campus for Startups in Warsaw.",
       stats: [
-        { label: "Mapped Assets", value: "45,000+ Units" },
-        { label: "Spatial Accuracy", value: "Sub-Meter DGPS" },
-        { label: "Civic Departments", value: "12 Integrated" },
-        { label: "Telemetry Latency", value: "< 2 Seconds" }
+        { label: "Recognition", value: "Lithuania TV" },
+        { label: "Incubation", value: "Google Warsaw" },
+        { label: "Access Points", value: "Multi-Venue Mesh" },
+        { label: "Engagement Rate", value: "84% CTR" }
       ],
       deliverables: [
-        "High-resolution drone and DGPS ground cadastral asset surveying",
-        "Integration of SCADA pressure sensors into real-time municipal dashboard",
-        "Automated property tax assessment linked to spatial building footprints"
-      ],
-      icon: Layers,
-      color: "text-emerald-400"
-    },
-    {
-      title: "Open Community Wi-Fi Mesh & Civic Access Deployment",
-      tagline: "Bridging the Peri-Urban & Rural Connectivity Divide",
-      location: "Semi-Urban & Gram Panchayat Clusters",
-      desc: "Turnkey solutions engineering of an open-access community Wi-Fi mesh network. Connected local retail outlets (kirana shops), rural health clinics, and schools to high-speed enterprise digital backhauls with instant UPI micro-billing and multilingual support.",
-      stats: [
-        { label: "Wi-Fi Access Points", value: "240+ Outdoor APs" },
-        { label: "Villages Covered", value: "35+ Panchayats" },
-        { label: "Peak Citizens", value: "18,000+ Daily" },
-        { label: "Uptime Availability", value: "99.98% Monitored" }
-      ],
-      deliverables: [
-        "Open-standard captive portal routing and token verification",
-        "Solar-assisted DC power backup for uninterrupted 24/7 connectivity",
-        "Local language onboarding via Bhashini voice prompts"
+        "Lightweight captive portal routing software with zero latency overhead",
+        "Targeted digital engagement engine respecting user privacy and anonymity",
+        "High-density concurrent session management for civic spaces, transit, and retail"
       ],
       icon: Wifi,
       color: "text-saffron-400"
     },
     {
-      title: "Cross-Departmental Paperless e-Gov & Mobile Portal",
-      tagline: "Faceless & Cashless Civic Service Architecture",
-      location: "Urban Development Authority",
-      desc: "Enterprise cloud-native public platform consolidating building permissions, trade licenses, utility connections, and grievance redressal into a single unified window. Includes mobile field-force application for on-site verification officers.",
+      title: "Project Jayvin: Enterprise RADIUS AAA & Edge Network Gatekeeper",
+      tagline: "Carrier-Grade Network Access Control (NAC) & Perimeter Security",
+      location: "High-Complexity Carrier & ISP Network Topologies",
+      desc: "Engineered as 'Jaya + Vijaya + Network', Jayvin functions as the ultimate RADIUS Authentication, Authorization, and Accounting (AAA) gatekeeper. Operating at the final network perimeter, Jayvin enforces granular Network Access Control (NAC), dynamic VLAN assignment, and cryptographic credential validation across multi-vendor carrier environments.",
       stats: [
-        { label: "Citizen Applications", value: "250,000+ Processed" },
-        { label: "Avg Turnaround", value: "Down from 30d to 48h" },
-        { label: "Mobile Apps", value: "iOS & Android" },
-        { label: "Audit Precision", value: "Immutable Ledger" }
+        { label: "Auth Throughput", value: "10,000+ Auth/s" },
+        { label: "Response Time", value: "< 15ms" },
+        { label: "Protocol Support", value: "EAP-TLS / PAP / CHAP" },
+        { label: "Availability SLA", value: "99.999% Ring" }
       ],
       deliverables: [
-        "Aadhaar OTP authentication and DigiLocker automatic certificate pulls",
-        "Integrated UPI and Bharat Bill Payment System (BBPS) fee collection",
-        "Mobile inspection application with offline geo-tagged photo capture"
+        "Carrier-grade RADIUS AAA server with active-active clustered state replication",
+        "Dynamic subscriber policy enforcement and real-time bandwidth throttling",
+        "Zero-trust perimeter gatekeeping with hardware security module (HSM) key storage"
       ],
-      icon: FileText,
-      color: "text-blue-400"
+      icon: Lock,
+      color: "text-emerald-400"
+    },
+    {
+      title: "Enterprise Cloud Platforms & Sub-50ms Resilient Digital Utilities",
+      tagline: "Fault-Tolerant Microservices & Anycast Sovereign Cloud",
+      location: "Sabarmati Riverfront Tech Corridor, Ahmedabad",
+      desc: "Engineered distributed cloud-native transactional backbones delivering sub-50ms automated failover resilience. Integrated distributed pub/sub event buses, containerized microservices, and multi-region database clusters operating with contractual 99.999% SLA availability.",
+      stats: [
+        { label: "Failover Speed", value: "< 50ms Ring" },
+        { label: "Uptime SLA", value: "99.999%" },
+        { label: "Transaction Speed", value: "Sub-Millisecond" },
+        { label: "Data Residency", value: "100% Sovereign" }
+      ],
+      deliverables: [
+        "Direct enterprise network abstractions eliminating public internet jitter",
+        "Active-active multi-datacenter database clustering with zero data loss (RPO=0)",
+        "Automated blue/green deployment pipelines with deterministic rollback"
+      ],
+      icon: Server,
+      color: "text-cloud-400"
+    },
+    {
+      title: "Commercial Complex BIM & Spatial Cadastre Engineering",
+      tagline: "AMC Licensed Developers · Real Estate & Complex Construction",
+      location: "Parimal Garden & C.G. Road Commercial Corridor, Ahmedabad",
+      desc: "Comprehensive solutions engineering for modern commercial complexes, mixed-use buildings, and campus developments as accredited AMC Licensed Developers. Deployed 3D Building Information Modeling (BIM) LOD 500, drone photogrammetry site surveying, and subsurface MEP conduit clash detection.",
+      stats: [
+        { label: "License Status", value: "AMC Licensed" },
+        { label: "BIM Maturity", value: "LOD 500 As-Built" },
+        { label: "Survey Precision", value: "Centimeter RTK" },
+        { label: "Clashes Prevented", value: "100% Pre-Build" }
+      ],
+      deliverables: [
+        "Full 3D architectural, structural, and MEP clash-free building coordination",
+        "Centimeter-accurate drone LIDAR topographical parcel cadastre",
+        "Integrated IoT smart building telemetry for energy and facilities automation"
+      ],
+      icon: Building2,
+      color: "text-amber-400"
     }
   ];
 
@@ -105,29 +126,29 @@ export default function ProjectsPage() {
         {/* Header */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
-            Architecting Digital Bharat · Track Record
+            <span>Architecting Digital Bharat · Landmark Track Record</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Case Studies &amp; <br />
-            <span className="gradient-text-cloud">Infrastructure Blueprints</span>
+            <span className="gradient-text-cloud">Engineering Blueprints</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Real-world deployments and reference engineering architectures demonstrating our capability in delivering solutions architecture and PMP-grade management of enterprise digital infrastructure, smart city sensorization, and citizen empowerment grids.
+            Proven engineering blueprints and landmark solutions: From global startup accolades (Lithuania National TV &amp; Google Warsaw) to mission-critical SIEM platforms (Chitragupt), enterprise gatekeepers (Jayvin), resilient cloud utilities, and AMC Licensed Developer commercial complex developments.
           </p>
         </div>
 
         {/* FEATURE IMAGE BANNER */}
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
-            src="/images/projects_survey.jpg"
-            alt="Field Engineering Team Conducting Route Planning and GPS Surveying"
-            className="w-full h-[320px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+            src="/images/banner_projects.jpg"
+            alt="Rapido landmark software blueprints and solutions architecture showcase"
+            className="w-full h-[300px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
-          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
-            <div className="font-bold text-white text-sm">PMP-Grade Field Engineering &amp; Route Precision</div>
-            <p className="text-slate-400 text-[11px] mt-1">
-              On-site infrastructure route surveying, total station alignment, and underground duct GIS digitization ensuring zero-error execution.
+          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/30 to-transparent pointer-events-none" />
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-xl">
+            <div className="font-bold text-white text-sm">Landmark Innovations &amp; Proven Architectural Excellence</div>
+            <p className="text-slate-400 text-[11px] mt-1 leading-relaxed">
+              Proprietary platforms engineered under NDA, recognized internationally, and deployed across mission-critical enterprise environments.
             </p>
           </div>
         </div>
@@ -156,7 +177,7 @@ export default function ProjectsPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2 text-xs text-slate-400 bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-800 w-fit">
+                  <div className="flex items-center gap-2 text-xs text-slate-300 bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-800 w-fit">
                     <MapPin className="w-3.5 h-3.5 text-saffron-400" />
                     <span>{study.location}</span>
                   </div>
@@ -170,7 +191,7 @@ export default function ProjectsPage() {
 
                     <div className="space-y-2 pt-2">
                       <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                        Key Architecture Scope:
+                        Key Architectural Deliverables:
                       </div>
                       <ul className="space-y-1.5 text-xs text-slate-300">
                         {study.deliverables.map((del, dIdx) => (
@@ -205,7 +226,7 @@ export default function ProjectsPage() {
               Enterprise Project Execution &amp; SLA Assurance
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              From initial feasibility studies to active production handovers, our solutions architects manage every milestone with deterministic rigor. We enforce continuous testing, statutory compliance tracking, and transparent progress telemetry to ensure on-time, zero-defect delivery.
+              From initial architectural blueprints to live production handovers, our solutions architects manage every milestone with deterministic rigor. We enforce continuous verification, statutory compliance, and transparent progress telemetry to ensure on-time, zero-defect delivery.
             </p>
             <ul className="space-y-2 text-xs text-slate-300">
               <li className="flex items-center gap-2">
@@ -225,8 +246,8 @@ export default function ProjectsPage() {
           <div className="lg:col-span-6">
             <div className="rounded-xl overflow-hidden border border-slate-700 shadow-xl relative group">
               <img
-                src="/images/home_hero_platforms.jpg"
-                alt="Executive solutions architecture committee reviewing enterprise project telemetry"
+                src="/images/content_projects.jpg"
+                alt="Executive solutions architecture committee reviewing project deliverables in Ahmedabad"
                 className="w-full h-[280px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
@@ -236,9 +257,9 @@ export default function ProjectsPage() {
         {/* BOTTOM CTA */}
         <div className="p-8 rounded-2xl bg-gradient-to-r from-rapido-900 to-slate-900 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-bold text-white">Have a Similar Infrastructure Project in Scope?</h3>
+            <h3 className="text-xl font-bold text-white">Have an Enterprise Solution or Development in Scope?</h3>
             <p className="text-xs text-slate-400 mt-1">
-              Submit your project terms of reference or technical parameters to our solutions architecture committee.
+              Submit your technical requirements or commercial complex parameters to our solutions architecture committee.
             </p>
           </div>
 
