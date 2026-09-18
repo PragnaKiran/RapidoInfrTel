@@ -51,48 +51,40 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
+    { name: "About Firm", href: "/about" },
     { 
       name: "Solutions", 
       href: "/solutions",
       hasDropdown: true,
       subItems: [
         {
-          title: "Enterprise Cloud Platforms",
-          desc: "Cloud-Native Microservices & Distributed Digital Utilities",
-          href: "/solutions/enterprise-platforms",
-          icon: Server
-        },
-        {
-          title: "Mobile Applications & Mobility",
+          title: "Proprietary IT & Mobile Products",
           desc: "Native iOS/Android, Field Operations & Offline-First Sync",
           href: "/solutions/mobile-products",
           icon: Cpu
         },
         {
-          title: "Sovereign AI & Intelligence",
-          desc: "Predictive Analytics, Bhashini 22-Language AI & Workflow ML",
-          href: "/solutions/ai-intelligence",
-          icon: Cpu
+          title: "Sovereign Cloud Platforms & Hosting",
+          desc: "Enterprise Cloud Native & Mission-Critical Hosting",
+          href: "/solutions/rapido-hosting",
+          icon: Server
         },
         {
-          title: "Spatial GIS & Complex BIM",
+          title: "Civic Digital Systems & Portals",
+          desc: "Paperless Civic Delivery & Public Infrastructure",
+          href: "/solutions/civic-inclusion",
+          icon: Users
+        },
+        {
+          title: "Spatial GIS & Infrastructure Modeling",
           desc: "3D Building Information Modeling, Layout Planning & Cadastre",
           href: "/solutions/spatial-gis",
           icon: Building2
-        },
-        {
-          title: "Rapido Hosting & Domains",
-          desc: "“We are . in domain name” · Enterprise Sovereign Cloud",
-          href: "/solutions/rapido-hosting",
-          icon: Globe2
         }
       ]
     },
-    { name: "Architecture", href: "/architecture" },
-    { name: "Digital Bharat", href: "/digital-india" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    { name: "Architecture Framework", href: "/architecture" },
+    { name: "Contact & RFP", href: "/contact" },
   ];
 
   return (
@@ -104,7 +96,7 @@ export default function Header() {
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
             <span className="inline-flex items-center gap-1.5 font-semibold text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
               <ShieldCheck className="w-3.5 h-3.5" />
-              A Legacy of Trust
+              Ahmedabad Headquartered · Est. September 2, 2009
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="text-cloud-400 font-semibold tracking-wide hidden lg:inline">
@@ -224,9 +216,9 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-saffron-500 to-saffron-600 hover:from-saffron-400 hover:to-saffron-500 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
+              className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-saffron-500 hover:bg-saffron-400 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
             >
-              <span>Solutions Inquiry</span>
+              <span>Initiate Architecture Review</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
 
@@ -270,9 +262,9 @@ export default function Header() {
             <div className="pt-4 border-t border-slate-800">
               <Link
                 href="/contact"
-                className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold text-white bg-saffron-500 rounded-lg"
+                className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold text-white bg-saffron-500 hover:bg-saffron-400 rounded-lg"
               >
-                <span>Connect With Solutions Team</span>
+                <span>Initiate Architecture Review</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
