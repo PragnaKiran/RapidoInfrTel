@@ -1,0 +1,68 @@
+# DETERMINISTIC PROJECT MANIFEST — [PRJ-11] Rapido Hosting & Rapido InfraTel Platform (RILLP)
+project_metadata:
+  project_id: "PRJ-11"
+  project_name: "Rapido Hosting"
+  entity_id: "ENT-01"
+  entity_name: "RAPIDO INFRATEL LLP"
+  base_priority: 11
+  status: "Active"
+  archetype: "full-stack-monorepo"
+  isolated_workspace: "/Users/viki/Developer/Websites/RILLP"
+  workspaces_symlink: "/Users/viki/Developer/Workspaces/PRJ-11-Rapido-Hosting"
+  discord_forum_id: "1516723132419801198"
+  discord_thread_id: "1554952913141366934"
+  discord_thread_url: "https://discord.com/channels/848598032337469451/1554952913141366934"
+
+repository_structure:
+  account_type: "organization"
+  organization_name: "PragnaKiran"
+  remote_repository: "https://github.com/PragnaKiran/RapidoInfrTel.git"
+  active_branch: "refactor/business-centric-redesign"
+  release_branches:
+    - "main"
+    - "refactor/business-centric-redesign"
+  deployment_target: "https://rapidoinfratel.com"
+  firebase_project: "rapidoinfr"
+  firebase_url: "https://rapidoinfr.web.app"
+  topology: "monorepo"
+  casing_convention: "kebab-case"
+  naming_formula: "[entity]-[project]-[component]"
+  branch_rules:
+    main_branch: "main"
+    allowed_prefixes:
+      - "feature/*"
+      - "bugfix/*"
+      - "release/*"
+      - "refactor/*"
+      - "hotfix/*"
+
+governance_and_guardrails:
+  context_isolation:
+    one_project_per_chat: true
+    forbid_cross_project_reads: true
+    repository_as_memory: true
+  branch_protection:
+    require_pr_reviews: true
+    min_approvals: 1
+    require_linear_history: true
+    require_status_checks: true
+    max_lines_per_pr: 300
+  versioning_standard: "SemVer"
+
+stakeholders_rbac:
+  director:
+    handle: "ViKi Vyas"
+    discord_user_id: "848597316982407169"
+    access_level: "Admin"
+  orchestrator:
+    handle: "Wishu (Agent 01)"
+    discord_bot_id: "1516677101674172487"
+    access_level: "Maintain"
+
+phase_gate_state:
+  phase_0_kickoff_locked: true
+  phase_1_stage1_lightweight_complete: true
+  director_gate_approved: false
+  director_approval_timestamp: null
+  phase_1_stage2_asciidoc_compiled: false
+  current_active_phase: "OPERATIONAL_EXECUTION"
