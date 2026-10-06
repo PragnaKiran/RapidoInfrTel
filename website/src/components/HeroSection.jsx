@@ -15,7 +15,7 @@ export default function HeroSection() {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs font-semibold">
               <span className="w-2 h-2 rounded-full bg-cloud-400 animate-pulse" />
-              <span className="text-cloud-400">Ahmedabad Headquartered · Est. September 2, 2009 · Solution Architects</span>
+              <span className="text-cloud-400">Ahmedabad Headquartered · Est. 2009 · Solution Architects</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.15]">
@@ -53,7 +53,7 @@ export default function HeroSection() {
                 <div className="text-xs font-semibold text-saffron-400">Domestic Data Residency &amp; Compliance</div>
               </div>
               <div>
-                <div className="text-xl font-black text-white font-mono">PMP-Grade</div>
+                <div className="text-xl font-black text-white font-mono">Structured</div>
                 <div className="text-xs font-semibold text-emerald-400">System Architecture &amp; Milestone Governance</div>
               </div>
             </div>

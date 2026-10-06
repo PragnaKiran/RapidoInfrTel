@@ -28,7 +28,7 @@ import {
 
 export const metadata = {
   title: "About Us | Brand Heritage Since 2009 & Solutions Architecture",
-  description: "Learn about RAPIDO INFRATEL LLP. Originating on Sep 2, 2009 within the Pragna Kiran Group, our journey spans Sudarshan Chakra inspired engineering, 2013 DoT telecom IT ventures, landmark NDA innovations (Chitragupt SIEM, AdNets, Jayvin), and AMC Licensed Developer operations.",
+  description: "Learn about RAPIDO INFRATEL LLP. Originating in 2009 within the Pragna Kiran Group, our journey spans Sudarshan Chakra inspired engineering, 2013 DoT telecom IT ventures, landmark NDA innovations (Chitragupt SIEM, AdNets, Jayvin), and AMC Licensed Developer operations.",
 };
 
 export default function AboutPage() {
@@ -36,7 +36,7 @@ export default function AboutPage() {
     {
       year: "2009",
       title: "Inception & Sudarshan Chakra Inspiration",
-      desc: "Incorporated on September 2, 2009 as part of the Pragna Kiran Group of Companies to unify hosting and domain services under the Rapido brand. Name inspired by Lord Krishna's Sudarshan Chakra (fashioned by Lord Shiva) — rapid speed and 100% uptime: Rapid + Do = Rapido.",
+      desc: "Established in 2009 as part of the Pragna Kiran Group of Companies to unify hosting and domain services under the Rapido brand. Name inspired by Lord Krishna's Sudarshan Chakra (fashioned by Lord Shiva) — rapid speed and 100% uptime: Rapid + Do = Rapido.",
       badge: "Brand Origin"
     },
     {
@@ -133,7 +133,7 @@ export default function AboutPage() {
               <span className="gradient-text-cloud">IT &amp; Mobile Products</span> on Enterprise Digital Networks
             </h1>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing Firm. Originating on September 2, 2009, we architect proprietary IT &amp; Mobile Products, sovereign cloud platforms, and spatial GIS utilities with uncompromised engineering precision.
+              <strong>RAPIDO INFRATEL LLP</strong> is an Ahmedabad-headquartered Technology Solutions Designing Firm. Originating in 2009, we architect proprietary IT &amp; Mobile Products, sovereign cloud platforms, and civic digital public infrastructure with uncompromised engineering precision.
             </p>
           </div>
 
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 <div className="text-[11px] text-slate-400">Collaborative engineering hub overlooking Sabarmati Riverfront, C.G. Road Technology Corridor</div>
               </div>
               <div className="inline-flex items-center gap-2 text-xs font-semibold text-saffron-400 bg-saffron-500/10 px-3 py-1 rounded border border-saffron-500/20 w-fit">
-                <ShieldCheck className="w-3.5 h-3.5" /> Established September 2, 2009
+                <ShieldCheck className="w-3.5 h-3.5" /> Established in 2009
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function AboutPage() {
               The Genesis of Rapido: Rapid Speed, 100% Uptime
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
-              On <strong>September 2, 2009</strong>, Rapido was incorporated as part of the <strong>Pragna Kiran Group of Companies</strong> to consolidate Pragna Kiran&apos;s hosting and domain infrastructure business under a unified, forward-looking brand.
+              In <strong>2009</strong>, the Rapido brand was established as part of the <strong>Pragna Kiran Group of Companies</strong> to consolidate hosting and domain infrastructure business under a unified, forward-looking brand.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               Our founders drew deep philosophical inspiration from <strong>Lord Krishna&apos;s Sudarshan Chakra</strong>, the celestial disc crafted by <strong>Lord Shiva</strong>. The hallmark of the Sudarshan Chakra is its unmatched velocity and its absolute, infallible execution with zero deviation—what modern engineers define as <strong>100% uptime</strong>. Combining rapid action with decisive execution gave birth to our identity:

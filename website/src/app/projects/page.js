@@ -221,7 +221,7 @@ export default function ProjectsPage() {
         {/* PROJECT DELIVERY SHOWCASE */}
         <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6 space-y-4">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-cloud-400">PMP-Grade Project Governance</span>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-cloud-400">Milestone-Driven Project Delivery</span>
             <h3 className="text-2xl font-bold text-white tracking-tight">
               Enterprise Project Execution &amp; SLA Assurance
             </h3>

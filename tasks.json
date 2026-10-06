@@ -38,10 +38,10 @@
         1
       ],
       "task_name": "Business-Centric Website Refinement & Hero Slider",
-      "status": "In Progress",
+      "status": "Completed",
       "est_hours": "2.0",
-      "actual_hours": "",
-      "notes": "Refine Footer.jsx, prune GIS references, standardize Est. 2009, implement 5-slide business hero slider on refactor/business-centric-redesign"
+      "actual_hours": "2.0",
+      "notes": "Refined Footer.jsx, pruned GIS references, standardized Est. 2009, validated 5-slide business hero slider, and deployed to live Firebase Hosting (https://rapidoinfr.web.app)"
     },
     {
       "task_id": "TSK-1102",

@@ -15,14 +15,14 @@
 ---
 
 ## II. Active Tasks (`Scrum_Board` — Sorted by `P-S-T`)
-* [ ] **`[11-1-1]` `TSK-1101` — Business-Centric Website Refinement & Hero Slider** (`In Progress` | Scheduled: `2026-10-05` | Est: `2.0h`)
-  * *Notes:* Refine `Footer.jsx`, prune GIS references, standardize "Est. 2009", implement 5-slide business hero slider, update editorial assets on `refactor/business-centric-redesign`.
 * [ ] **`[11-2-1]` `TSK-1102` — Firebase Hosting Custom Domain Verification & SSL Routing** (`To Do` | Scheduled: `2026-10-06` | Est: `1.0h`)
   * *Notes:* Complete apex and CNAME records for `rapidoinfratel.com` on `rapidoinfr.web.app` target.
 
 ---
 
-## III. Completed Milestones (`1` Completed)
+## III. Completed Milestones (`2` Completed)
+* [x] **`[11-1-1]` `TSK-1101` — Business-Centric Website Refinement & Hero Slider** (Completed: `2026-10-06` | Actual: `2.0h`)
+  * *Outcome:* Refined `Footer.jsx`, pruned GIS references, standardized "Est. 2009", validated 5-slide business hero slider, and deployed to live Firebase Hosting (`https://rapidoinfr.web.app`).
 * [x] **`[11-0-1]` `TSK-003` — Satish Yadav Final Documentation Sync** (Completed: `2026-08-11` | Actual: `3.0h`)
   * *Outcome:* All registered documents collected and work completed.
 
