@@ -28,7 +28,7 @@ import {
 
 export const metadata = {
   title: "About Us | Brand Heritage Since 2009 & Solutions Architecture",
-  description: "Learn about RAPIDO INFRATEL LLP. Originating in 2009 within the Pragna Kiran Group, our journey spans Sudarshan Chakra inspired engineering, 2013 DoT telecom IT ventures, landmark NDA innovations (Chitragupt SIEM, AdNets, Jayvin), and AMC Licensed Developer operations.",
+  description: "Learn about RAPIDO INFRATEL LLP. Originating in 2009 within the Pragna Kiran Group, our journey spans Sudarshan Chakra inspired engineering, enterprise network systems, landmark NDA innovations (Chitragupt SIEM, AdNets, Jayvin), and AMC Licensed Developer operations.",
 };
 
 export default function AboutPage() {
@@ -41,8 +41,8 @@ export default function AboutPage() {
     },
     {
       year: "2013",
-      title: "DoT Telecom Ventures & Vedant TechServe",
-      desc: "Pragna Kiran Group ventured into Telecom under Unified Licenses from the Department of Telecommunications (DoT), Government of India. Group consolidated IT services of Vedant Technical and Saathiv Creations into Vedant TechServe, solving telecom-grade IT bottlenecks.",
+      title: "Enterprise Network Systems & Vedant TechServe",
+      desc: "Pragna Kiran Group expanded into high-scale internet and network infrastructure engineering. Group consolidated IT services across Vedant Technical and Saathiv Creations into Vedant TechServe, solving enterprise-grade network bottlenecks.",
       badge: "Ecosystem Expansion"
     },
     {
@@ -60,7 +60,7 @@ export default function AboutPage() {
     {
       year: "Present",
       title: "RAPIDO INFRATEL LLP",
-      desc: "Operating as premier Solutions Architects, delivering enterprise cloud platforms, spatial GIS, AI intelligence, sovereign hosting, and PMP-grade governance under the Rapido heritage.",
+      desc: "Operating as premier Solutions Architects, delivering enterprise cloud platforms, AI & mobile systems, sovereign hosting, and PMP-grade governance under the Rapido heritage.",
       badge: "Active Practice"
     }
   ];
@@ -69,7 +69,7 @@ export default function AboutPage() {
     {
       title: "Project Chitragupt",
       subtitle: "Centralized SIEM & Telemetry for Internet Service Providers",
-      desc: "A centralized Security Information and Event Management (SIEM) and ISP telemetry tool collecting, normalizing, and analyzing massive volumes of log data, netflow telemetry, and security events from core routers, switches, CGNAT gateways, DNS servers, and perimeter firewalls in real time on AWS and GCP. Enabled rural and regional ISPs to maintain full DoT compliance and assisted law enforcement in tracking cybercrime.",
+      desc: "A centralized Security Information and Event Management (SIEM) and ISP telemetry tool collecting, normalizing, and analyzing massive volumes of log data, netflow telemetry, and security events from core routers, switches, CGNAT gateways, DNS servers, and perimeter firewalls in real time on AWS and GCP. Enabled regional ISPs and enterprise networks to maintain statutory log compliance and assisted in preventing cyber intrusions.",
       inspiration: "Inspired by Chitragupta, the cosmic scribe assigned to deity Yama, who maintains the infallible ledger (Agrasanadani) recording every single action with absolute integrity.",
       icon: ShieldCheck,
       tag: "SIEM & Compliance",
@@ -191,7 +191,7 @@ export default function AboutPage() {
               Pioneering Systems Delivered Under NDA
             </h2>
             <p className="text-xs sm:text-sm text-slate-400 max-w-3xl mt-1">
-              Engineered with pride in India at the heart of Gujarat in Ahmedabad, these landmark platforms powered domestic and global telecommunications, ISP governance, and public connectivity.
+              Engineered with pride in India at the heart of Gujarat in Ahmedabad, these landmark platforms powered domestic and global enterprise networks, ISP governance, and public connectivity.
             </p>
           </div>
 
@@ -227,13 +227,13 @@ export default function AboutPage() {
           <div className="lg:col-span-6 space-y-4">
             <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">Organizational Maturity</span>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              From Telecom IT Ventures to AMC Licensed Developers
+              From Enterprise Network Systems to AMC Licensed Developers
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
-              In <strong>2013</strong>, the Pragna Kiran Group ventured into Telecom under Unified Licenses granted by the Department of Telecommunications (DoT), Government of India. The group unified its IT service competencies—including Vedant Technical and Saathiv Creations—under <strong>Vedant TechServe</strong>.
+              In <strong>2013</strong>, the Pragna Kiran Group expanded into large-scale network infrastructure engineering. The group unified its IT service competencies—including Vedant Technical and Saathiv Creations—under <strong>Vedant TechServe</strong>.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Navigating complex telecom infrastructure environments highlighted the need for specialized IT solutions. To solve these mission-critical challenges, the group established <strong>Rapido InfrTel Pvt Ltd</strong>, capitalizing on deep data center operational experience and direct telco interconnects to support bulk telecommunications services.
+              Navigating complex high-throughput network environments highlighted the need for specialized platform solutions. To solve these mission-critical challenges, the group established <strong>Rapido InfrTel Pvt Ltd</strong>, capitalizing on deep data center operational experience and high-availability interconnects to support mission-critical enterprise systems.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               In <strong>2021</strong>, to embrace redevelopment and realty opportunities, corporate structures were converted to Limited Liability Partnerships (LLP) for optimized compliance and operational ease. Today, the group is not only an established developer of IT, mobile products, and cloud infrastructure, but also certified as <strong>AMC Licensed Developers</strong>, with realty activities channeled through <strong>Rapido Realty LLP</strong>.

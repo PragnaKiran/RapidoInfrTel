@@ -17,6 +17,7 @@ import {
   Globe2,
   Smartphone
 } from "lucide-react";
+import EdgeLatencySandbox from "@/components/EdgeLatencySandbox";
 
 export const metadata = {
   title: "Technology Architecture | Blueprints & Sovereign Cloud Stack",
@@ -217,6 +218,9 @@ export default function ArchitecturePage() {
             </div>
           </div>
         </div>
+
+        {/* LIVE EDGE LATENCY SANDBOX */}
+        <EdgeLatencySandbox />
 
         {/* SOLUTIONS ARCHITECTURE REVIEW SHOWCASE */}
         <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">

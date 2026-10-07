@@ -21,7 +21,7 @@ export const metadata = {
     "we are . in domain name",
     "open access community wifi mesh",
     "sovereign digital identity pki architecture",
-    "municipal GIS spatial intelligence",
+    "enterprise edge cloud infrastructure",
     "paperless cloud platforms",
   ],
   authors: [{ name: "RAPIDO INFRATEL LLP", url: "https://rapidoinfratel.com" }],
@@ -116,7 +116,7 @@ const jsonLdData = {
         "Rapido Hosting & Domain Services",
         "Open-Access Community Wi-Fi Mesh Products",
         "Sovereign Cryptographic Trust Architecture",
-        "Smart City Spatial GIS Intelligence",
+        "Enterprise Edge Cloud Networks",
         "Enterprise Digital Infrastructure",
         "Cloud-Native Platform Engineering",
       ],
@@ -140,6 +140,8 @@ const jsonLdData = {
   ],
 };
 
+import { LanguageProvider } from "@/context/LanguageContext";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -150,9 +152,11 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-screen flex flex-col bg-rapido-950 text-slate-200 antialiased selection:bg-cloud-500 selection:text-rapido-950">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

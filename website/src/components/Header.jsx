@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import RapidoLogo from "./RapidoLogo";
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 import { 
   ShieldCheck, 
   Mail, 
@@ -19,6 +21,7 @@ import {
 } from "lucide-react";
 
 export default function Header() {
+  const { t } = useLanguage();
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false);
@@ -89,16 +92,16 @@ export default function Header() {
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
             <span className="inline-flex items-center gap-1.5 font-semibold text-saffron-400 bg-saffron-500/10 px-2 py-0.5 rounded border border-saffron-500/20">
               <ShieldCheck className="w-3.5 h-3.5" />
-              Ahmedabad Headquartered · Est. 2009
+              {t.hq || "Ahmedabad Headquartered · Est. 2009"}
             </span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="text-cloud-400 font-semibold tracking-wide hidden lg:inline">
-              Architecting Digital Bharat
+              {t.tagline || "Architecting Digital Bharat"}
             </span>
           </div>
 
-          {/* Contact Directs */}
-          <div className="flex items-center gap-4 flex-wrap justify-center md:justify-end">
+          {/* Contact Directs & Language Toggle */}
+          <div className="flex items-center gap-3 flex-wrap justify-center md:justify-end">
             <a 
               href="mailto:contact@rapidoinfratel.com" 
               className="inline-flex items-center gap-1.5 text-slate-300 hover:text-cloud-400 transition-colors"
@@ -109,8 +112,12 @@ export default function Header() {
             <span className="text-slate-600 hidden sm:inline">|</span>
             <span className="inline-flex items-center gap-1.5 text-slate-400 hidden sm:inline-flex">
               <MapPin className="w-3 h-3 text-saffron-400" />
-              <span>Parimal Garden Cross Rd, C.G. Road, Ahmedabad</span>
+              <span>{t.address || "Parimal Garden Cross Rd, C.G. Road, Ahmedabad"}</span>
             </span>
+            <span className="text-slate-600 hidden md:inline">|</span>
+            <div className="hidden sm:inline-flex">
+              <LanguageToggle />
+            </div>
           </div>
         </div>
       </div>
@@ -211,7 +218,7 @@ export default function Header() {
               href="/contact"
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-saffron-500 hover:bg-saffron-400 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
             >
-              <span>Initiate Architecture Review</span>
+              <span>{t.initiateReview || "Initiate Architecture Review"}</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
 
@@ -229,6 +236,10 @@ export default function Header() {
         {/* 3. MOBILE SLIDE-DOWN DRAWER */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-rapido-950/95 backdrop-blur-2xl border-b border-slate-800 px-4 pt-4 pb-6 mt-3 space-y-2">
+            <div className="flex items-center justify-between pb-3 mb-2 border-b border-slate-800/80">
+              <span className="text-xs text-slate-400">Language / भाषा:</span>
+              <LanguageToggle />
+            </div>
             {navLinks.map((link) => (
               <div key={link.name}>
                 <Link
@@ -257,7 +268,7 @@ export default function Header() {
                 href="/contact"
                 className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold text-white bg-saffron-500 hover:bg-saffron-400 rounded-lg"
               >
-                <span>Initiate Architecture Review</span>
+                <span>{t.initiateReview || "Initiate Architecture Review"}</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>

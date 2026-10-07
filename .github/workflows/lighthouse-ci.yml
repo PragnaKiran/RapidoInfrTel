@@ -1,0 +1,56 @@
+name: Lighthouse CI & Web Vitals Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+      - production
+      - refactor/**
+  push:
+    branches:
+      - main
+      - production
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  lighthouse-audit:
+    name: Lighthouse Performance & Core Web Vitals Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'website/package-lock.json'
+
+      - name: Install Dependencies
+        working-directory: ./website
+        run: npm ci
+
+      - name: Build Next.js Static Export
+        working-directory: ./website
+        run: npm run build
+
+      - name: Run Lighthouse CI Audit
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            http://localhost:3000/
+            http://localhost:3000/about
+            http://localhost:3000/solutions
+            http://localhost:3000/architecture
+            http://localhost:3000/contact
+          startServerCommand: npx serve website/out -l 3000
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          budgetPath: .github/lighthouse-budget.json
