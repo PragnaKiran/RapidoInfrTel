@@ -141,6 +141,7 @@ const jsonLdData = {
 };
 
 import { LanguageProvider } from "@/context/LanguageContext";
+import FloatingActions from "@/components/FloatingActions";
 
 export default function RootLayout({ children }) {
   return (
@@ -156,6 +157,7 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
+          <FloatingActions />
         </LanguageProvider>
       </body>
     </html>

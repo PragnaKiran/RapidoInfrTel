@@ -82,14 +82,14 @@ export default function RapidoHostingPage() {
           <div className="max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
               <span className="w-2 h-2 rounded-full bg-saffron-400 animate-pulse" />
-              <span>Rapido Hosting · Brand Heritage Since 2009</span>
+              <span>Rapido® Hosting · Sovereign Cloud Infrastructure</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
               Sovereign Cloud Hosting &amp; <br />
               <span className="gradient-text-saffron">“We are . in domain name”</span>
             </h1>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              Under the established <strong>Rapido Hosting</strong> brand, we are one of the leading hosting service providers and domain name authorities. We deliver high-availability sovereign cloud hosting, managed VPS, edge compute enclaves, and premier domain name registration.
+              Under the established <strong>Rapido® Hosting</strong> brand, we deliver high-availability sovereign cloud hosting, managed VPS, edge compute enclaves, and premier domain name registration.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ export default function RapidoHostingPage() {
                 Active Cloud Enclave Telemetry
               </span>
               <h3 className="text-lg font-bold text-white mt-0.5">
-                Rapido Sovereign Hosting Infrastructure
+                Rapido® Sovereign Cloud Infrastructure
               </h3>
             </div>
             <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-lg">
@@ -241,7 +241,7 @@ export default function RapidoHostingPage() {
         <div className="glass-card p-8 rounded-2xl border border-saffron-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 max-w-2xl">
             <h3 className="text-xl font-bold text-white">
-              Deploy Your Infrastructure on Rapido Sovereign Hosting
+              Deploy Your Infrastructure on Rapido® Sovereign Hosting
             </h3>
             <p className="text-xs text-slate-300 leading-relaxed">
               Consult with our cloud engineering team for enterprise VPS provisioning, dedicated bare metal clusters, or corporate domain registration.

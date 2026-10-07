@@ -51,42 +51,39 @@ export default function Header() {
     setSolutionsDropdownOpen(false);
   }, [pathname]);
 
+  const subItemsData = [
+    { icon: Cpu, href: "/solutions/mobile-products", defaultTitle: "Proprietary IT & Mobile Products", defaultDesc: "Native iOS/Android, Field Operations & Offline-First Sync" },
+    { icon: Server, href: "/solutions/rapido-hosting", defaultTitle: "Sovereign Cloud Platforms & Hosting", defaultDesc: "Enterprise Cloud Native & Mission-Critical Hosting" },
+    { icon: Users, href: "/solutions/civic-inclusion", defaultTitle: "Civic Digital Systems & Portals", defaultDesc: "Paperless Civic Delivery & Public Infrastructure" },
+  ];
+
+  const subItems = subItemsData.map((item, idx) => {
+    const localized = t.solutionsSub && t.solutionsSub[idx];
+    return {
+      title: localized ? localized.title : item.defaultTitle,
+      desc: localized ? localized.desc : item.defaultDesc,
+      href: item.href,
+      icon: item.icon
+    };
+  });
+
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About Firm", href: "/about" },
+    { name: t.nav?.home || "Home", href: "/" },
+    { name: t.nav?.about || "About Firm", href: "/about" },
     { 
-      name: "Solutions", 
+      name: t.nav?.solutions || "Solutions", 
       href: "/solutions",
       hasDropdown: true,
-      subItems: [
-        {
-          title: "Proprietary IT & Mobile Products",
-          desc: "Native iOS/Android, Field Operations & Offline-First Sync",
-          href: "/solutions/mobile-products",
-          icon: Cpu
-        },
-        {
-          title: "Sovereign Cloud Platforms & Hosting",
-          desc: "Enterprise Cloud Native & Mission-Critical Hosting",
-          href: "/solutions/rapido-hosting",
-          icon: Server
-        },
-        {
-          title: "Civic Digital Systems & Portals",
-          desc: "Paperless Civic Delivery & Public Infrastructure",
-          href: "/solutions/civic-inclusion",
-          icon: Users
-        }
-      ]
+      subItems
     },
-    { name: "Architecture Framework", href: "/architecture" },
-    { name: "Contact & RFP", href: "/contact" },
+    { name: t.nav?.architecture || "Architecture Framework", href: "/architecture" },
+    { name: t.nav?.contact || "Contact & RFP", href: "/contact" },
   ];
 
   return (
     <>
       {/* 1. TOP STATUTORY & ENTITY BAR */}
-      <div className="bg-rapido-950 border-b border-slate-800/80 text-[11px] text-slate-300 py-1.5 px-4">
+      <div className="bg-rapido-950 border-b border-slate-800/80 text-[11px] text-slate-300 py-1.5 px-4 relative z-30">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
           {/* Entity Status */}
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
@@ -100,8 +97,8 @@ export default function Header() {
             </span>
           </div>
 
-          {/* Contact Directs & Language Toggle */}
-          <div className="flex items-center gap-3 flex-wrap justify-center md:justify-end">
+          {/* Contact Directs */}
+          <div className="flex items-center gap-4 flex-wrap justify-center md:justify-end">
             <a 
               href="mailto:contact@rapidoinfratel.com" 
               className="inline-flex items-center gap-1.5 text-slate-300 hover:text-cloud-400 transition-colors"
@@ -114,10 +111,6 @@ export default function Header() {
               <MapPin className="w-3 h-3 text-saffron-400" />
               <span>{t.address || "Parimal Garden Cross Rd, C.G. Road, Ahmedabad"}</span>
             </span>
-            <span className="text-slate-600 hidden md:inline">|</span>
-            <div className="hidden sm:inline-flex">
-              <LanguageToggle />
-            </div>
           </div>
         </div>
       </div>
@@ -213,10 +206,14 @@ export default function Header() {
           </nav>
 
           {/* Action CTA & Mobile Trigger */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="hidden sm:inline-block">
+              <LanguageToggle />
+            </div>
+
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-saffron-500 hover:bg-saffron-400 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-white bg-saffron-500 hover:bg-saffron-400 rounded-lg shadow-lg shadow-saffron-500/25 transition-all hover:scale-[1.02]"
             >
               <span>{t.initiateReview || "Initiate Architecture Review"}</span>
               <ArrowUpRight className="w-3.5 h-3.5" />

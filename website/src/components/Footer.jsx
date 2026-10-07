@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import RapidoLogo from "./RapidoLogo";
+import { useLanguage } from "@/context/LanguageContext";
 import { 
   ShieldCheck, 
   Mail, 
@@ -10,13 +11,15 @@ import {
   Radio, 
   Server, 
   Users, 
-  Layers,
-  Cpu,
-  Globe2,
+  Layers, 
+  Cpu, 
+  Globe2, 
   Lock
 } from "lucide-react";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="relative bg-rapido-950 border-t border-slate-800 text-slate-400 overflow-hidden">
       {/* Background ambient lighting */}
@@ -32,13 +35,13 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-white flex flex-wrap items-center gap-2">
-                <span>Architecting Digital Bharat</span>
+                <span>{t.tagline || "Architecting Digital Bharat"}</span>
                 <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded font-medium">
                   Anchored in universal human inclusion and equity
                 </span>
               </div>
               <div className="text-xs text-slate-400 mt-0.5">
-                RAPIDO INFRATEL LLP · Architecting Digital Bharat · Solutions Architecture Practice
+                RAPIDO® INFRATEL LLP · {t.tagline || "Architecting Digital Bharat"} · Solutions Architecture Practice
               </div>
             </div>
           </div>
@@ -63,20 +66,20 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <RapidoLogo size="default" />
             <p className="text-xs text-slate-300 leading-relaxed pr-6">
-              RAPIDO INFRATEL LLP designs and architects proprietary IT &amp; Mobile Products engineered for enterprise digital infrastructure. Inspired by the foundational paradigm of <em>Architecting Digital Bharat</em>, our product engineering is anchored in universal human inclusion and equity—actively valuing every individual, eliminating systemic biases, and elevating diverse leadership.
+              {t.footer?.aboutDesc || "RAPIDO® INFRATEL LLP designs and architects proprietary IT & Mobile Products engineered for enterprise digital infrastructure. Inspired by the foundational paradigm of Architecting Digital Bharat, our product engineering is anchored in universal human inclusion and equity."}
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-saffron-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Registered Office:</strong> B2, Rangkrupa Complex, B/s Gujarat Gas Bldg., Parimal Garden Cross Road, C.G. Road, Ahmedabad, Gujarat - 380006, India
+                  <strong>{t.footer?.registeredOffice || "Registered Office"}:</strong> {t.footer?.addressFull || "B2, Rangkrupa Complex, B/s Gujarat Gas Bldg., Parimal Garden Cross Road, C.G. Road, Ahmedabad, Gujarat - 380006, India"}
                 </span>
               </div>
               <div className="flex items-start gap-2.5">
                 <ShieldCheck className="w-4 h-4 text-cloud-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Brand Heritage:</strong> Rapido® brand established 2009 (Registered Trademark ®) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (Ahmedabad, Gujarat)
+                  <strong>Brand Heritage:</strong> {t.footer?.brandHeritage || "Rapido® brand established 2009 (Registered Trademark ®) · Incorporated in 2017 as RAPIDO INFRATEL PRIVATE LIMITED (CIN: U64200GJ2017PTC096551) · Structured as RAPIDO INFRATEL LLP (Ahmedabad, Gujarat)"}
                 </span>
               </div>
             </div>

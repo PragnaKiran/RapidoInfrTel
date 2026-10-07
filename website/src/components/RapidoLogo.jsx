@@ -28,8 +28,8 @@ export default function RapidoLogo({ showTagline = true, size = "default", class
       {/* Brand Typography */}
       <div className="flex flex-col">
         <div className="flex items-baseline gap-1.5 leading-none">
-          <span className={`font-black tracking-tight text-white ${mainTextSize}`}>
-            RAPIDO
+          <span className={`font-black tracking-tight text-white ${mainTextSize} inline-flex items-start`}>
+            RAPIDO<sup className="text-[10px] text-saffron-400 font-bold ml-0.5">®</sup>
           </span>
           <span className={`font-bold tracking-wider text-cloud-400 ${mainTextSize}`}>
             INFRATEL

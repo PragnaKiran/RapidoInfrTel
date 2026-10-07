@@ -47,7 +47,7 @@ export default function HeroSlider() {
         </>
       ),
       description:
-        "Under the Rapido Hosting brand, we provide high-availability sovereign cloud environments, managed VPS, and localized data residency compliant with Indian regulatory standards.",
+        "Under the Rapido® Hosting brand, we provide high-availability sovereign cloud environments, managed VPS, and localized data residency compliant with Indian regulatory standards.",
       image: "/images/content_rapido_hosting.jpg",
       imageAlt: "Systems engineers in an enterprise operations center monitoring cloud telemetry",
       primaryBtn: { text: "Explore Sovereign Cloud", href: "/solutions/rapido-hosting" },

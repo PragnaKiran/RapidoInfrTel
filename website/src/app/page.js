@@ -75,7 +75,7 @@ export default function HomePage() {
       number: "02",
       title: "Sovereign Cloud Platforms & Civic Digital Systems",
       tagline: "Resilient Infrastructure & Civic Portals",
-      desc: "High-availability sovereign cloud hosting (Rapido Hosting), paperless civic portals, GIS municipal asset monitoring, and compliant data residency.",
+      desc: "High-availability sovereign cloud hosting (Rapido® Hosting), paperless civic portals, and compliant national data residency.",
       borderColor: "border-saffron-500/40",
       textColor: "text-saffron-400",
       icon: Server,
@@ -83,7 +83,7 @@ export default function HomePage() {
       items: [
         "Sovereign cryptographic identity integration",
         "Paperless enterprise portals with immutable audit ledgers",
-        "Unified GIS municipal spatial asset intelligence",
+        "Unified civic data pipelines and digital platform integration",
         "99.999% SLA availability with localized disaster recovery"
       ],
       link: "/solutions/rapido-hosting"
@@ -285,7 +285,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white">
-                  RAPIDO INFRATEL LLP · 15+ Years Brand Heritage
+                  RAPIDO® INFRATEL LLP · Solutions Architecture &amp; Sovereign Platforms
                 </h3>
                 <p className="text-xs text-slate-300 mt-1 max-w-3xl leading-relaxed">
                   Rapido® brand established in <strong>2009</strong> with registered Trademark (®). Incorporated in 2017 as <strong>RAPIDO INFRATEL PRIVATE LIMITED</strong> (CIN: <span className="font-mono text-saffron-300">U64200GJ2017PTC096551</span>), currently structured as <strong>RAPIDO INFRATEL LLP</strong>. Registered Office: Parimal Garden Cross Road, C.G. Road, Ahmedabad.

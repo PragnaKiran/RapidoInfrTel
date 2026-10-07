@@ -36,7 +36,7 @@ export default function AboutPage() {
     {
       year: "2009",
       title: "Inception & Sudarshan Chakra Inspiration",
-      desc: "Established in 2009 as part of the Pragna Kiran Group of Companies to unify hosting and domain services under the Rapido brand. Name inspired by Lord Krishna's Sudarshan Chakra (fashioned by Lord Shiva) — rapid speed and 100% uptime: Rapid + Do = Rapido.",
+      desc: "Established in 2009 as part of the Pragna Kiran Group of Companies to unify hosting and domain services under the Rapido® brand. Name inspired by Lord Krishna's Sudarshan Chakra (fashioned by Lord Shiva) — rapid speed and 100% uptime: Rapid + Do = Rapido.",
       badge: "Brand Origin"
     },
     {
@@ -54,13 +54,13 @@ export default function AboutPage() {
     {
       year: "2021",
       title: "LLP Restructuring & Realty Diversification",
-      desc: "Transitioned to LLP structure for streamlined compliance and agile operations. Diversified into redevelopment as AMC Licensed Developers, alongside establishing Rapido Realty LLP.",
+      desc: "Transitioned to LLP structure for streamlined compliance and agile operations. Diversified into redevelopment as AMC Licensed Developers, alongside establishing Rapido® Realty LLP.",
       badge: "Structural Evolution"
     },
     {
       year: "Present",
       title: "RAPIDO INFRATEL LLP",
-      desc: "Operating as premier Solutions Architects, delivering enterprise cloud platforms, AI & mobile systems, sovereign hosting, and PMP-grade governance under the Rapido heritage.",
+      desc: "Operating as premier Solutions Architects, delivering enterprise cloud platforms, AI & mobile systems, sovereign hosting, and PMP-grade governance under the Rapido® heritage.",
       badge: "Active Practice"
     }
   ];
@@ -162,10 +162,10 @@ export default function AboutPage() {
           <div className="max-w-3xl space-y-3">
             <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">Brand Origin &amp; Philosophy</span>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              The Genesis of Rapido: Rapid Speed, 100% Uptime
+              The Genesis of Rapido®: Rapid Speed, 100% Uptime
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
-              In <strong>2009</strong>, the Rapido brand was established as part of the <strong>Pragna Kiran Group of Companies</strong> to consolidate hosting and domain infrastructure business under a unified, forward-looking brand.
+              In <strong>2009</strong>, the Rapido® brand was established as part of the <strong>Pragna Kiran Group of Companies</strong> to consolidate hosting and domain infrastructure business under a unified, forward-looking brand.
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               Our founders drew deep philosophical inspiration from <strong>Lord Krishna&apos;s Sudarshan Chakra</strong>, the celestial disc crafted by <strong>Lord Shiva</strong>. The hallmark of the Sudarshan Chakra is its unmatched velocity and its absolute, infallible execution with zero deviation—what modern engineers define as <strong>100% uptime</strong>. Combining rapid action with decisive execution gave birth to our identity:
@@ -175,10 +175,10 @@ export default function AboutPage() {
               <span className="text-slate-500">+</span>
               <span className="text-saffron-400">Do</span>
               <span className="text-slate-500">=</span>
-              <span className="text-emerald-400 text-lg sm:text-xl">RAPIDO</span>
+              <span className="text-emerald-400 text-lg sm:text-xl">RAPIDO®</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Backed by a registered trademark (®), the Rapido brand represents unwavering intellectual property integrity, technological resilience, and steadfast commitment to client success.
+              Backed by a registered trademark (®), the Rapido® brand represents intellectual property integrity, technological resilience, and steadfast commitment to client success.
             </p>
           </div>
         </div>
