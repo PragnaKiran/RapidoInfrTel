@@ -36,16 +36,16 @@ export const metadata = {
     canonical: "https://rapidoinfratel.com/",
   },
   openGraph: {
-    title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
-    description: "Delivering resilient solutions architecture & PMP-grade project management of IT & Mobile products on enterprise digital infrastructure, enterprise AI, and sovereign cloud.",
+    title: "RAPIDO® INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
+    description: "Delivering resilient solutions architecture & milestone-driven project management of IT & Mobile products on enterprise digital infrastructure, enterprise AI, and sovereign cloud.",
     url: "https://rapidoinfratel.com/",
-    siteName: "RAPIDO INFRATEL LLP",
+    siteName: "RAPIDO® INFRATEL LLP",
     images: [
       {
-        url: "/Rapido-Logo.png",
-        width: 1024,
-        height: 420,
-        alt: "RAPIDO INFRATEL LLP Logo",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "RAPIDO® INFRATEL LLP - Solutions Architecture & Sovereign Cloud Platforms",
       },
     ],
     locale: "en_IN",
@@ -53,9 +53,15 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RAPIDO INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
+    title: "RAPIDO® INFRATEL LLP | Architecting Digital Bharat · Solutions Architecture",
     description: "Architecting Digital Bharat: Proprietary IT & Mobile products on enterprise digital infrastructure under universal human inclusion and equity.",
-    images: ["/Rapido-Logo.png"],
+    images: ["/og-image.png"],
+  },
+  verification: {
+    google: "google-site-verification-rillp-prod-token",
+    other: {
+      "msvalidate.01": "bing-site-verification-rillp-prod-token",
+    },
   },
   icons: {
     icon: [

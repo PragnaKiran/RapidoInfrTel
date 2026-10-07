@@ -197,11 +197,15 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4 text-slate-400">
+          <div className="flex items-center gap-3 sm:gap-4 text-slate-400 flex-wrap justify-center sm:justify-end">
             <span>Ahmedabad, Gujarat</span>
             <span>·</span>
-            <Link href="/about" className="hover:text-cloud-300">
-              About Practice
+            <Link href="/privacy" className="hover:text-cloud-300">
+              Privacy Policy (DPDP 2023)
+            </Link>
+            <span>·</span>
+            <Link href="/terms" className="hover:text-cloud-300">
+              Terms of Engagement
             </Link>
             <span>·</span>
             <Link href="/contact" className="text-cloud-400 hover:underline">
