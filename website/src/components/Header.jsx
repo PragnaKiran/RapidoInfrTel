@@ -207,9 +207,11 @@ export default function Header() {
 
           {/* Action CTA & Mobile Trigger */}
           <div className="flex items-center gap-2 sm:gap-3">
+            {/* Bhashini Multilingual Toggle reserved for future activation:
             <div className="hidden sm:inline-block">
               <LanguageToggle />
             </div>
+            */}
 
             <Link
               href="/contact"
@@ -233,10 +235,12 @@ export default function Header() {
         {/* 3. MOBILE SLIDE-DOWN DRAWER */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-rapido-950/95 backdrop-blur-2xl border-b border-slate-800 px-4 pt-4 pb-6 mt-3 space-y-2">
+            {/* Bhashini Mobile Toggle reserved for future activation:
             <div className="flex items-center justify-between pb-3 mb-2 border-b border-slate-800/80">
               <span className="text-xs text-slate-400">Language / भाषा:</span>
               <LanguageToggle />
             </div>
+            */}
             {navLinks.map((link) => (
               <div key={link.name}>
                 <Link
