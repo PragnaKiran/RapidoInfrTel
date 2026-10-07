@@ -32,7 +32,9 @@ export default function HeroSlider() {
       description:
         "We design and architect bespoke, mission-critical mobile applications and enterprise software systems engineered for long-term scalability.",
       image: "/images/content_mobile_products.jpg",
-      imageAlt: "Two engineers at a dual-monitor workstation reviewing mobile application UI screens and code",
+      imageAlt: "High-concurrency mobile software architecture and offline-first data sync engines engineered for enterprise scale",
+      captionTitle: "Enterprise Mobile Engineering",
+      captionSub: "Offline-First Sync & Microservices",
       primaryBtn: { text: "Explore Proprietary Products", href: "/solutions/mobile-products" },
       secondaryBtn: { text: "Initiate Architecture Review", href: "/contact" },
       metric: { val: "15+ Years", label: "Continuous Engineering Heritage", sub: "Est. 2009" }
@@ -49,7 +51,9 @@ export default function HeroSlider() {
       description:
         "Under the Rapido® Hosting brand, we provide high-availability sovereign cloud environments, managed VPS, and localized data residency compliant with Indian regulatory standards.",
       image: "/images/content_rapido_hosting.jpg",
-      imageAlt: "Systems engineers in an enterprise operations center monitoring cloud telemetry",
+      imageAlt: "Sovereign cloud infrastructure telemetry and mission-critical enterprise hosting operations",
+      captionTitle: "Sovereign Cloud Hosting",
+      captionSub: "National Data Residency & Tier-III SLA",
       primaryBtn: { text: "Explore Sovereign Cloud", href: "/solutions/rapido-hosting" },
       secondaryBtn: { text: "Enterprise Cloud Specs", href: "/architecture" },
       metric: { val: "99.999%", label: "Target Cloud Availability SLA", sub: "High-Availability Sovereign Datacenters" }
@@ -66,7 +70,9 @@ export default function HeroSlider() {
       description:
         "Designing inclusive, paperless digital utilities and citizen portals that eliminate operational barriers and ensure seamless public service delivery.",
       image: "/images/content_civic_inclusion.jpg",
-      imageAlt: "Professional interacting with a citizen using a mobile tablet in a modern civic service center",
+      imageAlt: "Inclusive citizen-first digital public infrastructure delivering paperless public utilities",
+      captionTitle: "Civic Public Infrastructure",
+      captionSub: "Universal Human Inclusion & Equity",
       primaryBtn: { text: "Explore Civic Systems", href: "/solutions/civic-inclusion" },
       secondaryBtn: { text: "Digital Bharat Vision", href: "/digital-india" },
       metric: { val: "Universal", label: "Civic Accessibility & Transparent Governance", sub: "Inclusive Interfaces" }
@@ -83,7 +89,9 @@ export default function HeroSlider() {
       description:
         "Integrating state-of-the-art Bhashini language models into mobile and enterprise platforms, enabling voice-driven citizen and customer interactions.",
       image: "/images/about_banner.jpg",
-      imageAlt: "Senior tech architects discussing a blueprint on a conference screen",
+      imageAlt: "Multilingual natural language processing architecture integrated across 22 scheduled Indian languages",
+      captionTitle: "Sovereign Multilingual AI",
+      captionSub: "Bhashini NLP & Voice Computing",
       primaryBtn: { text: "Explore AI Solutions", href: "/solutions/ai-intelligence" },
       secondaryBtn: { text: "Technical Specs", href: "/architecture" },
       metric: { val: "22 Languages", label: "Bhashini-Ready Sovereign NLP Models", sub: "Inclusive Multilingual Interfaces" }
@@ -100,7 +108,9 @@ export default function HeroSlider() {
       description:
         "Collaborating directly with enterprise leadership and government departments to scope, prototype, and deploy high-reliability digital architectures.",
       image: "/images/about_boardroom.jpg",
-      imageAlt: "Executive leadership and architects around a clean wooden meeting table",
+      imageAlt: "Executive architecture consultation and milestone-driven technical roadmap governance",
+      captionTitle: "Enterprise Architecture Advisory",
+      captionSub: "Milestone-Driven Project Governance",
       primaryBtn: { text: "Initiate Architecture Review", href: "/contact" },
       secondaryBtn: { text: "Our Engagement Lifecycle", href: "/about" },
       metric: { val: "Milestone-Driven", label: "Structured Architectural Oversight", sub: "Milestone-Driven Solutions" }
@@ -223,9 +233,14 @@ export default function HeroSlider() {
                     <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
                     
                     {/* Bottom overlay badge */}
-                    <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs flex items-center justify-between">
-                      <span className="text-slate-300 font-medium">{slide.imageAlt}</span>
-                      <span className="text-[10px] font-mono text-saffron-400 font-bold">RAPIDO</span>
+                    <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/95 backdrop-blur-md border border-slate-800 text-xs flex items-center justify-between">
+                      <div>
+                        <div className="text-white font-bold">{slide.captionTitle}</div>
+                        <div className="text-[11px] text-cloud-400 font-mono">{slide.captionSub}</div>
+                      </div>
+                      <span className="text-[10px] font-mono text-saffron-400 font-bold bg-saffron-500/10 border border-saffron-500/20 px-2 py-0.5 rounded">
+                        RAPIDO®
+                      </span>
                     </div>
                   </div>
                 </div>

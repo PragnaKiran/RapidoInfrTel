@@ -148,29 +148,70 @@ export default function HomePage() {
       </section>
 
       {/* 3. CORE MISSION & POSITIONING */}
-      <section className="py-20 md:py-28 relative">
+      <section className="py-14 md:py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
-              Architecting Digital Bharat
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            {/* Left Narrative (7 cols) */}
+            <div className="lg:col-span-7 space-y-5">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cloud-400 bg-cloud-500/10 border border-cloud-500/20 px-3 py-1 rounded-full">
+                Architecting Digital Bharat
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                Partnering with Enterprise &amp; Government Leadership
+              </h2>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                <strong>RAPIDO INFRATEL LLP</strong> designs and architects proprietary IT &amp; Mobile Products engineered for enterprise digital infrastructure. We partner with enterprise leadership and government departments to architect sovereign software and resilient digital public infrastructure.
+              </p>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Our product architecture draws its foundational inspiration from <em>Architecting Digital Bharat</em> under the core concept of <strong>universal human inclusion and equity</strong>—which asserts that actively involving and valuing every individual directly strengthens communities and elevates the quality of life for everyone.
+              </p>
+              <div className="pt-2 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/digital-india"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-cloud-400 bg-cloud-500/10 hover:bg-cloud-500/20 border border-cloud-500/30 transition-colors"
+                >
+                  <span>Universal Inclusion Vision</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-800 transition-colors"
+                >
+                  <span>Corporate Heritage (Est. 2009)</span>
+                </Link>
+              </div>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
-              Partnering with Enterprise &amp; Government Leadership
-            </h2>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              <strong>RAPIDO INFRATEL LLP</strong> designs and architects proprietary IT &amp; Mobile Products engineered for enterprise digital infrastructure. We partner with enterprise leadership and government departments to architect sovereign software and resilient digital public infrastructure.
-            </p>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              Our product architecture draws its foundational inspiration from <em>Architecting Digital Bharat</em> under the core concept of <strong>universal human inclusion and equity</strong>—which asserts that actively involving and valuing every individual directly strengthens communities and elevates the quality of life for everyone.
-            </p>
+
+            {/* Right Architectural Image & Sovereign Badge (5 cols) */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
+                <img
+                  src="/images/equity_inclusion.jpg"
+                  alt="Inclusive Digital Public Infrastructure and Citizen Engagement by Rapido Infratel LLP"
+                  className="w-full h-[280px] sm:h-[360px] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+                
+                {/* Floating Institutional Badge */}
+                <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/95 backdrop-blur-md border border-slate-800 text-xs flex items-center justify-between">
+                  <div>
+                    <div className="font-bold text-white">Universal Human Inclusion &amp; Equity</div>
+                    <div className="text-[11px] text-cloud-400 font-mono">Digital Public Infrastructure · Bharat</div>
+                  </div>
+                  <span className="text-[10px] font-mono text-saffron-400 font-bold bg-saffron-500/10 border border-saffron-500/20 px-2 py-1 rounded">
+                    EST. 2009
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 4. THE TWO CORE ENGINEERING PRACTICES */}
-      <section className="py-16 md:py-24 bg-rapido-900/60 border-y border-slate-800/80 relative">
+      <section className="py-14 md:py-18 bg-rapido-900/60 border-y border-slate-800/80 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
               Engineering Practices
             </div>
@@ -243,8 +284,8 @@ export default function HomePage() {
       </section>
 
       {/* 5. THE 5-STAGE ARCHITECTURE ENGAGEMENT LIFECYCLE */}
-      <section className="py-20 md:py-28 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="py-14 md:py-20 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">
               Structured Architectural Governance

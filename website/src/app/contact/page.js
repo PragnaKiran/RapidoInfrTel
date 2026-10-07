@@ -39,7 +39,7 @@ export default function ContactPage() {
         {/* HERO BANNER IMAGE */}
         <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
           <img
-            src="/images/banner_contact.jpg"
+            src="/images/content_contact.jpg"
             alt="Rapido Solutions Architecture Studio Consultation Desk in Ahmedabad"
             className="w-full h-[240px] sm:h-[340px] object-cover transition-transform duration-700 group-hover:scale-105"
           />

@@ -7,40 +7,37 @@ export default function RapidoLogo({ showTagline = true, size = "default", class
   const isSmall = size === "sm";
   const isLarge = size === "lg";
 
-  const emblemSize = isSmall ? 34 : isLarge ? 48 : 42;
-  const mainTextSize = isSmall ? "text-lg" : isLarge ? "text-2xl" : "text-xl";
-  const subTextSize = isSmall ? "text-[9px]" : isLarge ? "text-xs" : "text-[11px]";
+  // Dimensions for full official Rapido-Logo.png (aspect ratio ~2.44:1)
+  const logoHeight = isSmall ? 28 : isLarge ? 40 : 34;
+  const logoWidth = Math.round(logoHeight * 2.44);
+  const infratelTextSize = isSmall ? "text-xs" : isLarge ? "text-base" : "text-sm";
+  const llpBadgeSize = isSmall ? "text-[8px]" : "text-[9px]";
 
   return (
-    <Link href="/" className={`inline-flex items-center gap-2.5 group ${className}`}>
-      {/* Official Circular Emblem */}
-      <div className="relative flex-shrink-0 flex items-center justify-center">
+    <Link href="/" className={`inline-flex flex-col group ${className}`}>
+      {/* 1. Official Full Brand Logo Image */}
+      <div className="relative flex-shrink-0 flex items-center">
         <img
-          src="/icon-192.png"
-          alt="Rapido Emblem"
-          width={emblemSize}
-          height={emblemSize}
-          className="transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_2px_8px_rgba(234,99,32,0.3)]"
-          style={{ width: `${emblemSize}px`, height: `${emblemSize}px`, objectFit: "contain" }}
+          src="/Rapido-Logo.png"
+          alt="Rapido® Official Brand Logo"
+          width={logoWidth}
+          height={logoHeight}
+          className="transition-transform duration-300 group-hover:scale-[1.02] object-contain drop-shadow-[0_2px_10px_rgba(234,99,32,0.25)]"
+          style={{ height: `${logoHeight}px`, width: "auto" }}
         />
       </div>
 
-      {/* Brand Typography */}
-      <div className="flex flex-col">
-        <div className="flex items-baseline gap-1.5 leading-none">
-          <span className={`font-black tracking-tight text-white ${mainTextSize} inline-flex items-start`}>
-            RAPIDO<sup className="text-[10px] text-saffron-400 font-bold ml-0.5">®</sup>
-          </span>
-          <span className={`font-bold tracking-wider text-cloud-400 ${mainTextSize}`}>
-            INFRATEL
-          </span>
-          <span className="text-[10px] font-semibold text-slate-400 border border-slate-700/80 px-1 py-0.5 rounded tracking-wide ml-0.5">
-            LLP
-          </span>
-        </div>
+      {/* 2. Second Line: INFRATEL (cloud-400) + LLP (slate badge) */}
+      <div className="flex items-center gap-1.5 leading-none mt-1 pl-0.5">
+        <span className={`font-black tracking-wider text-cloud-400 ${infratelTextSize} uppercase`}>
+          INFRATEL
+        </span>
+        <span className={`${llpBadgeSize} font-bold text-slate-300 border border-slate-700/90 bg-slate-900/90 px-1 py-0.2 rounded tracking-wider`}>
+          LLP
+        </span>
         {showTagline && (
-          <span className={`text-slate-400 font-medium tracking-wider uppercase mt-1 ${subTextSize}`}>
-            IT & Mobile Product Architects
+          <span className="hidden sm:inline text-slate-400 text-[10px] font-medium tracking-wide ml-1 border-l border-slate-800 pl-2">
+            Solutions Architecture
           </span>
         )}
       </div>
