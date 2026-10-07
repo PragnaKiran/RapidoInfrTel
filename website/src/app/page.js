@@ -345,9 +345,9 @@ export default function HomePage() {
       </section>
 
       {/* 7. HIGH-CONVERSION INTAKE SECTION */}
-      <section id="architecture-review" className="py-16 md:py-24 relative">
+      <section id="architecture-review" className="py-12 md:py-16 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron-400 bg-saffron-500/10 border border-saffron-500/20 px-3 py-1 rounded-full">
                 Direct Technical Inquiries

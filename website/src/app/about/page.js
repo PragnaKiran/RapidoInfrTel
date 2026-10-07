@@ -261,7 +261,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-wider text-saffron-400">15+ Years Evolution</span>
-              <h3 className="text-xl font-bold text-white mt-0.5">Corporate Heritage &amp; Milestone Timeline</h3>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mt-0.5">Corporate Heritage &amp; Milestone Timeline</h2>
             </div>
             <div className="text-xs text-slate-300 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 w-fit">
               Registered Trademark (®) Protection
@@ -278,7 +278,7 @@ export default function AboutPage() {
                       {m.badge}
                     </span>
                   </div>
-                  <h4 className="text-xs font-bold text-white">{m.title}</h4>
+                  <h3 className="text-xs font-bold text-white">{m.title}</h3>
                   <p className="text-[11px] text-slate-400 leading-relaxed">{m.desc}</p>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default function AboutPage() {
                 <div className="p-2.5 rounded-lg bg-slate-900 text-cloud-400 border border-slate-800 w-fit">
                   <Icon className="w-5 h-5" />
                 </div>
-                <h4 className="text-base font-bold text-white">{val.title}</h4>
+                <h3 className="text-base font-bold text-white">{val.title}</h3>
                 <p className="text-xs text-slate-300 leading-relaxed">{val.desc}</p>
               </div>
             );

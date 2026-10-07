@@ -102,34 +102,38 @@ export default function DigitalIndiaPage() {
           </p>
         </div>
 
-        {/* HERO BANNER */}
-        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
-          <img
-            src="/images/banner_digital_india.jpg"
-            alt="Digital Bharat Connectivity and Universal Inclusion"
-            className="w-full h-[280px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
-          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
-            <div>
-              <span className="font-bold text-white">Architecting Digital Bharat</span>
-              <span className="hidden sm:inline text-slate-400"> · Sovereign IT &amp; Mobile Products for 1.4 Billion Citizens</span>
+        {/* 2-COLUMN BALANCED HERO VISUAL GRID */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+            <img
+              src="/images/banner_digital_india.jpg"
+              alt="Digital Bharat Connectivity and Universal Inclusion"
+              className="w-full h-[260px] sm:h-[340px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+              <div>
+                <span className="font-bold text-white">Digital Bharat Scale</span>
+                <span className="hidden sm:inline text-slate-400"> · 1.4B Citizen Focus</span>
+              </div>
+              <span className="text-saffron-400 font-mono text-[11px] font-semibold">Public Utilities</span>
             </div>
-            <span className="text-saffron-400 font-mono text-[11px] font-semibold">Universal Equity Paradigm</span>
           </div>
-        </div>
-        <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
-          <img
-            src="/images/content_digital_india.jpg"
-            alt="Universal Human Inclusion and Diverse Leadership in Technology Innovation"
-            className="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
-          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 max-w-lg">
-            <div className="font-bold text-white text-sm">Universal Human Inclusion &amp; Equity in Technology</div>
-            <p className="text-slate-400 text-[11px] mt-1">
-              Active representation, gender equity, and fair access across every digital pipeline and mobile platform we architect.
-            </p>
+
+          <div className="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative group">
+            <img
+              src="/images/content_digital_india.jpg"
+              alt="Universal Human Inclusion and Diverse Leadership in Technology Innovation"
+              className="w-full h-[260px] sm:h-[340px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-rapido-950 via-rapido-950/20 to-transparent pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+              <div>
+                <span className="font-bold text-white">Universal Human Inclusion</span>
+                <span className="hidden sm:inline text-slate-400"> · Gender Equity</span>
+              </div>
+              <span className="text-cloud-400 font-mono text-[11px] font-semibold">Civic Dignity</span>
+            </div>
           </div>
         </div>
 
