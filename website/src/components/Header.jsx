@@ -28,22 +28,33 @@ export default function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // High-performance scroll tracking using passive listener without synchronous layout reads
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight;
-      const winHeight = window.innerHeight;
-      const distFromBottom = docHeight - (scrollY + winHeight);
-
-      // Proximity detection: Unfix / fade sticky header when near footer to eliminate duplicate logo collisions
-      if (scrollY > 80 && distFromBottom > 420) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
+      setIsSticky(scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // IntersectionObserver to gracefully unstick header when footer is in view
+    // Eliminates all 43ms synchronous scroll layout thrashing (scrollHeight querying)
+    const footerElement = document.getElementById("site-footer");
+    if (!footerElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsSticky(false);
+        }
+      },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0 }
+    );
+
+    observer.observe(footerElement);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {

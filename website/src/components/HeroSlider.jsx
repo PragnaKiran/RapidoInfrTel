@@ -115,13 +115,30 @@ export default function HeroSlider() {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   }, [slides.length]);
 
-  // Auto-advancing timer (6 seconds)
+  // Auto-advancing timer (6 seconds) with tab visibility dampening
   useEffect(() => {
     if (isPaused) return;
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setIsPaused(true);
+      } else {
+        setIsPaused(false);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
     const interval = setInterval(() => {
-      nextSlide();
+      if (!document.hidden) {
+        nextSlide();
+      }
     }, 6000);
-    return () => clearInterval(interval);
+
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, [isPaused, nextSlide]);
 
   return (
@@ -219,19 +236,25 @@ export default function HeroSlider() {
 
         {/* CONTROLS: PREV/NEXT & DOTS */}
         <div className="mt-8 pt-5 border-t border-slate-800/80 flex items-center justify-between flex-wrap gap-4">
-          {/* Slide Indicator Dots */}
-          <div className="flex items-center gap-2.5">
+          {/* Slide Indicator Dots with WCAG AA Compliant Touch Targets (min 24x24px) */}
+          <div className="flex items-center gap-1.5" role="tablist" aria-label="Hero carousel pagination">
             {slides.map((s, idx) => (
               <button
                 key={s.id}
                 onClick={() => setCurrent(idx)}
-                className={`transition-all duration-300 rounded-full h-2 ${
-                  idx === current
-                    ? "w-8 bg-cloud-400"
-                    : "w-2.5 bg-slate-700 hover:bg-slate-500"
-                }`}
+                className="p-2 flex items-center justify-center rounded-full group focus:outline-none"
                 aria-label={`Go to slide ${idx + 1}`}
-              />
+                aria-selected={idx === current}
+                role="tab"
+              >
+                <span
+                  className={`block transition-all duration-300 rounded-full h-2.5 ${
+                    idx === current
+                      ? "w-8 bg-cloud-400 shadow-md shadow-cloud-500/30"
+                      : "w-2.5 bg-slate-700 group-hover:bg-slate-500"
+                  }`}
+                />
+              </button>
             ))}
           </div>
 

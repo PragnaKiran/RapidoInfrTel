@@ -266,7 +266,7 @@ export default function HomePage() {
                     <Icon className="w-4 h-4" />
                   </div>
                   <div className="text-[10px] font-mono text-emerald-400 font-bold mb-1">STAGE {stage.step}</div>
-                  <h4 className="text-sm font-bold text-white mb-2 leading-snug">{stage.title}</h4>
+                  <h3 className="text-sm font-bold text-white mb-2 leading-snug">{stage.title}</h3>
                   <p className="text-xs text-slate-400 mt-auto leading-relaxed">{stage.desc}</p>
                 </div>
               );

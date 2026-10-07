@@ -136,10 +136,11 @@ export default function ContactForm({ initialSolution = "" }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label htmlFor="form_name_designation" className="block text-xs font-medium text-slate-300 mb-1">
                 Full Name &amp; Official Designation <span className="text-saffron-400">*</span>
               </label>
               <input
+                id="form_name_designation"
                 type="text"
                 name="name_designation"
                 required
@@ -151,10 +152,11 @@ export default function ContactForm({ initialSolution = "" }) {
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label htmlFor="form_email" className="block text-xs font-medium text-slate-300 mb-1">
                 Official Email <span className="text-saffron-400">*</span>
               </label>
               <input
+                id="form_email"
                 type="email"
                 name="email"
                 required
@@ -168,10 +170,11 @@ export default function ContactForm({ initialSolution = "" }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label htmlFor="form_organization" className="block text-xs font-medium text-slate-300 mb-1">
                 Official Organization Name <span className="text-saffron-400">*</span>
               </label>
               <input
+                id="form_organization"
                 type="text"
                 name="organization"
                 required
@@ -183,11 +186,13 @@ export default function ContactForm({ initialSolution = "" }) {
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label htmlFor="form_org_type" className="block text-xs font-medium text-slate-300 mb-1">
                 Organization Type <span className="text-saffron-400">*</span>
               </label>
               <select
+                id="form_org_type"
                 name="org_type"
+                aria-label="Organization Type"
                 value={formData.org_type}
                 onChange={handleChange}
                 className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-cloud-500 transition-colors"
@@ -202,11 +207,13 @@ export default function ContactForm({ initialSolution = "" }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label htmlFor="form_scope" className="block text-xs font-medium text-slate-300 mb-1">
                 Engagement Scope <span className="text-saffron-400">*</span>
               </label>
               <select
+                id="form_scope"
                 name="scope"
+                aria-label="Engagement Scope"
                 value={formData.scope}
                 onChange={handleChange}
                 className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-cloud-500 transition-colors"
@@ -219,11 +226,13 @@ export default function ContactForm({ initialSolution = "" }) {
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label htmlFor="form_timeline" className="block text-xs font-medium text-slate-300 mb-1">
                 Estimated Deployment Timeline <span className="text-saffron-400">*</span>
               </label>
               <select
+                id="form_timeline"
                 name="timeline"
+                aria-label="Estimated Deployment Timeline"
                 value={formData.timeline}
                 onChange={handleChange}
                 className="w-full px-3.5 py-2.5 rounded-lg bg-slate-900/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-cloud-500 transition-colors"
@@ -237,10 +246,11 @@ export default function ContactForm({ initialSolution = "" }) {
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-1">
+            <label htmlFor="form_message" className="block text-xs font-medium text-slate-300 mb-1">
               Brief Architecture Requirements <span className="text-saffron-400">*</span>
             </label>
             <textarea
+              id="form_message"
               name="message"
               required
               rows={4}
@@ -275,17 +285,17 @@ export default function ContactForm({ initialSolution = "" }) {
           <button
             type="submit"
             disabled={status.submitting}
-            className="w-full py-3 px-6 rounded-lg text-sm font-semibold text-white bg-saffron-500 hover:bg-saffron-400 shadow-lg shadow-saffron-500/20 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+            className="w-full py-3 px-6 rounded-lg text-sm font-bold text-rapido-950 bg-saffron-400 hover:bg-saffron-300 shadow-lg shadow-saffron-500/20 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
           >
             {status.submitting ? (
               <>
-                <Loader2 className="w-4 h-4 animate-spin" />
+                <Loader2 className="w-4 h-4 animate-spin text-rapido-950" />
                 <span>Submitting via relayBuoy...</span>
               </>
             ) : (
               <>
                 <span>Submit Architecture Brief</span>
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 text-rapido-950" />
               </>
             )}
           </button>

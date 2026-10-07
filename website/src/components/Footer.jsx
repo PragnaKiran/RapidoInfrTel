@@ -21,7 +21,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="relative bg-rapido-950 border-t border-slate-800 text-slate-400 overflow-hidden">
+    <footer id="site-footer" className="relative bg-rapido-950 border-t border-slate-800 text-slate-400 overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-cloud-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-saffron-500/5 rounded-full blur-3xl pointer-events-none" />
