@@ -26,3 +26,5 @@ yarn-error.log*
 # Firebase
 .firebase/
 firebase-debug.log*
+
+.local_secrets_backup/
